@@ -79,8 +79,8 @@ public class EmployeeItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Employee_Name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_Name_feature", "_UI_Employee_type"),
+				 getString("_UI_Employee_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Employee_name_feature", "_UI_Employee_type"),
 				 MallDsmPackage.Literals.EMPLOYEE__NAME,
 				 true,
 				 false,

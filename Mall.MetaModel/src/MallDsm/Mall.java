@@ -16,7 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link MallDsm.Mall#getShops <em>Shops</em>}</li>
- *   <li>{@link MallDsm.Mall#getAviableBrands <em>Aviable Brands</em>}</li>
+ *   <li>{@link MallDsm.Mall#getAvailableBrands <em>Available Brands</em>}</li>
+ *   <li>{@link MallDsm.Mall#getCategories <em>Categories</em>}</li>
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getMall()
@@ -41,19 +42,35 @@ public interface Mall extends EObject {
 	EList<Shop> getShops();
 
 	/**
-	 * Returns the value of the '<em><b>Aviable Brands</b></em>' containment reference list.
+	 * Returns the value of the '<em><b>Available Brands</b></em>' containment reference list.
 	 * The list contents are of type {@link MallDsm.Brand}.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Aviable Brands</em>' containment reference list isn't clear,
+	 * If the meaning of the '<em>Available Brands</em>' containment reference list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Aviable Brands</em>' containment reference list.
-	 * @see MallDsm.MallDsmPackage#getMall_AviableBrands()
+	 * @return the value of the '<em>Available Brands</em>' containment reference list.
+	 * @see MallDsm.MallDsmPackage#getMall_AvailableBrands()
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<Brand> getAviableBrands();
+	EList<Brand> getAvailableBrands();
+
+	/**
+	 * Returns the value of the '<em><b>Categories</b></em>' containment reference list.
+	 * The list contents are of type {@link MallDsm.Category}.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Categories</em>' containment reference list isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Categories</em>' containment reference list.
+	 * @see MallDsm.MallDsmPackage#getMall_Categories()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Category> getCategories();
 
 } // Mall

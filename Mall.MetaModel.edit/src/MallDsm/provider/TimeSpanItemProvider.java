@@ -79,13 +79,13 @@ public class TimeSpanItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TimeSpan_StartHour_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_StartHour_feature", "_UI_TimeSpan_type"),
+				 getString("_UI_TimeSpan_startHour_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_startHour_feature", "_UI_TimeSpan_type"),
 				 MallDsmPackage.Literals.TIME_SPAN__START_HOUR,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -101,13 +101,13 @@ public class TimeSpanItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TimeSpan_StartDay_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_StartDay_feature", "_UI_TimeSpan_type"),
+				 getString("_UI_TimeSpan_startDay_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_startDay_feature", "_UI_TimeSpan_type"),
 				 MallDsmPackage.Literals.TIME_SPAN__START_DAY,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -123,13 +123,13 @@ public class TimeSpanItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TimeSpan_EndDay_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_EndDay_feature", "_UI_TimeSpan_type"),
+				 getString("_UI_TimeSpan_endDay_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_endDay_feature", "_UI_TimeSpan_type"),
 				 MallDsmPackage.Literals.TIME_SPAN__END_DAY,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -145,13 +145,13 @@ public class TimeSpanItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_TimeSpan_EndHour_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_EndHour_feature", "_UI_TimeSpan_type"),
+				 getString("_UI_TimeSpan_endHour_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_TimeSpan_endHour_feature", "_UI_TimeSpan_type"),
 				 MallDsmPackage.Literals.TIME_SPAN__END_HOUR,
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -175,7 +175,11 @@ public class TimeSpanItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_TimeSpan_type");
+		Integer labelValue = ((TimeSpan)object).getStartHour();
+		String label = labelValue == null ? null : labelValue.toString();
+		return label == null || label.length() == 0 ?
+			getString("_UI_TimeSpan_type") :
+			getString("_UI_TimeSpan_type") + " " + label;
 	}
 
 

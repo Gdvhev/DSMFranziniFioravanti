@@ -274,7 +274,7 @@ public class GoodImpl extends EObjectImpl implements Good {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (ModelNumber: ");
+		result.append(" (modelNumber: ");
 		result.append(modelNumber);
 		result.append(')');
 		return result.toString();

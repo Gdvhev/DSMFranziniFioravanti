@@ -82,8 +82,8 @@ public class ShopItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Shop_Name_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_Name_feature", "_UI_Shop_type"),
+				 getString("_UI_Shop_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_name_feature", "_UI_Shop_type"),
 				 MallDsmPackage.Literals.SHOP__NAME,
 				 true,
 				 false,
@@ -104,8 +104,8 @@ public class ShopItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Shop_Address_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_Address_feature", "_UI_Shop_type"),
+				 getString("_UI_Shop_address_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_address_feature", "_UI_Shop_type"),
 				 MallDsmPackage.Literals.SHOP__ADDRESS,
 				 true,
 				 false,
@@ -126,8 +126,8 @@ public class ShopItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Shop_PhotosPaths_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_PhotosPaths_feature", "_UI_Shop_type"),
+				 getString("_UI_Shop_photosPaths_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_photosPaths_feature", "_UI_Shop_type"),
 				 MallDsmPackage.Literals.SHOP__PHOTOS_PATHS,
 				 true,
 				 false,
@@ -148,8 +148,8 @@ public class ShopItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Shop_MapPath_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_MapPath_feature", "_UI_Shop_type"),
+				 getString("_UI_Shop_mapPath_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Shop_mapPath_feature", "_UI_Shop_type"),
 				 MallDsmPackage.Literals.SHOP__MAP_PATH,
 				 true,
 				 false,

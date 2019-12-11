@@ -68,19 +68,29 @@ public interface ListedGood extends EObject {
 	EList<Discount> getSales();
 
 	/**
-	 * Returns the value of the '<em><b>Default Price</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Returns the value of the '<em><b>Default Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Default Price</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Default Price</em>' attribute list.
+	 * @return the value of the '<em>Default Price</em>' attribute.
+	 * @see #setDefaultPrice(Integer)
 	 * @see MallDsm.MallDsmPackage#getListedGood_DefaultPrice()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getDefaultPrice();
+	Integer getDefaultPrice();
+
+	/**
+	 * Sets the value of the '{@link MallDsm.ListedGood#getDefaultPrice <em>Default Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Default Price</em>' attribute.
+	 * @see #getDefaultPrice()
+	 * @generated
+	 */
+	void setDefaultPrice(Integer value);
 
 } // ListedGood

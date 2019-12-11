@@ -1,4 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Mall="http://mall.com">
-  <aviableBrands name="Brand1"/>
+<Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
+  <shops xsi:type="Mall:BrandShop" name="aa" brand="//@availableBrands.0">
+    <employees name="Emp1">
+      <shiftSchedule>
+        <Shift>
+          <startHour>1</startHour>
+          <startDay>1</startDay>
+          <endDay>1</endDay>
+          <endHour>1</endHour>
+        </Shift>
+      </shiftSchedule>
+    </employees>
+    <employees name="Emp2"/>
+    <manager name="Manager1"/>
+    <openSchedule>
+      <Shift>
+        <startHour>2</startHour>
+        <startDay>1</startDay>
+        <endDay>1</endDay>
+        <endHour>2222</endHour>
+      </Shift>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:SpecialisticShop" name="Shop2" speciality="//@categories.0"/>
+  <availableBrands name="Brand1"/>
+  <categories name="Category1">
+    <contains name="SubCategory1"/>
+  </categories>
 </Mall:Mall>

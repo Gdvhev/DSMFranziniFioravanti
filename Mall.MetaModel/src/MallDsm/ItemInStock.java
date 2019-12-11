@@ -51,19 +51,29 @@ public interface ItemInStock extends EObject {
 	void setContains(Good value);
 
 	/**
-	 * Returns the value of the '<em><b>Item Count</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Returns the value of the '<em><b>Item Count</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Item Count</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Item Count</em>' attribute list.
+	 * @return the value of the '<em>Item Count</em>' attribute.
+	 * @see #setItemCount(Integer)
 	 * @see MallDsm.MallDsmPackage#getItemInStock_ItemCount()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getItemCount();
+	Integer getItemCount();
+
+	/**
+	 * Sets the value of the '{@link MallDsm.ItemInStock#getItemCount <em>Item Count</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Item Count</em>' attribute.
+	 * @see #getItemCount()
+	 * @generated
+	 */
+	void setItemCount(Integer value);
 
 } // ItemInStock

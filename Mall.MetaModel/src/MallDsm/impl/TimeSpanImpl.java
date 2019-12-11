@@ -7,10 +7,12 @@ import MallDsm.TimeSpan;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
 
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
@@ -33,44 +35,84 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	/**
-	 * The cached value of the '{@link #getStartHour() <em>Start Hour</em>}' attribute list.
+	 * The default value of the '{@link #getStartHour() <em>Start Hour</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getStartHour()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> startHour;
+	protected static final Integer START_HOUR_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getStartDay() <em>Start Day</em>}' attribute list.
+	 * The cached value of the '{@link #getStartHour() <em>Start Hour</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStartHour()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer startHour = START_HOUR_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getStartDay() <em>Start Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getStartDay()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> startDay;
+	protected static final Integer START_DAY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getEndDay() <em>End Day</em>}' attribute list.
+	 * The cached value of the '{@link #getStartDay() <em>Start Day</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getStartDay()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer startDay = START_DAY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getEndDay() <em>End Day</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getEndDay()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> endDay;
+	protected static final Integer END_DAY_EDEFAULT = null;
 
 	/**
-	 * The cached value of the '{@link #getEndHour() <em>End Hour</em>}' attribute list.
+	 * The cached value of the '{@link #getEndDay() <em>End Day</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEndDay()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer endDay = END_DAY_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getEndHour() <em>End Hour</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getEndHour()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> endHour;
+	protected static final Integer END_HOUR_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getEndHour() <em>End Hour</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getEndHour()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer endHour = END_HOUR_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -96,10 +138,7 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getStartHour() {
-		if (startHour == null) {
-			startHour = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.TIME_SPAN__START_HOUR);
-		}
+	public Integer getStartHour() {
 		return startHour;
 	}
 
@@ -108,10 +147,19 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getStartDay() {
-		if (startDay == null) {
-			startDay = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.TIME_SPAN__START_DAY);
-		}
+	public void setStartHour(Integer newStartHour) {
+		Integer oldStartHour = startHour;
+		startHour = newStartHour;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.TIME_SPAN__START_HOUR, oldStartHour, startHour));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Integer getStartDay() {
 		return startDay;
 	}
 
@@ -120,10 +168,19 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getEndDay() {
-		if (endDay == null) {
-			endDay = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.TIME_SPAN__END_DAY);
-		}
+	public void setStartDay(Integer newStartDay) {
+		Integer oldStartDay = startDay;
+		startDay = newStartDay;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.TIME_SPAN__START_DAY, oldStartDay, startDay));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Integer getEndDay() {
 		return endDay;
 	}
 
@@ -132,11 +189,32 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getEndHour() {
-		if (endHour == null) {
-			endHour = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.TIME_SPAN__END_HOUR);
-		}
+	public void setEndDay(Integer newEndDay) {
+		Integer oldEndDay = endDay;
+		endDay = newEndDay;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.TIME_SPAN__END_DAY, oldEndDay, endDay));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public Integer getEndHour() {
 		return endHour;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setEndHour(Integer newEndHour) {
+		Integer oldEndHour = endHour;
+		endHour = newEndHour;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.TIME_SPAN__END_HOUR, oldEndHour, endHour));
 	}
 
 	/**
@@ -169,20 +247,16 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case MallDsmPackage.TIME_SPAN__START_HOUR:
-				getStartHour().clear();
-				getStartHour().addAll((Collection<? extends Integer>)newValue);
+				setStartHour((Integer)newValue);
 				return;
 			case MallDsmPackage.TIME_SPAN__START_DAY:
-				getStartDay().clear();
-				getStartDay().addAll((Collection<? extends Integer>)newValue);
+				setStartDay((Integer)newValue);
 				return;
 			case MallDsmPackage.TIME_SPAN__END_DAY:
-				getEndDay().clear();
-				getEndDay().addAll((Collection<? extends Integer>)newValue);
+				setEndDay((Integer)newValue);
 				return;
 			case MallDsmPackage.TIME_SPAN__END_HOUR:
-				getEndHour().clear();
-				getEndHour().addAll((Collection<? extends Integer>)newValue);
+				setEndHour((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -197,16 +271,16 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case MallDsmPackage.TIME_SPAN__START_HOUR:
-				getStartHour().clear();
+				setStartHour(START_HOUR_EDEFAULT);
 				return;
 			case MallDsmPackage.TIME_SPAN__START_DAY:
-				getStartDay().clear();
+				setStartDay(START_DAY_EDEFAULT);
 				return;
 			case MallDsmPackage.TIME_SPAN__END_DAY:
-				getEndDay().clear();
+				setEndDay(END_DAY_EDEFAULT);
 				return;
 			case MallDsmPackage.TIME_SPAN__END_HOUR:
-				getEndHour().clear();
+				setEndHour(END_HOUR_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -221,13 +295,13 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case MallDsmPackage.TIME_SPAN__START_HOUR:
-				return startHour != null && !startHour.isEmpty();
+				return START_HOUR_EDEFAULT == null ? startHour != null : !START_HOUR_EDEFAULT.equals(startHour);
 			case MallDsmPackage.TIME_SPAN__START_DAY:
-				return startDay != null && !startDay.isEmpty();
+				return START_DAY_EDEFAULT == null ? startDay != null : !START_DAY_EDEFAULT.equals(startDay);
 			case MallDsmPackage.TIME_SPAN__END_DAY:
-				return endDay != null && !endDay.isEmpty();
+				return END_DAY_EDEFAULT == null ? endDay != null : !END_DAY_EDEFAULT.equals(endDay);
 			case MallDsmPackage.TIME_SPAN__END_HOUR:
-				return endHour != null && !endHour.isEmpty();
+				return END_HOUR_EDEFAULT == null ? endHour != null : !END_HOUR_EDEFAULT.equals(endHour);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -242,13 +316,13 @@ public class TimeSpanImpl extends EObjectImpl implements TimeSpan {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (StartHour: ");
+		result.append(" (startHour: ");
 		result.append(startHour);
-		result.append(", StartDay: ");
+		result.append(", startDay: ");
 		result.append(startDay);
-		result.append(", EndDay: ");
+		result.append(", endDay: ");
 		result.append(endDay);
-		result.append(", EndHour: ");
+		result.append(", endHour: ");
 		result.append(endHour);
 		result.append(')');
 		return result.toString();

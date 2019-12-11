@@ -78,7 +78,8 @@ public class MallItemProvider
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
 			childrenFeatures.add(MallDsmPackage.Literals.MALL__SHOPS);
-			childrenFeatures.add(MallDsmPackage.Literals.MALL__AVIABLE_BRANDS);
+			childrenFeatures.add(MallDsmPackage.Literals.MALL__AVAILABLE_BRANDS);
+			childrenFeatures.add(MallDsmPackage.Literals.MALL__CATEGORIES);
 		}
 		return childrenFeatures;
 	}
@@ -132,7 +133,8 @@ public class MallItemProvider
 
 		switch (notification.getFeatureID(Mall.class)) {
 			case MallDsmPackage.MALL__SHOPS:
-			case MallDsmPackage.MALL__AVIABLE_BRANDS:
+			case MallDsmPackage.MALL__AVAILABLE_BRANDS:
+			case MallDsmPackage.MALL__CATEGORIES:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -162,8 +164,13 @@ public class MallItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MallDsmPackage.Literals.MALL__AVIABLE_BRANDS,
+				(MallDsmPackage.Literals.MALL__AVAILABLE_BRANDS,
 				 MallDsmFactory.eINSTANCE.createBrand()));
+
+		newChildDescriptors.add
+			(createChildParameter
+				(MallDsmPackage.Literals.MALL__CATEGORIES,
+				 MallDsmFactory.eINSTANCE.createCategory()));
 	}
 
 	/**

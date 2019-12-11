@@ -61,14 +61,24 @@ public class ListedGoodImpl extends EObjectImpl implements ListedGood {
 	protected EList<Discount> sales;
 
 	/**
-	 * The cached value of the '{@link #getDefaultPrice() <em>Default Price</em>}' attribute list.
+	 * The default value of the '{@link #getDefaultPrice() <em>Default Price</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getDefaultPrice()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> defaultPrice;
+	protected static final Integer DEFAULT_PRICE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getDefaultPrice() <em>Default Price</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getDefaultPrice()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer defaultPrice = DEFAULT_PRICE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,11 +154,20 @@ public class ListedGoodImpl extends EObjectImpl implements ListedGood {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getDefaultPrice() {
-		if (defaultPrice == null) {
-			defaultPrice = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.LISTED_GOOD__DEFAULT_PRICE);
-		}
+	public Integer getDefaultPrice() {
 		return defaultPrice;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setDefaultPrice(Integer newDefaultPrice) {
+		Integer oldDefaultPrice = defaultPrice;
+		defaultPrice = newDefaultPrice;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.LISTED_GOOD__DEFAULT_PRICE, oldDefaultPrice, defaultPrice));
 	}
 
 	/**
@@ -201,8 +220,7 @@ public class ListedGoodImpl extends EObjectImpl implements ListedGood {
 				getSales().addAll((Collection<? extends Discount>)newValue);
 				return;
 			case MallDsmPackage.LISTED_GOOD__DEFAULT_PRICE:
-				getDefaultPrice().clear();
-				getDefaultPrice().addAll((Collection<? extends Integer>)newValue);
+				setDefaultPrice((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -223,7 +241,7 @@ public class ListedGoodImpl extends EObjectImpl implements ListedGood {
 				getSales().clear();
 				return;
 			case MallDsmPackage.LISTED_GOOD__DEFAULT_PRICE:
-				getDefaultPrice().clear();
+				setDefaultPrice(DEFAULT_PRICE_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -242,7 +260,7 @@ public class ListedGoodImpl extends EObjectImpl implements ListedGood {
 			case MallDsmPackage.LISTED_GOOD__SALES:
 				return sales != null && !sales.isEmpty();
 			case MallDsmPackage.LISTED_GOOD__DEFAULT_PRICE:
-				return defaultPrice != null && !defaultPrice.isEmpty();
+				return DEFAULT_PRICE_EDEFAULT == null ? defaultPrice != null : !DEFAULT_PRICE_EDEFAULT.equals(defaultPrice);
 		}
 		return super.eIsSet(featureID);
 	}

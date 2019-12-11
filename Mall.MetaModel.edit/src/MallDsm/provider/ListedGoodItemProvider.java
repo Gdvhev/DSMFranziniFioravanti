@@ -108,7 +108,7 @@ public class ListedGoodItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -162,7 +162,11 @@ public class ListedGoodItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_ListedGood_type");
+		Integer labelValue = ((ListedGood)object).getDefaultPrice();
+		String label = labelValue == null ? null : labelValue.toString();
+		return label == null || label.length() == 0 ?
+			getString("_UI_ListedGood_type") :
+			getString("_UI_ListedGood_type") + " " + label;
 	}
 
 

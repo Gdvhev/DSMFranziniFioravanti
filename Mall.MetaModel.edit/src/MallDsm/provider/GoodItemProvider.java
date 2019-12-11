@@ -102,8 +102,8 @@ public class GoodItemProvider
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Good_ModelNumber_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Good_ModelNumber_feature", "_UI_Good_type"),
+				 getString("_UI_Good_modelNumber_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_Good_modelNumber_feature", "_UI_Good_type"),
 				 MallDsmPackage.Literals.GOOD__MODEL_NUMBER,
 				 true,
 				 false,

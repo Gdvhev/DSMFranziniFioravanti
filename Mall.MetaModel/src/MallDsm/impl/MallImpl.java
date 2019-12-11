@@ -3,6 +3,7 @@
 package MallDsm.impl;
 
 import MallDsm.Brand;
+import MallDsm.Category;
 import MallDsm.Mall;
 import MallDsm.MallDsmPackage;
 import MallDsm.Shop;
@@ -30,7 +31,8 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * </p>
  * <ul>
  *   <li>{@link MallDsm.impl.MallImpl#getShops <em>Shops</em>}</li>
- *   <li>{@link MallDsm.impl.MallImpl#getAviableBrands <em>Aviable Brands</em>}</li>
+ *   <li>{@link MallDsm.impl.MallImpl#getAvailableBrands <em>Available Brands</em>}</li>
+ *   <li>{@link MallDsm.impl.MallImpl#getCategories <em>Categories</em>}</li>
  * </ul>
  *
  * @generated
@@ -47,14 +49,24 @@ public class MallImpl extends EObjectImpl implements Mall {
 	protected EList<Shop> shops;
 
 	/**
-	 * The cached value of the '{@link #getAviableBrands() <em>Aviable Brands</em>}' containment reference list.
+	 * The cached value of the '{@link #getAvailableBrands() <em>Available Brands</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getAviableBrands()
+	 * @see #getAvailableBrands()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Brand> aviableBrands;
+	protected EList<Brand> availableBrands;
+
+	/**
+	 * The cached value of the '{@link #getCategories() <em>Categories</em>}' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getCategories()
+	 * @generated
+	 * @ordered
+	 */
+	protected EList<Category> categories;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,11 +104,23 @@ public class MallImpl extends EObjectImpl implements Mall {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Brand> getAviableBrands() {
-		if (aviableBrands == null) {
-			aviableBrands = new EObjectContainmentEList<Brand>(Brand.class, this, MallDsmPackage.MALL__AVIABLE_BRANDS);
+	public EList<Brand> getAvailableBrands() {
+		if (availableBrands == null) {
+			availableBrands = new EObjectContainmentEList<Brand>(Brand.class, this, MallDsmPackage.MALL__AVAILABLE_BRANDS);
 		}
-		return aviableBrands;
+		return availableBrands;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public EList<Category> getCategories() {
+		if (categories == null) {
+			categories = new EObjectContainmentEList<Category>(Category.class, this, MallDsmPackage.MALL__CATEGORIES);
+		}
+		return categories;
 	}
 
 	/**
@@ -109,8 +133,10 @@ public class MallImpl extends EObjectImpl implements Mall {
 		switch (featureID) {
 			case MallDsmPackage.MALL__SHOPS:
 				return ((InternalEList<?>)getShops()).basicRemove(otherEnd, msgs);
-			case MallDsmPackage.MALL__AVIABLE_BRANDS:
-				return ((InternalEList<?>)getAviableBrands()).basicRemove(otherEnd, msgs);
+			case MallDsmPackage.MALL__AVAILABLE_BRANDS:
+				return ((InternalEList<?>)getAvailableBrands()).basicRemove(otherEnd, msgs);
+			case MallDsmPackage.MALL__CATEGORIES:
+				return ((InternalEList<?>)getCategories()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -125,8 +151,10 @@ public class MallImpl extends EObjectImpl implements Mall {
 		switch (featureID) {
 			case MallDsmPackage.MALL__SHOPS:
 				return getShops();
-			case MallDsmPackage.MALL__AVIABLE_BRANDS:
-				return getAviableBrands();
+			case MallDsmPackage.MALL__AVAILABLE_BRANDS:
+				return getAvailableBrands();
+			case MallDsmPackage.MALL__CATEGORIES:
+				return getCategories();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -144,9 +172,13 @@ public class MallImpl extends EObjectImpl implements Mall {
 				getShops().clear();
 				getShops().addAll((Collection<? extends Shop>)newValue);
 				return;
-			case MallDsmPackage.MALL__AVIABLE_BRANDS:
-				getAviableBrands().clear();
-				getAviableBrands().addAll((Collection<? extends Brand>)newValue);
+			case MallDsmPackage.MALL__AVAILABLE_BRANDS:
+				getAvailableBrands().clear();
+				getAvailableBrands().addAll((Collection<? extends Brand>)newValue);
+				return;
+			case MallDsmPackage.MALL__CATEGORIES:
+				getCategories().clear();
+				getCategories().addAll((Collection<? extends Category>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -163,8 +195,11 @@ public class MallImpl extends EObjectImpl implements Mall {
 			case MallDsmPackage.MALL__SHOPS:
 				getShops().clear();
 				return;
-			case MallDsmPackage.MALL__AVIABLE_BRANDS:
-				getAviableBrands().clear();
+			case MallDsmPackage.MALL__AVAILABLE_BRANDS:
+				getAvailableBrands().clear();
+				return;
+			case MallDsmPackage.MALL__CATEGORIES:
+				getCategories().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -180,8 +215,10 @@ public class MallImpl extends EObjectImpl implements Mall {
 		switch (featureID) {
 			case MallDsmPackage.MALL__SHOPS:
 				return shops != null && !shops.isEmpty();
-			case MallDsmPackage.MALL__AVIABLE_BRANDS:
-				return aviableBrands != null && !aviableBrands.isEmpty();
+			case MallDsmPackage.MALL__AVAILABLE_BRANDS:
+				return availableBrands != null && !availableBrands.isEmpty();
+			case MallDsmPackage.MALL__CATEGORIES:
+				return categories != null && !categories.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

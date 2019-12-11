@@ -576,13 +576,13 @@ public abstract class ShopImpl extends EObjectImpl implements Shop {
 		if (eIsProxy()) return super.toString();
 
 		StringBuilder result = new StringBuilder(super.toString());
-		result.append(" (Name: ");
+		result.append(" (name: ");
 		result.append(name);
-		result.append(", Address: ");
+		result.append(", address: ");
 		result.append(address);
-		result.append(", PhotosPaths: ");
+		result.append(", photosPaths: ");
 		result.append(photosPaths);
-		result.append(", MapPath: ");
+		result.append(", mapPath: ");
 		result.append(mapPath);
 		result.append(')');
 		return result.toString();

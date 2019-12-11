@@ -67,7 +67,7 @@ public class ShelfItemProvider extends ContainerItemProvider {
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -91,7 +91,11 @@ public class ShelfItemProvider extends ContainerItemProvider {
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_Shelf_type");
+		Integer labelValue = ((Shelf)object).getLayers();
+		String label = labelValue == null ? null : labelValue.toString();
+		return label == null || label.length() == 0 ?
+			getString("_UI_Shelf_type") :
+			getString("_UI_Shelf_type") + " " + label;
 	}
 
 

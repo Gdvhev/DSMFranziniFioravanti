@@ -27,67 +27,107 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface TimeSpan extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Start Hour</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Returns the value of the '<em><b>Start Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Start Hour</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Start Hour</em>' attribute list.
+	 * @return the value of the '<em>Start Hour</em>' attribute.
+	 * @see #setStartHour(Integer)
 	 * @see MallDsm.MallDsmPackage#getTimeSpan_StartHour()
-	 * @model upper="23"
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getStartHour();
+	Integer getStartHour();
 
 	/**
-	 * Returns the value of the '<em><b>Start Day</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Sets the value of the '{@link MallDsm.TimeSpan#getStartHour <em>Start Hour</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Start Hour</em>' attribute.
+	 * @see #getStartHour()
+	 * @generated
+	 */
+	void setStartHour(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>Start Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Start Day</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Start Day</em>' attribute list.
+	 * @return the value of the '<em>Start Day</em>' attribute.
+	 * @see #setStartDay(Integer)
 	 * @see MallDsm.MallDsmPackage#getTimeSpan_StartDay()
-	 * @model required="true" upper="7"
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getStartDay();
+	Integer getStartDay();
 
 	/**
-	 * Returns the value of the '<em><b>End Day</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Sets the value of the '{@link MallDsm.TimeSpan#getStartDay <em>Start Day</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Start Day</em>' attribute.
+	 * @see #getStartDay()
+	 * @generated
+	 */
+	void setStartDay(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>End Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>End Day</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>End Day</em>' attribute list.
+	 * @return the value of the '<em>End Day</em>' attribute.
+	 * @see #setEndDay(Integer)
 	 * @see MallDsm.MallDsmPackage#getTimeSpan_EndDay()
-	 * @model required="true" upper="7"
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getEndDay();
+	Integer getEndDay();
 
 	/**
-	 * Returns the value of the '<em><b>End Hour</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Sets the value of the '{@link MallDsm.TimeSpan#getEndDay <em>End Day</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>End Day</em>' attribute.
+	 * @see #getEndDay()
+	 * @generated
+	 */
+	void setEndDay(Integer value);
+
+	/**
+	 * Returns the value of the '<em><b>End Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>End Hour</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>End Hour</em>' attribute list.
+	 * @return the value of the '<em>End Hour</em>' attribute.
+	 * @see #setEndHour(Integer)
 	 * @see MallDsm.MallDsmPackage#getTimeSpan_EndHour()
-	 * @model upper="23"
+	 * @model
 	 * @generated
 	 */
-	EList<Integer> getEndHour();
+	Integer getEndHour();
+
+	/**
+	 * Sets the value of the '{@link MallDsm.TimeSpan#getEndHour <em>End Hour</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>End Hour</em>' attribute.
+	 * @see #getEndHour()
+	 * @generated
+	 */
+	void setEndHour(Integer value);
 
 } // TimeSpan

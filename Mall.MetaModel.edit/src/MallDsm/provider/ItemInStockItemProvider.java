@@ -105,7 +105,7 @@ public class ItemInStockItemProvider
 				 true,
 				 false,
 				 false,
-				 ItemPropertyDescriptor.INTEGRAL_VALUE_IMAGE,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
 				 null,
 				 null));
 	}
@@ -129,7 +129,11 @@ public class ItemInStockItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		return getString("_UI_ItemInStock_type");
+		Integer labelValue = ((ItemInStock)object).getItemCount();
+		String label = labelValue == null ? null : labelValue.toString();
+		return label == null || label.length() == 0 ?
+			getString("_UI_ItemInStock_type") :
+			getString("_UI_ItemInStock_type") + " " + label;
 	}
 
 

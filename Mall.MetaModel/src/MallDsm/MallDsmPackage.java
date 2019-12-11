@@ -504,7 +504,7 @@ public interface MallDsmPackage extends EPackage {
 	int ITEM_IN_STOCK__CONTAINS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Item Count</b></em>' attribute list.
+	 * The feature id for the '<em><b>Item Count</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -550,7 +550,7 @@ public interface MallDsmPackage extends EPackage {
 	int LISTED_GOOD__SALES = 1;
 
 	/**
-	 * The feature id for the '<em><b>Default Price</b></em>' attribute list.
+	 * The feature id for the '<em><b>Default Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -717,7 +717,7 @@ public interface MallDsmPackage extends EPackage {
 	int TIME_SPAN = 12;
 
 	/**
-	 * The feature id for the '<em><b>Start Hour</b></em>' attribute list.
+	 * The feature id for the '<em><b>Start Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -726,7 +726,7 @@ public interface MallDsmPackage extends EPackage {
 	int TIME_SPAN__START_HOUR = 0;
 
 	/**
-	 * The feature id for the '<em><b>Start Day</b></em>' attribute list.
+	 * The feature id for the '<em><b>Start Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -735,7 +735,7 @@ public interface MallDsmPackage extends EPackage {
 	int TIME_SPAN__START_DAY = 1;
 
 	/**
-	 * The feature id for the '<em><b>End Day</b></em>' attribute list.
+	 * The feature id for the '<em><b>End Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -744,7 +744,7 @@ public interface MallDsmPackage extends EPackage {
 	int TIME_SPAN__END_DAY = 2;
 
 	/**
-	 * The feature id for the '<em><b>End Hour</b></em>' attribute list.
+	 * The feature id for the '<em><b>End Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -855,7 +855,7 @@ public interface MallDsmPackage extends EPackage {
 	int SHELF__CONTAINED_GOOD = CONTAINER__CONTAINED_GOOD;
 
 	/**
-	 * The feature id for the '<em><b>Layers</b></em>' attribute list.
+	 * The feature id for the '<em><b>Layers</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -948,13 +948,22 @@ public interface MallDsmPackage extends EPackage {
 	int MALL__SHOPS = 0;
 
 	/**
-	 * The feature id for the '<em><b>Aviable Brands</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Available Brands</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int MALL__AVIABLE_BRANDS = 1;
+	int MALL__AVAILABLE_BRANDS = 1;
+
+	/**
+	 * The feature id for the '<em><b>Categories</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int MALL__CATEGORIES = 2;
 
 	/**
 	 * The number of structural features of the '<em>Mall</em>' class.
@@ -963,7 +972,7 @@ public interface MallDsmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int MALL_FEATURE_COUNT = 2;
+	int MALL_FEATURE_COUNT = 3;
 
 
 	/**
@@ -1235,10 +1244,10 @@ public interface MallDsmPackage extends EPackage {
 	EReference getItemInStock_Contains();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.ItemInStock#getItemCount <em>Item Count</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.ItemInStock#getItemCount <em>Item Count</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Item Count</em>'.
+	 * @return the meta object for the attribute '<em>Item Count</em>'.
 	 * @see MallDsm.ItemInStock#getItemCount()
 	 * @see #getItemInStock()
 	 * @generated
@@ -1278,10 +1287,10 @@ public interface MallDsmPackage extends EPackage {
 	EReference getListedGood_Sales();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.ListedGood#getDefaultPrice <em>Default Price</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.ListedGood#getDefaultPrice <em>Default Price</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Default Price</em>'.
+	 * @return the meta object for the attribute '<em>Default Price</em>'.
 	 * @see MallDsm.ListedGood#getDefaultPrice()
 	 * @see #getListedGood()
 	 * @generated
@@ -1416,10 +1425,10 @@ public interface MallDsmPackage extends EPackage {
 	EClass getTimeSpan();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.TimeSpan#getStartHour <em>Start Hour</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.TimeSpan#getStartHour <em>Start Hour</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Start Hour</em>'.
+	 * @return the meta object for the attribute '<em>Start Hour</em>'.
 	 * @see MallDsm.TimeSpan#getStartHour()
 	 * @see #getTimeSpan()
 	 * @generated
@@ -1427,10 +1436,10 @@ public interface MallDsmPackage extends EPackage {
 	EAttribute getTimeSpan_StartHour();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.TimeSpan#getStartDay <em>Start Day</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.TimeSpan#getStartDay <em>Start Day</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Start Day</em>'.
+	 * @return the meta object for the attribute '<em>Start Day</em>'.
 	 * @see MallDsm.TimeSpan#getStartDay()
 	 * @see #getTimeSpan()
 	 * @generated
@@ -1438,10 +1447,10 @@ public interface MallDsmPackage extends EPackage {
 	EAttribute getTimeSpan_StartDay();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.TimeSpan#getEndDay <em>End Day</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.TimeSpan#getEndDay <em>End Day</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>End Day</em>'.
+	 * @return the meta object for the attribute '<em>End Day</em>'.
 	 * @see MallDsm.TimeSpan#getEndDay()
 	 * @see #getTimeSpan()
 	 * @generated
@@ -1449,10 +1458,10 @@ public interface MallDsmPackage extends EPackage {
 	EAttribute getTimeSpan_EndDay();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.TimeSpan#getEndHour <em>End Hour</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.TimeSpan#getEndHour <em>End Hour</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>End Hour</em>'.
+	 * @return the meta object for the attribute '<em>End Hour</em>'.
 	 * @see MallDsm.TimeSpan#getEndHour()
 	 * @see #getTimeSpan()
 	 * @generated
@@ -1534,10 +1543,10 @@ public interface MallDsmPackage extends EPackage {
 	EClass getShelf();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.Shelf#getLayers <em>Layers</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.Shelf#getLayers <em>Layers</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Layers</em>'.
+	 * @return the meta object for the attribute '<em>Layers</em>'.
 	 * @see MallDsm.Shelf#getLayers()
 	 * @see #getShelf()
 	 * @generated
@@ -1586,15 +1595,26 @@ public interface MallDsmPackage extends EPackage {
 	EReference getMall_Shops();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link MallDsm.Mall#getAviableBrands <em>Aviable Brands</em>}'.
+	 * Returns the meta object for the containment reference list '{@link MallDsm.Mall#getAvailableBrands <em>Available Brands</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Aviable Brands</em>'.
-	 * @see MallDsm.Mall#getAviableBrands()
+	 * @return the meta object for the containment reference list '<em>Available Brands</em>'.
+	 * @see MallDsm.Mall#getAvailableBrands()
 	 * @see #getMall()
 	 * @generated
 	 */
-	EReference getMall_AviableBrands();
+	EReference getMall_AvailableBrands();
+
+	/**
+	 * Returns the meta object for the containment reference list '{@link MallDsm.Mall#getCategories <em>Categories</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Categories</em>'.
+	 * @see MallDsm.Mall#getCategories()
+	 * @see #getMall()
+	 * @generated
+	 */
+	EReference getMall_Categories();
 
 	/**
 	 * Returns the factory that creates the instances of the model.
@@ -1833,7 +1853,7 @@ public interface MallDsmPackage extends EPackage {
 		EReference ITEM_IN_STOCK__CONTAINS = eINSTANCE.getItemInStock_Contains();
 
 		/**
-		 * The meta object literal for the '<em><b>Item Count</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Item Count</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1867,7 +1887,7 @@ public interface MallDsmPackage extends EPackage {
 		EReference LISTED_GOOD__SALES = eINSTANCE.getListedGood_Sales();
 
 		/**
-		 * The meta object literal for the '<em><b>Default Price</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Default Price</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1981,7 +2001,7 @@ public interface MallDsmPackage extends EPackage {
 		EClass TIME_SPAN = eINSTANCE.getTimeSpan();
 
 		/**
-		 * The meta object literal for the '<em><b>Start Hour</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Start Hour</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1989,7 +2009,7 @@ public interface MallDsmPackage extends EPackage {
 		EAttribute TIME_SPAN__START_HOUR = eINSTANCE.getTimeSpan_StartHour();
 
 		/**
-		 * The meta object literal for the '<em><b>Start Day</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Start Day</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -1997,7 +2017,7 @@ public interface MallDsmPackage extends EPackage {
 		EAttribute TIME_SPAN__START_DAY = eINSTANCE.getTimeSpan_StartDay();
 
 		/**
-		 * The meta object literal for the '<em><b>End Day</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>End Day</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2005,7 +2025,7 @@ public interface MallDsmPackage extends EPackage {
 		EAttribute TIME_SPAN__END_DAY = eINSTANCE.getTimeSpan_EndDay();
 
 		/**
-		 * The meta object literal for the '<em><b>End Hour</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>End Hour</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2075,7 +2095,7 @@ public interface MallDsmPackage extends EPackage {
 		EClass SHELF = eINSTANCE.getShelf();
 
 		/**
-		 * The meta object literal for the '<em><b>Layers</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Layers</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
@@ -2121,12 +2141,20 @@ public interface MallDsmPackage extends EPackage {
 		EReference MALL__SHOPS = eINSTANCE.getMall_Shops();
 
 		/**
-		 * The meta object literal for the '<em><b>Aviable Brands</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Available Brands</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference MALL__AVIABLE_BRANDS = eINSTANCE.getMall_AviableBrands();
+		EReference MALL__AVAILABLE_BRANDS = eINSTANCE.getMall_AvailableBrands();
+
+		/**
+		 * The meta object literal for the '<em><b>Categories</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference MALL__CATEGORIES = eINSTANCE.getMall_Categories();
 
 	}
 

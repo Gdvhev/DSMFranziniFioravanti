@@ -46,14 +46,24 @@ public class ItemInStockImpl extends EObjectImpl implements ItemInStock {
 	protected Good contains;
 
 	/**
-	 * The cached value of the '{@link #getItemCount() <em>Item Count</em>}' attribute list.
+	 * The default value of the '{@link #getItemCount() <em>Item Count</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getItemCount()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> itemCount;
+	protected static final Integer ITEM_COUNT_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getItemCount() <em>Item Count</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getItemCount()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer itemCount = ITEM_COUNT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -117,11 +127,20 @@ public class ItemInStockImpl extends EObjectImpl implements ItemInStock {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getItemCount() {
-		if (itemCount == null) {
-			itemCount = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.ITEM_IN_STOCK__ITEM_COUNT);
-		}
+	public Integer getItemCount() {
 		return itemCount;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setItemCount(Integer newItemCount) {
+		Integer oldItemCount = itemCount;
+		itemCount = newItemCount;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.ITEM_IN_STOCK__ITEM_COUNT, oldItemCount, itemCount));
 	}
 
 	/**
@@ -154,8 +173,7 @@ public class ItemInStockImpl extends EObjectImpl implements ItemInStock {
 				setContains((Good)newValue);
 				return;
 			case MallDsmPackage.ITEM_IN_STOCK__ITEM_COUNT:
-				getItemCount().clear();
-				getItemCount().addAll((Collection<? extends Integer>)newValue);
+				setItemCount((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -173,7 +191,7 @@ public class ItemInStockImpl extends EObjectImpl implements ItemInStock {
 				setContains((Good)null);
 				return;
 			case MallDsmPackage.ITEM_IN_STOCK__ITEM_COUNT:
-				getItemCount().clear();
+				setItemCount(ITEM_COUNT_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -190,7 +208,7 @@ public class ItemInStockImpl extends EObjectImpl implements ItemInStock {
 			case MallDsmPackage.ITEM_IN_STOCK__CONTAINS:
 				return contains != null;
 			case MallDsmPackage.ITEM_IN_STOCK__ITEM_COUNT:
-				return itemCount != null && !itemCount.isEmpty();
+				return ITEM_COUNT_EDEFAULT == null ? itemCount != null : !ITEM_COUNT_EDEFAULT.equals(itemCount);
 		}
 		return super.eIsSet(featureID);
 	}

@@ -7,10 +7,12 @@ import MallDsm.Shelf;
 
 import java.util.Collection;
 
+import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
+import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
@@ -28,14 +30,23 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class ShelfImpl extends ContainerImpl implements Shelf {
 	/**
-	 * The cached value of the '{@link #getLayers() <em>Layers</em>}' attribute list.
+	 * The default value of the '{@link #getLayers() <em>Layers</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getLayers()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> layers;
+	protected static final Integer LAYERS_EDEFAULT = null;
+	/**
+	 * The cached value of the '{@link #getLayers() <em>Layers</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getLayers()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer layers = LAYERS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,11 +72,20 @@ public class ShelfImpl extends ContainerImpl implements Shelf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getLayers() {
-		if (layers == null) {
-			layers = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.SHELF__LAYERS);
-		}
+	public Integer getLayers() {
 		return layers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setLayers(Integer newLayers) {
+		Integer oldLayers = layers;
+		layers = newLayers;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.SHELF__LAYERS, oldLayers, layers));
 	}
 
 	/**
@@ -92,8 +112,7 @@ public class ShelfImpl extends ContainerImpl implements Shelf {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case MallDsmPackage.SHELF__LAYERS:
-				getLayers().clear();
-				getLayers().addAll((Collection<? extends Integer>)newValue);
+				setLayers((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -108,7 +127,7 @@ public class ShelfImpl extends ContainerImpl implements Shelf {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case MallDsmPackage.SHELF__LAYERS:
-				getLayers().clear();
+				setLayers(LAYERS_EDEFAULT);
 				return;
 		}
 		super.eUnset(featureID);
@@ -123,7 +142,7 @@ public class ShelfImpl extends ContainerImpl implements Shelf {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case MallDsmPackage.SHELF__LAYERS:
-				return layers != null && !layers.isEmpty();
+				return LAYERS_EDEFAULT == null ? layers != null : !LAYERS_EDEFAULT.equals(layers);
 		}
 		return super.eIsSet(featureID);
 	}
