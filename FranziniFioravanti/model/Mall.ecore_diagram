@@ -390,6 +390,26 @@
     <element xmi:type="ecore:EClass" href="Mall.ecore#//Table"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lZD5gRwCEeqtJr0GYUArHg" x="732" y="216"/>
   </children>
+  <children xmi:type="notation:Shape" xmi:id="_VO2wYBwxEeq3oOZtqFm_ZA" type="2001" fontName="Noto Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_VO3XcBwxEeq3oOZtqFm_ZA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_VO3XcRwxEeq3oOZtqFm_ZA" type="7001" collapsed="true">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_VO3XchwxEeq3oOZtqFm_ZA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_VO3XcxwxEeq3oOZtqFm_ZA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_hxSWMBwxEeq3oOZtqFm_ZA" value="0.22641509433962265"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_VO3XdBwxEeq3oOZtqFm_ZA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_VO3XdRwxEeq3oOZtqFm_ZA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_VO3XdhwxEeq3oOZtqFm_ZA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_hxS9QBwxEeq3oOZtqFm_ZA" value="0.22641509433962265"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_VO3XdxwxEeq3oOZtqFm_ZA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_VO3XeBwxEeq3oOZtqFm_ZA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_VO3XeRwxEeq3oOZtqFm_ZA"/>
+      <layoutConstraint xmi:type="notation:Ratio" xmi:id="_hxS9QRwxEeq3oOZtqFm_ZA" value="0.22641509433962265"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Mall.ecore#//Mall"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_VO2wYRwxEeq3oOZtqFm_ZA" x="180" y="-132"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_fr_l0Rv-EeqtJr0GYUArHg"/>
   <element xmi:type="ecore:EPackage" href="Mall.ecore#/"/>
   <edges xmi:type="notation:Connector" xmi:id="_yBO3wBv-EeqtJr0GYUArHg" type="4004" source="_v-WaABv-EeqtJr0GYUArHg" target="_keSQIBv-EeqtJr0GYUArHg">
@@ -619,5 +639,28 @@
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3XmishwCEeqtJr0GYUArHg" points="[-7, -5, 218, 130]$[-188, -140, 37, -5]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3XoX4BwCEeqtJr0GYUArHg" id="(0.14583333333333334,0.5384615384615384)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_WnQGsBwxEeq3oOZtqFm_ZA" type="4003" source="_VO2wYBwxEeq3oOZtqFm_ZA" target="_keSQIBv-EeqtJr0GYUArHg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_WnQtwBwxEeq3oOZtqFm_ZA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WnQtwRwxEeq3oOZtqFm_ZA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_WnQtwhwxEeq3oOZtqFm_ZA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_WnQtwxwxEeq3oOZtqFm_ZA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_WnQGsRwxEeq3oOZtqFm_ZA" fontName="Noto Sans"/>
+    <element xmi:type="ecore:EReference" href="Mall.ecore#//Mall/shops"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_WnQGshwxEeq3oOZtqFm_ZA" points="[11, 5, -87, -38]$[99, 33, 1, -10]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_WnTxEBwxEeq3oOZtqFm_ZA" id="(0.2302158273381295,0.17757009345794392)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_dcmN4BwxEeq3oOZtqFm_ZA" type="4003" source="_VO2wYBwxEeq3oOZtqFm_ZA" target="_7QUdgBv-EeqtJr0GYUArHg">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dcm08BwxEeq3oOZtqFm_ZA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dcncABwxEeq3oOZtqFm_ZA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dcncARwxEeq3oOZtqFm_ZA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dcncAhwxEeq3oOZtqFm_ZA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_dcmN4RwxEeq3oOZtqFm_ZA" fontName="Noto Sans"/>
+    <element xmi:type="ecore:EReference" href="Mall.ecore#//Mall/aviableBrands"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dcmN4hwxEeq3oOZtqFm_ZA" points="[22, 1, -971, -266]$[889, 57, -104, -210]$[978, 238, -15, -29]"/>
   </edges>
 </notation:Diagram>

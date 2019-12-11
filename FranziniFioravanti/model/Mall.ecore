@@ -99,4 +99,10 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Refrigerator" eSuperTypes="#//Container"/>
   <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Container"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Mall">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shops" upperBound="-1"
+        eType="#//Shop" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="aviableBrands" upperBound="-1"
+        eType="#//Brand" containment="true"/>
+  </eClassifiers>
 </ecore:EPackage>
