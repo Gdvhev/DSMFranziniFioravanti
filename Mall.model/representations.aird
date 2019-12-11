@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:test.com="http://test.com" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_CiPdQBxSEeqhitFLqlF74w" selectedViews="_hGfF4BxWEeqk8LnePUR3-w" version="13.0.0.201804031646">
+    <semanticResources>platform:/resource/Mall.MetaModel/Mall.ecore</semanticResources>
+    <semanticResources>My.testtest</semanticResources>
+    <semanticResources>example1.malldsm</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_fPFmwBxTEeq1PaGN7JVYBQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Mall.Graphic/description/Graphic.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_n19V8BxTEeq1PaGN7JVYBQ" name="new Mall Diagram" repPath="#_n1CI4BxTEeq1PaGN7JVYBQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Graphic.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
+        <target xmi:type="test.com:Test" href="My.testtest#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_hGfF4BxWEeqk8LnePUR3-w">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_up0vEBxWEeqk8LnePUR3-w" name="new Mall Diagram" repPath="#_upG9YBxWEeqk8LnePUR3-w">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
+        <target xmi:type="Mall:Mall" href="example1.malldsm#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_n165sBxTEeq1PaGN7JVYBQ" name="new Mall Diagram" uid="_n1CI4BxTEeq1PaGN7JVYBQ">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_n165sRxTEeq1PaGN7JVYBQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_n165shxTEeq1PaGN7JVYBQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_n2aB4BxTEeq1PaGN7JVYBQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_n2aB4RxTEeq1PaGN7JVYBQ" type="Sirius" element="_n165sBxTEeq1PaGN7JVYBQ" measurementUnit="Pixel">
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_n2aB4hxTEeq1PaGN7JVYBQ"/>
+      </data>
+    </ownedAnnotationEntries>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Graphic.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_n165tBxTEeq1PaGN7JVYBQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Mall.Graphic/description/Graphic.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer"/>
+    <target xmi:type="test.com:Test" href="My.testtest#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_upyS0BxWEeqk8LnePUR3-w" name="new Mall Diagram" uid="_upG9YBxWEeqk8LnePUR3-w">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_upyS0RxWEeqk8LnePUR3-w" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_upyS0hxWEeqk8LnePUR3-w"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_uqCxgBxWEeqk8LnePUR3-w" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_uqCxgRxWEeqk8LnePUR3-w" type="Sirius" element="_upyS0BxWEeqk8LnePUR3-w" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_weRvQBxWEeqk8LnePUR3-w" type="2001" element="_wd3fkBxWEeqk8LnePUR3-w">
+          <children xmi:type="notation:Node" xmi:id="_weWnwBxWEeqk8LnePUR3-w" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_weWnwRxWEeqk8LnePUR3-w" y="5"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_77uqABxWEeqk8LnePUR3-w" type="3017" element="_76HgcBxWEeqk8LnePUR3-w">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_77uqARxWEeqk8LnePUR3-w" fontName="Ubuntu"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_77uqAhxWEeqk8LnePUR3-w"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_weRvQRxWEeqk8LnePUR3-w" fontName="Ubuntu"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_weRvQhxWEeqk8LnePUR3-w" x="396" y="300" width="205" height="73"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_uqCxghxWEeqk8LnePUR3-w"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_wd3fkBxWEeqk8LnePUR3-w" name="Brand1" width="3" height="3" resizeKind="NSEW">
+      <target xmi:type="Mall:Brand" href="example1.malldsm#//@aviableBrands.0"/>
+      <semanticElements xmi:type="Mall:Brand" href="example1.malldsm#//@aviableBrands.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:Lozenge" xmi:id="_76HgcBxWEeqk8LnePUR3-w" labelPosition="node">
+        <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Brand%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Brand%20Node']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_upyS1BxWEeqk8LnePUR3-w"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer"/>
+    <target xmi:type="Mall:Mall" href="example1.malldsm#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated Mall -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="MallDsm.presentation.MallDsmModelWizardID"
+            name="%_UI_MallDsmModelWizard_label"
+            class="MallDsm.presentation.MallDsmModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/MallDsmModelFile.gif">
+         <description>%_UI_MallDsmModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated Mall -->
+      <editor
+            id="MallDsm.presentation.MallDsmEditorID"
+            name="%_UI_MallDsmEditor_label"
+            icon="icons/full/obj16/MallDsmModelFile.gif"
+            extensions="malldsm"
+            class="MallDsm.presentation.MallDsmEditor"
+            contributorClass="MallDsm.presentation.MallDsmActionBarContributor">
+      </editor>
+   </extension>
+</plugin>
