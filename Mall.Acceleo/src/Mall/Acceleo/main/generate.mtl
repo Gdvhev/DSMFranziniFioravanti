@@ -1,0 +1,64 @@
+[comment encoding = UTF-8 /]
+[module generate('http://mall.com')]
+
+
+[template public generateElement(aMall : Mall)]
+[comment @main/]
+[file ('index.html', false, 'UTF-8')]
+	<html>
+	<head>
+	<title>Mall Info</title>
+	</head>
+
+	<body>
+		<b>Mall Info</b>
+		<br/><br/>
+		<ul>
+		 [for (shop : Shop | aMall.shops)]
+			<li>
+			<p>[shop.name/]:</p>
+				<ul>
+					<li>
+					Location: 
+					[if (shop.address = null)]
+						<b>MISSING, must be one of those shops that disapears</b>
+					[/if]
+					[shop.address/]
+					</li>
+
+					<li>
+						Manager:
+					[if (shop.manager = null)]
+						<b>MIA</b>
+					[/if]
+					[if (shop.manager <> null)]
+						[shop.manager.name/]
+					[/if]
+					</li>
+					<li>
+					Brands:
+						[for (brand : Brand | aMall.availableBrands)]
+							[if (brand.producedGoods->intersection(shop.soldGoods->asBag().good)->size() <> 0)]
+								[brand.name.concat(' ')/]
+							[/if]
+						[/for]	
+					</li>
+					<li>
+					Opening Times:
+						[if (shop.openSchedule = null or shop.openSchedule.Shift = null)]
+							<b>WE ARE OUT OF TIME</b>
+						[/if]
+						[if (not (shop.openSchedule = null or shop.openSchedule.Shift = null))]
+						[for (time : TimeSpan | shop.openSchedule.Shift->sortedBy(t : TimeSpan | t.startDay * 1000 + t.startHour))]
+							<p>from [time.startDay/] [time.startHour/] to [time.endDay/] [time.endHour/]<p>							
+						[/for]
+						[/if]
+					</li>
+				</ul>
+			</li>
+		 [/for]
+		</ul>
+	</body>
+	</html>
+[/file]
+[/template]
