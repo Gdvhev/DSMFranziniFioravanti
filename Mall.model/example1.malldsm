@@ -11,8 +11,26 @@
         </Shift>
       </shiftSchedule>
     </employees>
-    <employees name="Emp2"/>
-    <manager name="Manager1"/>
+    <employees name="Emp2">
+    	<shiftSchedule>
+        <Shift>
+          <startHour>2</startHour>
+          <startDay>1</startDay>
+          <endDay>3</endDay>
+          <endHour>1</endHour>
+        </Shift>
+      </shiftSchedule>
+    </employees>
+    <manager name="Manager1">
+    <shiftSchedule>
+        <Shift>
+          <startHour>2</startHour>
+          <startDay>1</startDay>
+          <endDay>3</endDay>
+          <endHour>1</endHour>
+        </Shift>
+      </shiftSchedule>
+    </manager>
     <openSchedule>
       <Shift>
         <startHour>2</startHour>

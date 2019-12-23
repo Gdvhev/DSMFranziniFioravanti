@@ -1,0 +1,76 @@
+module Mall2Brands;
+
+-- @path Brands=/Brands.MetaModel/Brands.ecore
+-- @path Mall=/Mall.MetaModel/Mall.ecore
+
+create OUT: Brands from IN: Mall;
+
+rule Mall2BrandList {
+	from
+		s: Mall!Mall
+		
+	to 
+		t: Brands!BrandsList(
+			brands <- s.availableBrands->collect(e | thisModule.Brand2Brand(e)))
+}
+
+helper context Mall!Brand def:
+	getShopOfBrand(): Sequence(Mall!BrandShop) =
+		self.refImmediateComposite().shops->select(s | s.oclIsKindOf(Mall!BrandShop))->select(s | s.brand = self);
+
+helper context Mall!Shop def:
+	getEmployees(): Sequence(Mall!Employees) =
+		self.employees->union(Sequence{self.manager});
+	
+helper context Mall!Brand def:
+	getWorkers(): Sequence(Mall!Eployee) = 
+		self.getShopOfBrand()->collect(s | s.getEmployees()->collect(e | thisModule.Employee2Worker(e)));
+
+lazy rule Brand2Brand
+{
+	from 
+		s: Mall!Brand
+	to
+		t: Brands!Brand(
+			name <- s.name, 
+			workers <- s.getWorkers()
+			)
+}
+
+lazy rule TimeSpan2TimeSpan
+{
+	from
+		s: Mall!TimeSpan
+
+	to
+		t: Brands!TimeSpan(
+			StartDay <- s.startDay,
+			EndDay <- s.endDay,
+			StartHour <- s.endHour,
+			EndHour <- s.endHour
+			)
+}
+
+lazy rule WeeklySchedule2WeeklySchedyle
+{
+	from
+		s: Mall!WeeklySchedule
+		
+	to
+		t: Brands!WeeklySchedule(
+			Shift <- s.Shift->collect(e | thisModule.TimeSpan2TimeSpan(e))	
+		)
+}
+
+lazy rule Employee2Worker
+{
+	from
+		s: Mall!Employee
+		
+	to
+		t: Brands!Worker(
+			name <- s.name,
+			shiftSchedule <- thisModule.WeeklySchedule2WeeklySchedyle(s.shiftSchedule),
+			isManager <- s.refImmediateComposite().manager = s
+		)
+}

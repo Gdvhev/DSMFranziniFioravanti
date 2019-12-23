@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<BrandsList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns="">
+  <brands name="Brand1">
+    <workers name="Emp1">
+      <shiftSchedule>
+        <Shift StartDay="1" StartHour="1" EndDay="1" EndHour="1"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Emp2">
+      <shiftSchedule>
+        <Shift StartDay="1" StartHour="1" EndDay="3" EndHour="1"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Manager1" isManager="true">
+      <shiftSchedule>
+        <Shift StartDay="1" StartHour="1" EndDay="3" EndHour="1"/>
+      </shiftSchedule>
+    </workers>
+  </brands>
+</BrandsList>

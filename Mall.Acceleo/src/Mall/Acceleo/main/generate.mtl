@@ -50,7 +50,8 @@
 						[/if]
 						[if (not (shop.openSchedule = null or shop.openSchedule.Shift = null))]
 						[for (time : TimeSpan | shop.openSchedule.Shift->sortedBy(t : TimeSpan | t.startDay * 1000 + t.startHour))]
-							<p>from [time.startDay/] [time.startHour/] to [time.endDay/] [time.endHour/]<p>							
+							<p>from [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.startDay)/] [time.startHour/] 
+								to [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.endDay)/] [time.endHour/]<p>							
 						[/for]
 						[/if]
 					</li>

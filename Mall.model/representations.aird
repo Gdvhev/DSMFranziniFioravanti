@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:test.com="http://test.com" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis xmi:id="_CiPdQBxSEeqhitFLqlF74w" selectedViews="_hGfF4BxWEeqk8LnePUR3-w" version="13.0.0.201804031646">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:mall.com="http://mall.com" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:test.com="http://test.com" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_CiPdQBxSEeqhitFLqlF74w" selectedViews="_hGfF4BxWEeqk8LnePUR3-w _kfKYgCWDEeqWTeOqvev9lw _kfV-sCWDEeqWTeOqvev9lw _kfd6gCWDEeqWTeOqvev9lw _kfoSkCWDEeqWTeOqvev9lw" version="13.0.0.201804031646">
     <semanticResources>platform:/resource/Mall.MetaModel/Mall.ecore</semanticResources>
     <semanticResources>My.testtest</semanticResources>
     <semanticResources>example1.malldsm</semanticResources>
+    <semanticResources>platform:/resource/Mall.MetaModel/Mall.genmodel</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fPFmwBxTEeq1PaGN7JVYBQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Mall.Graphic/description/Graphic.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_n19V8BxTEeq1PaGN7JVYBQ" name="new Mall Diagram" repPath="#_n1CI4BxTEeq1PaGN7JVYBQ">
@@ -15,8 +17,20 @@
       <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_up0vEBxWEeqk8LnePUR3-w" name="new Mall Diagram" repPath="#_upG9YBxWEeqk8LnePUR3-w">
         <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
-        <target xmi:type="Mall:Mall" href="example1.malldsm#/"/>
+        <target xmi:type="mall.com:Mall" href="example1.malldsm#/"/>
       </ownedRepresentationDescriptors>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_kfKYgCWDEeqWTeOqvev9lw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_kfV-sCWDEeqWTeOqvev9lw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Review']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_kfd6gCWDEeqWTeOqvev9lw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Archetype']"/>
+    </ownedViews>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_kfoSkCWDEeqWTeOqvev9lw">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Generation']"/>
     </ownedViews>
   </viewpoint:DAnalysis>
   <diagram:DSemanticDiagram xmi:id="_n165sBxTEeq1PaGN7JVYBQ" name="new Mall Diagram" uid="_n1CI4BxTEeq1PaGN7JVYBQ">
@@ -303,8 +317,6 @@
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_RsajkBxhEequVqhO3tfVVw" name="Brand1" incomingEdges="_RIN04BxiEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:Brand" href="example1.malldsm#//@availableBrands.0"/>
-      <semanticElements xmi:type="Mall:Brand" href="example1.malldsm#//@availableBrands.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -312,10 +324,10 @@
         <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Brand%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Brand%20Node']"/>
+      <target xmi:type="mall.com:Brand" href="example1.malldsm#//@availableBrands.0"/>
+      <semanticElements xmi:type="mall.com:Brand" href="example1.malldsm#//@availableBrands.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_RHqbQBxiEequVqhO3tfVVw" name="aa" outgoingEdges="_RIN04BxiEequVqhO3tfVVw _0AoocBxmEequVqhO3tfVVw _0ApPgBxmEequVqhO3tfVVw _3ZFyABxmEequVqhO3tfVVw _-ckmYBxnEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
-      <semanticElements xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -323,10 +335,10 @@
         <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='BrandShop%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='BrandShop%20Node']"/>
+      <target xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
+      <semanticElements xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_RIJjcBxiEequVqhO3tfVVw" name="Shop2" outgoingEdges="_3_JpQBxiEequVqhO3tfVVw" width="10" height="10" resizeKind="NSEW">
-      <target xmi:type="Mall:SpecialisticShop" href="example1.malldsm#//@shops.1"/>
-      <semanticElements xmi:type="Mall:SpecialisticShop" href="example1.malldsm#//@shops.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -334,18 +346,18 @@
         <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='SpecialisticShop%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='SpecialisticShop%20Node']"/>
+      <target xmi:type="mall.com:SpecialisticShop" href="example1.malldsm#//@shops.1"/>
+      <semanticElements xmi:type="mall.com:SpecialisticShop" href="example1.malldsm#//@shops.1"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_RIN04BxiEequVqhO3tfVVw" sourceNode="_RHqbQBxiEequVqhO3tfVVw" targetNode="_RsajkBxhEequVqhO3tfVVw">
-      <target xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_RIQRIBxiEequVqhO3tfVVw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_RIQRIRxiEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']"/>
+      <target xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_WpjWgBxiEequVqhO3tfVVw" name="Category1" outgoingEdges="_2mGgwBxkEequVqhO3tfVVw" incomingEdges="_3_JpQBxiEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:Category" href="example1.malldsm#//@categories.0"/>
-      <semanticElements xmi:type="Mall:Category" href="example1.malldsm#//@categories.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -353,18 +365,18 @@
         <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Category%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Category%20Node']"/>
+      <target xmi:type="mall.com:Category" href="example1.malldsm#//@categories.0"/>
+      <semanticElements xmi:type="mall.com:Category" href="example1.malldsm#//@categories.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_3_JpQBxiEequVqhO3tfVVw" sourceNode="_RIJjcBxiEequVqhO3tfVVw" targetNode="_WpjWgBxiEequVqhO3tfVVw">
-      <target xmi:type="Mall:SpecialisticShop" href="example1.malldsm#//@shops.1"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_3_KQUBxiEequVqhO3tfVVw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SpecialisticCategoryEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_3_KQURxiEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SpecialisticCategoryEdge']"/>
+      <target xmi:type="mall.com:SpecialisticShop" href="example1.malldsm#//@shops.1"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_uGr54BxjEequVqhO3tfVVw" name="SubCategory1" incomingEdges="_2mGgwBxkEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:SubCatecory" href="example1.malldsm#//@categories.0/@contains.0"/>
-      <semanticElements xmi:type="Mall:SubCatecory" href="example1.malldsm#//@categories.0/@contains.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -372,18 +384,18 @@
         <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='SubCategory%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='SubCategory%20Node']"/>
+      <target xmi:type="mall.com:SubCatecory" href="example1.malldsm#//@categories.0/@contains.0"/>
+      <semanticElements xmi:type="mall.com:SubCatecory" href="example1.malldsm#//@categories.0/@contains.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_2mGgwBxkEequVqhO3tfVVw" sourceNode="_WpjWgBxiEequVqhO3tfVVw" targetNode="_uGr54BxjEequVqhO3tfVVw">
-      <target xmi:type="Mall:Category" href="example1.malldsm#//@categories.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_2mGgwRxkEequVqhO3tfVVw" sourceArrow="InputArrow" targetArrow="NoDecoration" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SubCategoryOwnershipEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_2mHH0BxkEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SubCategoryOwnershipEdge']"/>
+      <target xmi:type="mall.com:Category" href="example1.malldsm#//@categories.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_i-9QIBxmEequVqhO3tfVVw" name="Emp1" outgoingEdges="_FcF9QBxoEequVqhO3tfVVw" incomingEdges="_0AoocBxmEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@employees.0"/>
-      <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@employees.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -391,10 +403,10 @@
         <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Employee%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Employee%20Node']"/>
+      <target xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@employees.0"/>
+      <semanticElements xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@employees.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_i-93MBxmEequVqhO3tfVVw" name="Emp2" incomingEdges="_0ApPgBxmEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@employees.1"/>
-      <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@employees.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -402,10 +414,10 @@
         <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Employee%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Employee%20Node']"/>
+      <target xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@employees.1"/>
+      <semanticElements xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@employees.1"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_gjnPEBxmEequVqhO3tfVVw" name="Manager1" incomingEdges="_3ZFyABxmEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@manager"/>
-      <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@manager"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -413,34 +425,34 @@
         <description xmi:type="style:LozengeNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Employee%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Employee%20Node']"/>
+      <target xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@manager"/>
+      <semanticElements xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@manager"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_0AoocBxmEequVqhO3tfVVw" sourceNode="_RHqbQBxiEequVqhO3tfVVw" targetNode="_i-9QIBxmEequVqhO3tfVVw">
-      <target xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_0AoocRxmEequVqhO3tfVVw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='EmployeesEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_0AoochxmEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='EmployeesEdge']"/>
+      <target xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_0ApPgBxmEequVqhO3tfVVw" sourceNode="_RHqbQBxiEequVqhO3tfVVw" targetNode="_i-93MBxmEequVqhO3tfVVw">
-      <target xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_0ApPgRxmEequVqhO3tfVVw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='EmployeesEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_0ApPghxmEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='EmployeesEdge']"/>
+      <target xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_3ZFyABxmEequVqhO3tfVVw" sourceNode="_RHqbQBxiEequVqhO3tfVVw" targetNode="_gjnPEBxmEequVqhO3tfVVw">
-      <target xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_3ZFyARxmEequVqhO3tfVVw" size="2" strokeColor="239,41,41">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ManagerEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_3ZFyAhxmEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ManagerEdge']"/>
+      <target xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_X92dsBxnEequVqhO3tfVVw" name="a" incomingEdges="_FcF9QBxoEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule"/>
-      <semanticElements xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -448,10 +460,10 @@
         <description xmi:type="style:DotDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Schedule%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Schedule%20Node']"/>
+      <target xmi:type="mall.com:WeeklySchedule" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule"/>
+      <semanticElements xmi:type="mall.com:WeeklySchedule" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_-chjEBxnEequVqhO3tfVVw" name="a" incomingEdges="_-ckmYBxnEequVqhO3tfVVw" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.0/@openSchedule"/>
-      <semanticElements xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.0/@openSchedule"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -459,26 +471,26 @@
         <description xmi:type="style:DotDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Schedule%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Schedule%20Node']"/>
+      <target xmi:type="mall.com:WeeklySchedule" href="example1.malldsm#//@shops.0/@openSchedule"/>
+      <semanticElements xmi:type="mall.com:WeeklySchedule" href="example1.malldsm#//@shops.0/@openSchedule"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_-ckmYBxnEequVqhO3tfVVw" sourceNode="_RHqbQBxiEequVqhO3tfVVw" targetNode="_-chjEBxnEequVqhO3tfVVw">
-      <target xmi:type="Mall:BrandShop" href="example1.malldsm#//@shops.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_-ckmYRxnEequVqhO3tfVVw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='OpenHoursEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_-ckmYhxnEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='OpenHoursEdge']"/>
+      <target xmi:type="mall.com:BrandShop" href="example1.malldsm#//@shops.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_FcF9QBxoEequVqhO3tfVVw" sourceNode="_i-9QIBxmEequVqhO3tfVVw" targetNode="_X92dsBxnEequVqhO3tfVVw">
-      <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@employees.0"/>
       <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_FcF9QRxoEequVqhO3tfVVw" size="2">
         <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShiftEdge']/@style"/>
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_FcF9QhxoEequVqhO3tfVVw"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShiftEdge']"/>
+      <target xmi:type="mall.com:Employee" href="example1.malldsm#//@shops.0/@employees.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_vxw3cBxqEeqdsv5nzqf-gQ" name="1 -  1 : 1 - 1" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:TimeSpan" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule/@Shift.0"/>
-      <semanticElements xmi:type="Mall:TimeSpan" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule/@Shift.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -486,10 +498,10 @@
         <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='TimeSpan%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='TimeSpan%20Node']"/>
+      <target xmi:type="mall.com:TimeSpan" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule/@Shift.0"/>
+      <semanticElements xmi:type="mall.com:TimeSpan" href="example1.malldsm#//@shops.0/@employees.0/@shiftSchedule/@Shift.0"/>
     </ownedDiagramElements>
     <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_vx3lIBxqEeqdsv5nzqf-gQ" name="2 -  2222 : 1 - 1" width="3" height="3" resizeKind="NSEW">
-      <target xmi:type="Mall:TimeSpan" href="example1.malldsm#//@shops.0/@openSchedule/@Shift.0"/>
-      <semanticElements xmi:type="Mall:TimeSpan" href="example1.malldsm#//@shops.0/@openSchedule/@Shift.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
       <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
       <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
@@ -497,10 +509,12 @@
         <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='TimeSpan%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='TimeSpan%20Node']"/>
+      <target xmi:type="mall.com:TimeSpan" href="example1.malldsm#//@shops.0/@openSchedule/@Shift.0"/>
+      <semanticElements xmi:type="mall.com:TimeSpan" href="example1.malldsm#//@shops.0/@openSchedule/@Shift.0"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_upyS1BxWEeqk8LnePUR3-w"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer"/>
-    <target xmi:type="Mall:Mall" href="example1.malldsm#/"/>
+    <target xmi:type="mall.com:Mall" href="example1.malldsm#/"/>
   </diagram:DSemanticDiagram>
 </xmi:XMI>

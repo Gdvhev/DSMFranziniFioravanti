@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_WEwt0CVqEeqUL8gvnt1upQ" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_-I-Q0CVuEeqinrE--UwKBA" type="2001" fontName="Noto Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_-JCiQCVuEeqinrE--UwKBA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-JDwYCVuEeqinrE--UwKBA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-JDwYSVuEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-JDwYiVuEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-JDwYyVuEeqinrE--UwKBA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-JDwZCVuEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-JDwZSVuEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_-JDwZiVuEeqinrE--UwKBA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_-JDwZyVuEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_-JDwaCVuEeqinrE--UwKBA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Brands.ecore#//BrandsList"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-I-Q0SVuEeqinrE--UwKBA" x="138" y="106"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="__p0_kCVuEeqinrE--UwKBA" type="2001" fontName="Noto Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="__p0_kiVuEeqinrE--UwKBA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__p1moCVuEeqinrE--UwKBA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_BXEkgCVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//Brand/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_BXEkgSVvEeqinrE--UwKBA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="__p1moSVuEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__p1moiVuEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__p1moyVuEeqinrE--UwKBA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="__p1mpCVuEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__p1mpSVuEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="__p1mpiVuEeqinrE--UwKBA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="__p2NsCVuEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="__p2NsSVuEeqinrE--UwKBA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Brands.ecore#//Brand"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__p0_kSVuEeqinrE--UwKBA" x="156" y="233"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_Lb4RUCVvEeqinrE--UwKBA" type="2001" fontName="Noto Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_Lb44YCVvEeqinrE--UwKBA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Lb44YSVvEeqinrE--UwKBA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_PAp_oCVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//Worker/name"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_PAp_oSVvEeqinrE--UwKBA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_Wlb_sCVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//Worker/isManager"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_Wlb_sSVvEeqinrE--UwKBA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Lb44YiVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Lb44YyVvEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Lb5fcCVvEeqinrE--UwKBA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Lb5fcSVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Lb5fciVvEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_Lb5fcyVvEeqinrE--UwKBA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_Lb5fdCVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_Lb5fdSVvEeqinrE--UwKBA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Brands.ecore#//Worker"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Lb4RUSVvEeqinrE--UwKBA" x="344" y="260"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_acOEACVvEeqinrE--UwKBA" type="2001" fontName="Noto Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_acOEAiVvEeqinrE--UwKBA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_acOrECVvEeqinrE--UwKBA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_acOrESVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_acOrEiVvEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_acOrEyVvEeqinrE--UwKBA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_acOrFCVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_acOrFSVvEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_acPSICVvEeqinrE--UwKBA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_acPSISVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_acPSIiVvEeqinrE--UwKBA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Brands.ecore#//WeeklySchedule"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_acOEASVvEeqinrE--UwKBA" x="608" y="268"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_hnRVcCVvEeqinrE--UwKBA" type="2001" fontName="Noto Sans">
+    <children xmi:type="notation:DecorationNode" xmi:id="_hnR8gCVvEeqinrE--UwKBA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hnR8gSVvEeqinrE--UwKBA" type="7001">
+      <children xmi:type="notation:Node" xmi:id="_qvLVICVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//TimeSpan/StartDay"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_qvLVISVvEeqinrE--UwKBA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_uBtc4CVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//TimeSpan/StartHour"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_uBtc4SVvEeqinrE--UwKBA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_wxYIICVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//TimeSpan/EndDay"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_wxYvMCVvEeqinrE--UwKBA"/>
+      </children>
+      <children xmi:type="notation:Node" xmi:id="_1K6UMCVvEeqinrE--UwKBA" type="3001">
+        <element xmi:type="ecore:EAttribute" href="Brands.ecore#//TimeSpan/EndHour"/>
+        <layoutConstraint xmi:type="notation:Location" xmi:id="_1K6UMSVvEeqinrE--UwKBA"/>
+      </children>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hnR8giVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hnR8gyVvEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hnR8hCVvEeqinrE--UwKBA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hnR8hSVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hnR8hiVvEeqinrE--UwKBA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hnR8hyVvEeqinrE--UwKBA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hnR8iCVvEeqinrE--UwKBA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hnR8iSVvEeqinrE--UwKBA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="Brands.ecore#//TimeSpan"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hnRVcSVvEeqinrE--UwKBA" x="703" y="445"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_WEwt0SVqEeqUL8gvnt1upQ"/>
+  <element xmi:type="ecore:EPackage" href="Brands.ecore#/"/>
+  <edges xmi:type="notation:Connector" xmi:id="_HYFEsCVvEeqinrE--UwKBA" type="4003" source="_-I-Q0CVuEeqinrE--UwKBA" target="__p0_kCVuEeqinrE--UwKBA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_HYFrwCVvEeqinrE--UwKBA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HYFrwSVvEeqinrE--UwKBA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_HYGS0CVvEeqinrE--UwKBA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_HYGS0SVvEeqinrE--UwKBA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_HYFEsSVvEeqinrE--UwKBA" fontName="Noto Sans"/>
+    <element xmi:type="ecore:EReference" href="Brands.ecore#//BrandsList/brands"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_HYFEsiVvEeqinrE--UwKBA" points="[3, 27, -10, -76]$[11, 101, -2, -2]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_HYTuMCVvEeqinrE--UwKBA" id="(0.3090909090909091,0.03278688524590164)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_SO6rYCVvEeqinrE--UwKBA" type="4003" source="__p0_kCVuEeqinrE--UwKBA" target="_Lb4RUCVvEeqinrE--UwKBA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_SO7ScCVvEeqinrE--UwKBA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SO7ScSVvEeqinrE--UwKBA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_SO7SciVvEeqinrE--UwKBA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_SO7ScyVvEeqinrE--UwKBA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_SO6rYSVvEeqinrE--UwKBA" fontName="Noto Sans"/>
+    <element xmi:type="ecore:EReference" href="Brands.ecore#//Brand/workers"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_SO6rYiVvEeqinrE--UwKBA" points="[55, 11, -85, -18]$[133, 29, -7, 0]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_SO9HoCVvEeqinrE--UwKBA" id="(0.06363636363636363,0.5245901639344263)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_dkrpwCVvEeqinrE--UwKBA" type="4003" source="_Lb4RUCVvEeqinrE--UwKBA" target="_acOEACVvEeqinrE--UwKBA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_dksQ0iVvEeqinrE--UwKBA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dksQ0yVvEeqinrE--UwKBA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_dksQ1CVvEeqinrE--UwKBA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_dks34CVvEeqinrE--UwKBA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_dksQ0CVvEeqinrE--UwKBA" fontName="Noto Sans"/>
+    <element xmi:type="ecore:EReference" href="Brands.ecore#//Worker/shiftSchedule"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_dksQ0SVvEeqinrE--UwKBA" points="[37, 2, -133, -9]$[150, 16, -20, 5]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dkv7MCVvEeqinrE--UwKBA" id="(0.7549668874172185,0.4230769230769231)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_dkv7MSVvEeqinrE--UwKBA" id="(0.18181818181818182,0.6792452830188679)"/>
+  </edges>
+  <edges xmi:type="notation:Connector" xmi:id="_i56pECVvEeqinrE--UwKBA" type="4003" source="_acOEACVvEeqinrE--UwKBA" target="_hnRVcCVvEeqinrE--UwKBA">
+    <children xmi:type="notation:DecorationNode" xmi:id="_i57QICVvEeqinrE--UwKBA" type="6002">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_i573MCVvEeqinrE--UwKBA" y="40"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_i573MSVvEeqinrE--UwKBA" type="6004">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_i573MiVvEeqinrE--UwKBA" y="60"/>
+    </children>
+    <styles xmi:type="notation:FontStyle" xmi:id="_i56pESVvEeqinrE--UwKBA" fontName="Noto Sans"/>
+    <element xmi:type="ecore:EReference" href="Brands.ecore#//WeeklySchedule/Shift"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_i56pEiVvEeqinrE--UwKBA" points="[8, 27, -48, -152]$[40, 180, -16, 1]"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_i5_hkCVvEeqinrE--UwKBA" id="(0.21333333333333335,0.5283018867924528)"/>
+  </edges>
+</notation:Diagram>
