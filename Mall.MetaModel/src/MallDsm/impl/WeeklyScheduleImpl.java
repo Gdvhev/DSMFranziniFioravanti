@@ -28,22 +28,21 @@ import org.eclipse.emf.ecore.util.InternalEList;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link MallDsm.impl.WeeklyScheduleImpl#getShift <em>Shift</em>}</li>
+ *   <li>{@link MallDsm.impl.WeeklyScheduleImpl#getShifts <em>Shifts</em>}</li>
  * </ul>
  *
  * @generated
  */
 public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	/**
-	 * The cached value of the '{@link #getShift() <em>Shift</em>}' containment reference list.
+	 * The cached value of the '{@link #getShifts() <em>Shifts</em>}' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getShift()
+	 * @see #getShifts()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<TimeSpan> shift;
-
+	protected EList<TimeSpan> shifts;
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,11 +67,11 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<TimeSpan> getShift() {
-		if (shift == null) {
-			shift = new EObjectContainmentEList<TimeSpan>(TimeSpan.class, this, MallDsmPackage.WEEKLY_SCHEDULE__SHIFT);
+	public EList<TimeSpan> getShifts() {
+		if (shifts == null) {
+			shifts = new EObjectContainmentEList<TimeSpan>(TimeSpan.class, this, MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS);
 		}
-		return shift;
+		return shifts;
 	}
 
 	/**
@@ -83,8 +82,8 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFT:
-				return ((InternalEList<?>)getShift()).basicRemove(otherEnd, msgs);
+			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS:
+				return ((InternalEList<?>)getShifts()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -97,8 +96,8 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFT:
-				return getShift();
+			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS:
+				return getShifts();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -112,9 +111,9 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFT:
-				getShift().clear();
-				getShift().addAll((Collection<? extends TimeSpan>)newValue);
+			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS:
+				getShifts().clear();
+				getShifts().addAll((Collection<? extends TimeSpan>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -128,8 +127,8 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFT:
-				getShift().clear();
+			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS:
+				getShifts().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -143,8 +142,8 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFT:
-				return shift != null && !shift.isEmpty();
+			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS:
+				return shifts != null && !shifts.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}

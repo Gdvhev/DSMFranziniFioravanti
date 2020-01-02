@@ -51,7 +51,7 @@ public interface Brand extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see MallDsm.MallDsmPackage#getBrand_Name()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();

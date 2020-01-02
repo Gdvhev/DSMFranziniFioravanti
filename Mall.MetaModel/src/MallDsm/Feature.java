@@ -33,7 +33,7 @@ public interface Feature extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see MallDsm.MallDsmPackage#getFeature_Name()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();
@@ -59,7 +59,7 @@ public interface Feature extends EObject {
 	 * @return the value of the '<em>Value</em>' attribute.
 	 * @see #setValue(Integer)
 	 * @see MallDsm.MallDsmPackage#getFeature_Value()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	Integer getValue();

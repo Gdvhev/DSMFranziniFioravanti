@@ -59,7 +59,7 @@ public interface Employee extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see MallDsm.MallDsmPackage#getEmployee_Name()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();

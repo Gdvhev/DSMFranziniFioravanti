@@ -36,14 +36,24 @@ import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
  */
 public class DiscountImpl extends EObjectImpl implements Discount {
 	/**
-	 * The cached value of the '{@link #getPercentage() <em>Percentage</em>}' attribute list.
+	 * The default value of the '{@link #getPercentage() <em>Percentage</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see #getPercentage()
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<Integer> percentage;
+	protected static final Integer PERCENTAGE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPercentage() <em>Percentage</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPercentage()
+	 * @generated
+	 * @ordered
+	 */
+	protected Integer percentage = PERCENTAGE_EDEFAULT;
 
 	/**
 	 * The default value of the '{@link #getTimeStart() <em>Time Start</em>}' attribute.
@@ -109,11 +119,20 @@ public class DiscountImpl extends EObjectImpl implements Discount {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Integer> getPercentage() {
-		if (percentage == null) {
-			percentage = new EDataTypeUniqueEList<Integer>(Integer.class, this, MallDsmPackage.DISCOUNT__PERCENTAGE);
-		}
+	public Integer getPercentage() {
 		return percentage;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPercentage(Integer newPercentage) {
+		Integer oldPercentage = percentage;
+		percentage = newPercentage;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.DISCOUNT__PERCENTAGE, oldPercentage, percentage));
 	}
 
 	/**
@@ -186,8 +205,7 @@ public class DiscountImpl extends EObjectImpl implements Discount {
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
 			case MallDsmPackage.DISCOUNT__PERCENTAGE:
-				getPercentage().clear();
-				getPercentage().addAll((Collection<? extends Integer>)newValue);
+				setPercentage((Integer)newValue);
 				return;
 			case MallDsmPackage.DISCOUNT__TIME_START:
 				setTimeStart((Date)newValue);
@@ -208,7 +226,7 @@ public class DiscountImpl extends EObjectImpl implements Discount {
 	public void eUnset(int featureID) {
 		switch (featureID) {
 			case MallDsmPackage.DISCOUNT__PERCENTAGE:
-				getPercentage().clear();
+				setPercentage(PERCENTAGE_EDEFAULT);
 				return;
 			case MallDsmPackage.DISCOUNT__TIME_START:
 				setTimeStart(TIME_START_EDEFAULT);
@@ -229,7 +247,7 @@ public class DiscountImpl extends EObjectImpl implements Discount {
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
 			case MallDsmPackage.DISCOUNT__PERCENTAGE:
-				return percentage != null && !percentage.isEmpty();
+				return PERCENTAGE_EDEFAULT == null ? percentage != null : !PERCENTAGE_EDEFAULT.equals(percentage);
 			case MallDsmPackage.DISCOUNT__TIME_START:
 				return TIME_START_EDEFAULT == null ? timeStart != null : !TIME_START_EDEFAULT.equals(timeStart);
 			case MallDsmPackage.DISCOUNT__TIME_END:

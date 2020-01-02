@@ -115,7 +115,7 @@ public interface TimeSpan extends EObject {
 	 * @return the value of the '<em>End Hour</em>' attribute.
 	 * @see #setEndHour(Integer)
 	 * @see MallDsm.MallDsmPackage#getTimeSpan_EndHour()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	Integer getEndHour();

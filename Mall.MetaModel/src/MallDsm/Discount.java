@@ -28,20 +28,30 @@ import org.eclipse.emf.ecore.EObject;
  */
 public interface Discount extends EObject {
 	/**
-	 * Returns the value of the '<em><b>Percentage</b></em>' attribute list.
-	 * The list contents are of type {@link java.lang.Integer}.
+	 * Returns the value of the '<em><b>Percentage</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Percentage</em>' attribute list isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Percentage</em>' attribute list.
+	 * @return the value of the '<em>Percentage</em>' attribute.
+	 * @see #setPercentage(Integer)
 	 * @see MallDsm.MallDsmPackage#getDiscount_Percentage()
-	 * @model upper="100"
+	 * @model required="true"
 	 * @generated
 	 */
-	EList<Integer> getPercentage();
+	Integer getPercentage();
+
+	/**
+	 * Sets the value of the '{@link MallDsm.Discount#getPercentage <em>Percentage</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Percentage</em>' attribute.
+	 * @see #getPercentage()
+	 * @generated
+	 */
+	void setPercentage(Integer value);
 
 	/**
 	 * Returns the value of the '<em><b>Time Start</b></em>' attribute.
@@ -54,7 +64,7 @@ public interface Discount extends EObject {
 	 * @return the value of the '<em>Time Start</em>' attribute.
 	 * @see #setTimeStart(Date)
 	 * @see MallDsm.MallDsmPackage#getDiscount_TimeStart()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	Date getTimeStart();
@@ -80,7 +90,7 @@ public interface Discount extends EObject {
 	 * @return the value of the '<em>Time End</em>' attribute.
 	 * @see #setTimeEnd(Date)
 	 * @see MallDsm.MallDsmPackage#getDiscount_TimeEnd()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	Date getTimeEnd();

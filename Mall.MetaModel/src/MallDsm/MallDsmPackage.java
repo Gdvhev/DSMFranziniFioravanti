@@ -772,13 +772,13 @@ public interface MallDsmPackage extends EPackage {
 	int WEEKLY_SCHEDULE = 13;
 
 	/**
-	 * The feature id for the '<em><b>Shift</b></em>' containment reference list.
+	 * The feature id for the '<em><b>Shifts</b></em>' containment reference list.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int WEEKLY_SCHEDULE__SHIFT = 0;
+	int WEEKLY_SCHEDULE__SHIFTS = 0;
 
 	/**
 	 * The number of structural features of the '<em>Weekly Schedule</em>' class.
@@ -800,7 +800,7 @@ public interface MallDsmPackage extends EPackage {
 	int DISCOUNT = 14;
 
 	/**
-	 * The feature id for the '<em><b>Percentage</b></em>' attribute list.
+	 * The feature id for the '<em><b>Percentage</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
@@ -1479,15 +1479,15 @@ public interface MallDsmPackage extends EPackage {
 	EClass getWeeklySchedule();
 
 	/**
-	 * Returns the meta object for the containment reference list '{@link MallDsm.WeeklySchedule#getShift <em>Shift</em>}'.
+	 * Returns the meta object for the containment reference list '{@link MallDsm.WeeklySchedule#getShifts <em>Shifts</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Shift</em>'.
-	 * @see MallDsm.WeeklySchedule#getShift()
+	 * @return the meta object for the containment reference list '<em>Shifts</em>'.
+	 * @see MallDsm.WeeklySchedule#getShifts()
 	 * @see #getWeeklySchedule()
 	 * @generated
 	 */
-	EReference getWeeklySchedule_Shift();
+	EReference getWeeklySchedule_Shifts();
 
 	/**
 	 * Returns the meta object for class '{@link MallDsm.Discount <em>Discount</em>}'.
@@ -1500,10 +1500,10 @@ public interface MallDsmPackage extends EPackage {
 	EClass getDiscount();
 
 	/**
-	 * Returns the meta object for the attribute list '{@link MallDsm.Discount#getPercentage <em>Percentage</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.Discount#getPercentage <em>Percentage</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute list '<em>Percentage</em>'.
+	 * @return the meta object for the attribute '<em>Percentage</em>'.
 	 * @see MallDsm.Discount#getPercentage()
 	 * @see #getDiscount()
 	 * @generated
@@ -2043,12 +2043,12 @@ public interface MallDsmPackage extends EPackage {
 		EClass WEEKLY_SCHEDULE = eINSTANCE.getWeeklySchedule();
 
 		/**
-		 * The meta object literal for the '<em><b>Shift</b></em>' containment reference list feature.
+		 * The meta object literal for the '<em><b>Shifts</b></em>' containment reference list feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference WEEKLY_SCHEDULE__SHIFT = eINSTANCE.getWeeklySchedule_Shift();
+		EReference WEEKLY_SCHEDULE__SHIFTS = eINSTANCE.getWeeklySchedule_Shifts();
 
 		/**
 		 * The meta object literal for the '{@link MallDsm.impl.DiscountImpl <em>Discount</em>}' class.
@@ -2061,7 +2061,7 @@ public interface MallDsmPackage extends EPackage {
 		EClass DISCOUNT = eINSTANCE.getDiscount();
 
 		/**
-		 * The meta object literal for the '<em><b>Percentage</b></em>' attribute list feature.
+		 * The meta object literal for the '<em><b>Percentage</b></em>' attribute feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated

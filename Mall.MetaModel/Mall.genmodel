@@ -65,7 +65,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mall.ecore#//TimeSpan/endHour"/>
     </genClasses>
     <genClasses ecoreClass="Mall.ecore#//WeeklySchedule">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mall.ecore#//WeeklySchedule/Shift"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mall.ecore#//WeeklySchedule/shifts"/>
     </genClasses>
     <genClasses ecoreClass="Mall.ecore#//Discount">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mall.ecore#//Discount/percentage"/>

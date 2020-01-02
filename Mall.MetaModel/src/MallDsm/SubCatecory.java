@@ -32,7 +32,7 @@ public interface SubCatecory extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see MallDsm.MallDsmPackage#getSubCatecory_Name()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();

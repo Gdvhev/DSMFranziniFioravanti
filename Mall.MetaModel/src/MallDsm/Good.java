@@ -78,7 +78,7 @@ public interface Good extends EObject {
 	 * @return the value of the '<em>Model Number</em>' attribute.
 	 * @see #setModelNumber(String)
 	 * @see MallDsm.MallDsmPackage#getGood_ModelNumber()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getModelNumber();

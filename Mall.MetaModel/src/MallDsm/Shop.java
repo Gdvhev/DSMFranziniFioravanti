@@ -142,7 +142,7 @@ public interface Shop extends EObject {
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
 	 * @see MallDsm.MallDsmPackage#getShop_Name()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getName();
@@ -168,7 +168,7 @@ public interface Shop extends EObject {
 	 * @return the value of the '<em>Address</em>' attribute.
 	 * @see #setAddress(String)
 	 * @see MallDsm.MallDsmPackage#getShop_Address()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	String getAddress();

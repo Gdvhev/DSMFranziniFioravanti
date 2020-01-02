@@ -153,7 +153,7 @@ public class DiscountItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Date labelValue = ((Discount)object).getTimeStart();
+		Integer labelValue = ((Discount)object).getPercentage();
 		String label = labelValue == null ? null : labelValue.toString();
 		return label == null || label.length() == 0 ?
 			getString("_UI_Discount_type") :

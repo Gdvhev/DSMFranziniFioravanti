@@ -77,7 +77,7 @@ public class WeeklyScheduleItemProvider
 	public Collection<? extends EStructuralFeature> getChildrenFeatures(Object object) {
 		if (childrenFeatures == null) {
 			super.getChildrenFeatures(object);
-			childrenFeatures.add(MallDsmPackage.Literals.WEEKLY_SCHEDULE__SHIFT);
+			childrenFeatures.add(MallDsmPackage.Literals.WEEKLY_SCHEDULE__SHIFTS);
 		}
 		return childrenFeatures;
 	}
@@ -130,7 +130,7 @@ public class WeeklyScheduleItemProvider
 		updateChildren(notification);
 
 		switch (notification.getFeatureID(WeeklySchedule.class)) {
-			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFT:
+			case MallDsmPackage.WEEKLY_SCHEDULE__SHIFTS:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), true, false));
 				return;
 		}
@@ -150,7 +150,7 @@ public class WeeklyScheduleItemProvider
 
 		newChildDescriptors.add
 			(createChildParameter
-				(MallDsmPackage.Literals.WEEKLY_SCHEDULE__SHIFT,
+				(MallDsmPackage.Literals.WEEKLY_SCHEDULE__SHIFTS,
 				 MallDsmFactory.eINSTANCE.createTimeSpan()));
 	}
 

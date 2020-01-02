@@ -1,47 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
-  <shops xsi:type="Mall:BrandShop" name="aa" brand="//@availableBrands.0">
+  <shops xsi:type="Mall:BrandShop" name="aa" address="xx blv" brand="//@availableBrands.0">
+    <has xsi:type="Mall:Shelf" layers="2"/>
     <employees name="Emp1">
       <shiftSchedule>
-        <Shift>
-          <startHour>1</startHour>
-          <startDay>1</startDay>
-          <endDay>1</endDay>
-          <endHour>1</endHour>
-        </Shift>
+        <shifts startHour="1" startDay="1" endDay="1" endHour="1"/>
       </shiftSchedule>
     </employees>
     <employees name="Emp2">
-    	<shiftSchedule>
-        <Shift>
-          <startHour>2</startHour>
-          <startDay>1</startDay>
-          <endDay>3</endDay>
-          <endHour>1</endHour>
-        </Shift>
+      <shiftSchedule>
+        <shifts startHour="2" startDay="1" endDay="3" endHour="1"/>
       </shiftSchedule>
     </employees>
     <manager name="Manager1">
-    <shiftSchedule>
-        <Shift>
-          <startHour>2</startHour>
-          <startDay>1</startDay>
-          <endDay>3</endDay>
-          <endHour>1</endHour>
-        </Shift>
+      <shiftSchedule>
+        <shifts startHour="2" startDay="1" endDay="3" endHour="1"/>
       </shiftSchedule>
     </manager>
     <openSchedule>
-      <Shift>
-        <startHour>2</startHour>
-        <startDay>1</startDay>
-        <endDay>1</endDay>
-        <endHour>2222</endHour>
-      </Shift>
+      <shifts startHour="2" startDay="1" endDay="1" endHour="2222"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:SpecialisticShop" name="Shop2" speciality="//@categories.0"/>
+  <shops xsi:type="Mall:SpecialisticShop" name="Shop2" address="yy blv" speciality="//@categories.0">
+    <manager name="Emp3">
+      <shiftSchedule/>
+    </manager>
+    <openSchedule/>
+  </shops>
   <availableBrands name="Brand1"/>
+  <availableBrands name="Brand2"/>
   <categories name="Category1">
     <contains name="SubCategory1"/>
   </categories>
