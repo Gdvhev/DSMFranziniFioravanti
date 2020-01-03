@@ -63,7 +63,7 @@ public class MallDsmFactoryImpl extends EFactoryImpl implements MallDsmFactory {
 			case MallDsmPackage.ITEM_IN_STOCK: return createItemInStock();
 			case MallDsmPackage.LISTED_GOOD: return createListedGood();
 			case MallDsmPackage.FEATURE: return createFeature();
-			case MallDsmPackage.SUB_CATECORY: return createSubCatecory();
+			case MallDsmPackage.SUB_CATEGORY: return createSubCategory();
 			case MallDsmPackage.CATEGORY: return createCategory();
 			case MallDsmPackage.EMPLOYEE: return createEmployee();
 			case MallDsmPackage.TIME_SPAN: return createTimeSpan();
@@ -153,9 +153,9 @@ public class MallDsmFactoryImpl extends EFactoryImpl implements MallDsmFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SubCatecory createSubCatecory() {
-		SubCatecoryImpl subCatecory = new SubCatecoryImpl();
-		return subCatecory;
+	public SubCategory createSubCategory() {
+		SubCategoryImpl subCategory = new SubCategoryImpl();
+		return subCategory;
 	}
 
 	/**

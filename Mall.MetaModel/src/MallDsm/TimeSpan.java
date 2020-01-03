@@ -2,8 +2,6 @@
  */
 package MallDsm;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -30,7 +28,7 @@ public interface TimeSpan extends EObject {
 	 * Returns the value of the '<em><b>Start Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Start Hour</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Start Hour</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -56,7 +54,7 @@ public interface TimeSpan extends EObject {
 	 * Returns the value of the '<em><b>Start Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Start Day</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Start Day</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -82,7 +80,7 @@ public interface TimeSpan extends EObject {
 	 * Returns the value of the '<em><b>End Day</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>End Day</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>End Day</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->
@@ -108,7 +106,7 @@ public interface TimeSpan extends EObject {
 	 * Returns the value of the '<em><b>End Hour</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>End Hour</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>End Hour</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

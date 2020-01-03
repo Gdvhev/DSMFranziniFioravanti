@@ -57,12 +57,12 @@ public interface Feature extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Value</em>' attribute.
-	 * @see #setValue(Integer)
+	 * @see #setValue(String)
 	 * @see MallDsm.MallDsmPackage#getFeature_Value()
 	 * @model required="true"
 	 * @generated
 	 */
-	Integer getValue();
+	String getValue();
 
 	/**
 	 * Sets the value of the '{@link MallDsm.Feature#getValue <em>Value</em>}' attribute.
@@ -72,6 +72,6 @@ public interface Feature extends EObject {
 	 * @see #getValue()
 	 * @generated
 	 */
-	void setValue(Integer value);
+	void setValue(String value);
 
 } // Feature

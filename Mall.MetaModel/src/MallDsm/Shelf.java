@@ -2,7 +2,6 @@
  */
 package MallDsm;
 
-import org.eclipse.emf.common.util.EList;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +24,7 @@ public interface Shelf extends Container {
 	 * Returns the value of the '<em><b>Layers</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Layers</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Layers</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

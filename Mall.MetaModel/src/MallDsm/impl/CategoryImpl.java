@@ -4,7 +4,7 @@ package MallDsm.impl;
 
 import MallDsm.Category;
 import MallDsm.MallDsmPackage;
-import MallDsm.SubCatecory;
+import MallDsm.SubCategory;
 
 import java.util.Collection;
 
@@ -45,7 +45,7 @@ public class CategoryImpl extends EObjectImpl implements Category {
 	 * @generated
 	 * @ordered
 	 */
-	protected EList<SubCatecory> contains;
+	protected EList<SubCategory> contains;
 
 	/**
 	 * The default value of the '{@link #getName() <em>Name</em>}' attribute.
@@ -91,9 +91,9 @@ public class CategoryImpl extends EObjectImpl implements Category {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<SubCatecory> getContains() {
+	public EList<SubCategory> getContains() {
 		if (contains == null) {
-			contains = new EObjectContainmentEList<SubCatecory>(SubCatecory.class, this, MallDsmPackage.CATEGORY__CONTAINS);
+			contains = new EObjectContainmentEList<SubCategory>(SubCategory.class, this, MallDsmPackage.CATEGORY__CONTAINS);
 		}
 		return contains;
 	}
@@ -160,7 +160,7 @@ public class CategoryImpl extends EObjectImpl implements Category {
 		switch (featureID) {
 			case MallDsmPackage.CATEGORY__CONTAINS:
 				getContains().clear();
-				getContains().addAll((Collection<? extends SubCatecory>)newValue);
+				getContains().addAll((Collection<? extends SubCategory>)newValue);
 				return;
 			case MallDsmPackage.CATEGORY__NAME:
 				setName((String)newValue);

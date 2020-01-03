@@ -605,14 +605,14 @@ public interface MallDsmPackage extends EPackage {
 	int FEATURE_FEATURE_COUNT = 2;
 
 	/**
-	 * The meta object id for the '{@link MallDsm.impl.SubCatecoryImpl <em>Sub Catecory</em>}' class.
+	 * The meta object id for the '{@link MallDsm.impl.SubCategoryImpl <em>Sub Category</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see MallDsm.impl.SubCatecoryImpl
-	 * @see MallDsm.impl.MallDsmPackageImpl#getSubCatecory()
+	 * @see MallDsm.impl.SubCategoryImpl
+	 * @see MallDsm.impl.MallDsmPackageImpl#getSubCategory()
 	 * @generated
 	 */
-	int SUB_CATECORY = 9;
+	int SUB_CATEGORY = 9;
 
 	/**
 	 * The feature id for the '<em><b>Name</b></em>' attribute.
@@ -621,16 +621,16 @@ public interface MallDsmPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int SUB_CATECORY__NAME = 0;
+	int SUB_CATEGORY__NAME = 0;
 
 	/**
-	 * The number of structural features of the '<em>Sub Catecory</em>' class.
+	 * The number of structural features of the '<em>Sub Category</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SUB_CATECORY_FEATURE_COUNT = 1;
+	int SUB_CATEGORY_FEATURE_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link MallDsm.impl.CategoryImpl <em>Category</em>}' class.
@@ -1330,25 +1330,25 @@ public interface MallDsmPackage extends EPackage {
 	EAttribute getFeature_Value();
 
 	/**
-	 * Returns the meta object for class '{@link MallDsm.SubCatecory <em>Sub Catecory</em>}'.
+	 * Returns the meta object for class '{@link MallDsm.SubCategory <em>Sub Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for class '<em>Sub Catecory</em>'.
-	 * @see MallDsm.SubCatecory
+	 * @return the meta object for class '<em>Sub Category</em>'.
+	 * @see MallDsm.SubCategory
 	 * @generated
 	 */
-	EClass getSubCatecory();
+	EClass getSubCategory();
 
 	/**
-	 * Returns the meta object for the attribute '{@link MallDsm.SubCatecory#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link MallDsm.SubCategory#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see MallDsm.SubCatecory#getName()
-	 * @see #getSubCatecory()
+	 * @see MallDsm.SubCategory#getName()
+	 * @see #getSubCategory()
 	 * @generated
 	 */
-	EAttribute getSubCatecory_Name();
+	EAttribute getSubCategory_Name();
 
 	/**
 	 * Returns the meta object for class '{@link MallDsm.Category <em>Category</em>}'.
@@ -1921,14 +1921,14 @@ public interface MallDsmPackage extends EPackage {
 		EAttribute FEATURE__VALUE = eINSTANCE.getFeature_Value();
 
 		/**
-		 * The meta object literal for the '{@link MallDsm.impl.SubCatecoryImpl <em>Sub Catecory</em>}' class.
+		 * The meta object literal for the '{@link MallDsm.impl.SubCategoryImpl <em>Sub Category</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see MallDsm.impl.SubCatecoryImpl
-		 * @see MallDsm.impl.MallDsmPackageImpl#getSubCatecory()
+		 * @see MallDsm.impl.SubCategoryImpl
+		 * @see MallDsm.impl.MallDsmPackageImpl#getSubCategory()
 		 * @generated
 		 */
-		EClass SUB_CATECORY = eINSTANCE.getSubCatecory();
+		EClass SUB_CATEGORY = eINSTANCE.getSubCategory();
 
 		/**
 		 * The meta object literal for the '<em><b>Name</b></em>' attribute feature.
@@ -1936,7 +1936,7 @@ public interface MallDsmPackage extends EPackage {
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EAttribute SUB_CATECORY__NAME = eINSTANCE.getSubCatecory_Name();
+		EAttribute SUB_CATEGORY__NAME = eINSTANCE.getSubCategory_Name();
 
 		/**
 		 * The meta object literal for the '{@link MallDsm.impl.CategoryImpl <em>Category</em>}' class.

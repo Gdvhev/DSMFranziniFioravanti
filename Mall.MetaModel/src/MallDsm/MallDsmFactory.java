@@ -85,13 +85,13 @@ public interface MallDsmFactory extends EFactory {
 	Feature createFeature();
 
 	/**
-	 * Returns a new object of class '<em>Sub Catecory</em>'.
+	 * Returns a new object of class '<em>Sub Category</em>'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return a new object of class '<em>Sub Catecory</em>'.
+	 * @return a new object of class '<em>Sub Category</em>'.
 	 * @generated
 	 */
-	SubCatecory createSubCatecory();
+	SubCategory createSubCategory();
 
 	/**
 	 * Returns a new object of class '<em>Category</em>'.

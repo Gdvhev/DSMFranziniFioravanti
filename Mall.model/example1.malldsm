@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
   <shops xsi:type="Mall:BrandShop" name="aa" address="xx blv" brand="//@availableBrands.0">
-    <has xsi:type="Mall:Shelf" layers="2"/>
+    <has xsi:type="Mall:Shelf" layers="2">
+      <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="5"/>
+    </has>
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="6"/>
+    </has>
+    <has xsi:type="Mall:Table"/>
     <employees name="Emp1">
       <shiftSchedule>
         <shifts startHour="1" startDay="1" endDay="1" endHour="1"/>
@@ -22,12 +28,17 @@
     </openSchedule>
   </shops>
   <shops xsi:type="Mall:SpecialisticShop" name="Shop2" address="yy blv" speciality="//@categories.0">
+    <has xsi:type="Mall:Shelf" layers="3"/>
     <manager name="Emp3">
       <shiftSchedule/>
     </manager>
     <openSchedule/>
   </shops>
-  <availableBrands name="Brand1"/>
+  <availableBrands name="Brand1">
+    <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Good1">
+      <features name="Size" value="100*100"/>
+    </producedGoods>
+  </availableBrands>
   <availableBrands name="Brand2"/>
   <categories name="Category1">
     <contains name="SubCategory1"/>

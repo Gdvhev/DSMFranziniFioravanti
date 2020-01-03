@@ -18,7 +18,7 @@ import MallDsm.Refrigerator;
 import MallDsm.Shelf;
 import MallDsm.Shop;
 import MallDsm.SpecialisticShop;
-import MallDsm.SubCatecory;
+import MallDsm.SubCategory;
 import MallDsm.Table;
 import MallDsm.TimeSpan;
 import MallDsm.WeeklySchedule;
@@ -105,7 +105,7 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private EClass subCatecoryEClass = null;
+	private EClass subCategoryEClass = null;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -533,8 +533,8 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EClass getSubCatecory() {
-		return subCatecoryEClass;
+	public EClass getSubCategory() {
+		return subCategoryEClass;
 	}
 
 	/**
@@ -542,8 +542,8 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EAttribute getSubCatecory_Name() {
-		return (EAttribute)subCatecoryEClass.getEStructuralFeatures().get(0);
+	public EAttribute getSubCategory_Name() {
+		return (EAttribute)subCategoryEClass.getEStructuralFeatures().get(0);
 	}
 
 	/**
@@ -841,8 +841,8 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 		createEAttribute(featureEClass, FEATURE__NAME);
 		createEAttribute(featureEClass, FEATURE__VALUE);
 
-		subCatecoryEClass = createEClass(SUB_CATECORY);
-		createEAttribute(subCatecoryEClass, SUB_CATECORY__NAME);
+		subCategoryEClass = createEClass(SUB_CATEGORY);
+		createEAttribute(subCategoryEClass, SUB_CATEGORY__NAME);
 
 		categoryEClass = createEClass(CATEGORY);
 		createEReference(categoryEClass, CATEGORY__CONTAINS);
@@ -940,7 +940,7 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 
 		initEClass(goodEClass, Good.class, "Good", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEReference(getGood_Features(), this.getFeature(), null, "features", null, 0, -1, Good.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEReference(getGood_HasSubCategory(), this.getSubCatecory(), null, "hasSubCategory", null, 1, 1, Good.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getGood_HasSubCategory(), this.getSubCategory(), null, "hasSubCategory", null, 1, 1, Good.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getGood_ModelNumber(), ecorePackage.getEString(), "modelNumber", null, 1, 1, Good.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(itemInStockEClass, ItemInStock.class, "ItemInStock", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -954,13 +954,13 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 
 		initEClass(featureEClass, Feature.class, "Feature", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 		initEAttribute(getFeature_Name(), ecorePackage.getEString(), "name", null, 1, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-		initEAttribute(getFeature_Value(), ecorePackage.getEIntegerObject(), "value", null, 1, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getFeature_Value(), ecorePackage.getEString(), "value", null, 1, 1, Feature.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
-		initEClass(subCatecoryEClass, SubCatecory.class, "SubCatecory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEAttribute(getSubCatecory_Name(), ecorePackage.getEString(), "name", null, 1, 1, SubCatecory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEClass(subCategoryEClass, SubCategory.class, "SubCategory", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+		initEAttribute(getSubCategory_Name(), ecorePackage.getEString(), "name", null, 1, 1, SubCategory.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(categoryEClass, Category.class, "Category", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getCategory_Contains(), this.getSubCatecory(), null, "contains", null, 0, -1, Category.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getCategory_Contains(), this.getSubCategory(), null, "contains", null, 0, -1, Category.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getCategory_Name(), ecorePackage.getEString(), "name", null, 1, 1, Category.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		initEClass(employeeEClass, Employee.class, "Employee", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);

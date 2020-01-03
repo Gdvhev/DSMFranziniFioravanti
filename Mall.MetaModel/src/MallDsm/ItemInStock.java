@@ -2,8 +2,6 @@
  */
 package MallDsm;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -54,7 +52,7 @@ public interface ItemInStock extends EObject {
 	 * Returns the value of the '<em><b>Item Count</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Item Count</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Item Count</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

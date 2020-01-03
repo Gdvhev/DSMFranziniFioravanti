@@ -71,7 +71,7 @@ public interface ListedGood extends EObject {
 	 * Returns the value of the '<em><b>Default Price</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Default Price</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Default Price</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

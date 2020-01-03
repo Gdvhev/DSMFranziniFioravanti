@@ -122,9 +122,9 @@ public class MallDsmSwitch<T> extends Switch<T> {
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case MallDsmPackage.SUB_CATECORY: {
-				SubCatecory subCatecory = (SubCatecory)theEObject;
-				T result = caseSubCatecory(subCatecory);
+			case MallDsmPackage.SUB_CATEGORY: {
+				SubCategory subCategory = (SubCategory)theEObject;
+				T result = caseSubCategory(subCategory);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -325,17 +325,17 @@ public class MallDsmSwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Sub Catecory</em>'.
+	 * Returns the result of interpreting the object as an instance of '<em>Sub Category</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
 	 * returning a non-null result will terminate the switch.
 	 * <!-- end-user-doc -->
 	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Sub Catecory</em>'.
+	 * @return the result of interpreting the object as an instance of '<em>Sub Category</em>'.
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubCatecory(SubCatecory object) {
+	public T caseSubCategory(SubCategory object) {
 		return null;
 	}
 

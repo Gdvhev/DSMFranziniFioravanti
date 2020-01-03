@@ -8,13 +8,7 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: A,
- A.impl,
- A.util,
- TestTest,
- TestTest.impl,
- TestTest.util,
- MallDsm,
+Export-Package: MallDsm,
  MallDsm.impl,
  MallDsm.util
 Require-Bundle: org.eclipse.core.runtime,

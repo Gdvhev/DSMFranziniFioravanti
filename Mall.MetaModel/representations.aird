@@ -872,7 +872,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
-      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-TZvMBxaEeqzgK6a1JDDew" name="value : EIntegerObject" tooltipText="">
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-TZvMBxaEeqzgK6a1JDDew" name="value : EString" tooltipText="">
         <target xmi:type="ecore:EAttribute" href="Mall.ecore#//Feature/value"/>
         <semanticElements xmi:type="ecore:EAttribute" href="Mall.ecore#//Feature/value"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_tU2nwC2PEeqCo7SE4iqE1w" labelAlignment="LEFT" description="_-TeAoRxaEeqzgK6a1JDDew">
@@ -881,16 +881,16 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@subNodeMappings[name='EC%20EAttribute']"/>
       </ownedElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_-S4x0BxaEeqzgK6a1JDDew" name="SubCatecory" tooltipText="" incomingEdges="_-TufUxxaEeqzgK6a1JDDew _-TywwxxaEeqzgK6a1JDDew" width="12" height="10">
-      <target xmi:type="ecore:EClass" href="Mall.ecore#//SubCatecory"/>
-      <semanticElements xmi:type="ecore:EClass" href="Mall.ecore#//SubCatecory"/>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_-S4x0BxaEeqzgK6a1JDDew" name="SubCategory" tooltipText="" incomingEdges="_-TufUxxaEeqzgK6a1JDDew _-TywwxxaEeqzgK6a1JDDew" width="12" height="10">
+      <target xmi:type="ecore:EClass" href="Mall.ecore#//SubCategory"/>
+      <semanticElements xmi:type="ecore:EClass" href="Mall.ecore#//SubCategory"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-S5Y4BxaEeqzgK6a1JDDew" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="Liquid" foregroundColor="255,252,216">
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']/@ownedRepresentations[name='Entities']/@defaultLayer/@containerMappings[name='EC%20EClass']"/>
       <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_-TaWQBxaEeqzgK6a1JDDew" name="name : EString" tooltipText="">
-        <target xmi:type="ecore:EAttribute" href="Mall.ecore#//SubCatecory/name"/>
-        <semanticElements xmi:type="ecore:EAttribute" href="Mall.ecore#//SubCatecory/name"/>
+        <target xmi:type="ecore:EAttribute" href="Mall.ecore#//SubCategory/name"/>
+        <semanticElements xmi:type="ecore:EAttribute" href="Mall.ecore#//SubCategory/name"/>
         <ownedStyle xmi:type="diagram:BundledImage" xmi:id="_xGqFcC2PEeqCo7SE4iqE1w" labelAlignment="LEFT" description="_-TeAoRxaEeqzgK6a1JDDew">
           <labelFormat>bold</labelFormat>
         </ownedStyle>

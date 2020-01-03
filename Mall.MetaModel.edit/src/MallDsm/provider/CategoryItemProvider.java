@@ -182,7 +182,7 @@ public class CategoryItemProvider
 		newChildDescriptors.add
 			(createChildParameter
 				(MallDsmPackage.Literals.CATEGORY__CONTAINS,
-				 MallDsmFactory.eINSTANCE.createSubCatecory()));
+				 MallDsmFactory.eINSTANCE.createSubCategory()));
 	}
 
 	/**

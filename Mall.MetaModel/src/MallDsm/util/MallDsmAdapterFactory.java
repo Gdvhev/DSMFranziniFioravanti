@@ -104,8 +104,8 @@ public class MallDsmAdapterFactory extends AdapterFactoryImpl {
 				return createFeatureAdapter();
 			}
 			@Override
-			public Adapter caseSubCatecory(SubCatecory object) {
-				return createSubCatecoryAdapter();
+			public Adapter caseSubCategory(SubCategory object) {
+				return createSubCategoryAdapter();
 			}
 			@Override
 			public Adapter caseCategory(Category object) {
@@ -290,16 +290,16 @@ public class MallDsmAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link MallDsm.SubCatecory <em>Sub Catecory</em>}'.
+	 * Creates a new adapter for an object of class '{@link MallDsm.SubCategory <em>Sub Category</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see MallDsm.SubCatecory
+	 * @see MallDsm.SubCategory
 	 * @generated
 	 */
-	public Adapter createSubCatecoryAdapter() {
+	public Adapter createSubCategoryAdapter() {
 		return null;
 	}
 

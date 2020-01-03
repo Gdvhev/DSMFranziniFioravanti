@@ -8,9 +8,7 @@ Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: A.tests,
- TestTest.tests,
- MallDsm.tests
+Export-Package: MallDsm.tests
 Require-Bundle: org.eclipse.core.runtime,
  Mall.MetaModel;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,

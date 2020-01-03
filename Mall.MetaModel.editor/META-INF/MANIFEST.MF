@@ -9,9 +9,7 @@ Bundle-Activator: MallDsm.presentation.MallDsmEditorPlugin$Implementation
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: A.presentation,
- TestTest.presentation,
- MallDsm.presentation
+Export-Package: MallDsm.presentation
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.core.resources;visibility:=reexport,
  Mall.MetaModel.edit;visibility:=reexport,

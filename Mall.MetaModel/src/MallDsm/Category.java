@@ -26,7 +26,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface Category extends EObject {
 	/**
 	 * Returns the value of the '<em><b>Contains</b></em>' containment reference list.
-	 * The list contents are of type {@link MallDsm.SubCatecory}.
+	 * The list contents are of type {@link MallDsm.SubCategory}.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>Contains</em>' containment reference list isn't clear,
@@ -38,7 +38,7 @@ public interface Category extends EObject {
 	 * @model containment="true"
 	 * @generated
 	 */
-	EList<SubCatecory> getContains();
+	EList<SubCategory> getContains();
 
 	/**
 	 * Returns the value of the '<em><b>Name</b></em>' attribute.

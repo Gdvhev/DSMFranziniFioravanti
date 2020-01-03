@@ -5,7 +5,7 @@ package MallDsm.impl;
 import MallDsm.Feature;
 import MallDsm.Good;
 import MallDsm.MallDsmPackage;
-import MallDsm.SubCatecory;
+import MallDsm.SubCategory;
 
 import java.util.Collection;
 
@@ -57,7 +57,7 @@ public class GoodImpl extends EObjectImpl implements Good {
 	 * @generated
 	 * @ordered
 	 */
-	protected SubCatecory hasSubCategory;
+	protected SubCategory hasSubCategory;
 
 	/**
 	 * The default value of the '{@link #getModelNumber() <em>Model Number</em>}' attribute.
@@ -115,10 +115,10 @@ public class GoodImpl extends EObjectImpl implements Good {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SubCatecory getHasSubCategory() {
+	public SubCategory getHasSubCategory() {
 		if (hasSubCategory != null && hasSubCategory.eIsProxy()) {
 			InternalEObject oldHasSubCategory = (InternalEObject)hasSubCategory;
-			hasSubCategory = (SubCatecory)eResolveProxy(oldHasSubCategory);
+			hasSubCategory = (SubCategory)eResolveProxy(oldHasSubCategory);
 			if (hasSubCategory != oldHasSubCategory) {
 				if (eNotificationRequired())
 					eNotify(new ENotificationImpl(this, Notification.RESOLVE, MallDsmPackage.GOOD__HAS_SUB_CATEGORY, oldHasSubCategory, hasSubCategory));
@@ -132,7 +132,7 @@ public class GoodImpl extends EObjectImpl implements Good {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SubCatecory basicGetHasSubCategory() {
+	public SubCategory basicGetHasSubCategory() {
 		return hasSubCategory;
 	}
 
@@ -141,8 +141,8 @@ public class GoodImpl extends EObjectImpl implements Good {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setHasSubCategory(SubCatecory newHasSubCategory) {
-		SubCatecory oldHasSubCategory = hasSubCategory;
+	public void setHasSubCategory(SubCategory newHasSubCategory) {
+		SubCategory oldHasSubCategory = hasSubCategory;
 		hasSubCategory = newHasSubCategory;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, MallDsmPackage.GOOD__HAS_SUB_CATEGORY, oldHasSubCategory, hasSubCategory));
@@ -216,7 +216,7 @@ public class GoodImpl extends EObjectImpl implements Good {
 				getFeatures().addAll((Collection<? extends Feature>)newValue);
 				return;
 			case MallDsmPackage.GOOD__HAS_SUB_CATEGORY:
-				setHasSubCategory((SubCatecory)newValue);
+				setHasSubCategory((SubCategory)newValue);
 				return;
 			case MallDsmPackage.GOOD__MODEL_NUMBER:
 				setModelNumber((String)newValue);
@@ -237,7 +237,7 @@ public class GoodImpl extends EObjectImpl implements Good {
 				getFeatures().clear();
 				return;
 			case MallDsmPackage.GOOD__HAS_SUB_CATEGORY:
-				setHasSubCategory((SubCatecory)null);
+				setHasSubCategory((SubCategory)null);
 				return;
 			case MallDsmPackage.GOOD__MODEL_NUMBER:
 				setModelNumber(MODEL_NUMBER_EDEFAULT);

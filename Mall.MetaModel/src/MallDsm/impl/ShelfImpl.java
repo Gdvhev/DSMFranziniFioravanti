@@ -5,15 +5,11 @@ package MallDsm.impl;
 import MallDsm.MallDsmPackage;
 import MallDsm.Shelf;
 
-import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
-import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
-import org.eclipse.emf.ecore.util.EDataTypeUniqueEList;
 
 /**
  * <!-- begin-user-doc -->
@@ -38,6 +34,7 @@ public class ShelfImpl extends ContainerImpl implements Shelf {
 	 * @ordered
 	 */
 	protected static final Integer LAYERS_EDEFAULT = null;
+
 	/**
 	 * The cached value of the '{@link #getLayers() <em>Layers</em>}' attribute.
 	 * <!-- begin-user-doc -->
@@ -107,7 +104,6 @@ public class ShelfImpl extends ContainerImpl implements Shelf {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	@SuppressWarnings("unchecked")
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {

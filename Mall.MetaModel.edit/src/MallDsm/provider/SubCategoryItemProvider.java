@@ -3,8 +3,8 @@
 package MallDsm.provider;
 
 
-import MallDsm.Discount;
 import MallDsm.MallDsmPackage;
+import MallDsm.SubCategory;
 
 import java.util.Collection;
 import java.util.List;
@@ -26,12 +26,12 @@ import org.eclipse.emf.edit.provider.ItemProviderAdapter;
 import org.eclipse.emf.edit.provider.ViewerNotification;
 
 /**
- * This is the item provider adapter for a {@link MallDsm.Discount} object.
+ * This is the item provider adapter for a {@link MallDsm.SubCategory} object.
  * <!-- begin-user-doc -->
  * <!-- end-user-doc -->
  * @generated
  */
-public class DiscountItemProvider 
+public class SubCategoryItemProvider 
 	extends ItemProviderAdapter
 	implements
 		IEditingDomainItemProvider,
@@ -45,7 +45,7 @@ public class DiscountItemProvider
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DiscountItemProvider(AdapterFactory adapterFactory) {
+	public SubCategoryItemProvider(AdapterFactory adapterFactory) {
 		super(adapterFactory);
 	}
 
@@ -60,27 +60,25 @@ public class DiscountItemProvider
 		if (itemPropertyDescriptors == null) {
 			super.getPropertyDescriptors(object);
 
-			addPercentagePropertyDescriptor(object);
-			addTimeStartPropertyDescriptor(object);
-			addTimeEndPropertyDescriptor(object);
+			addNamePropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
 
 	/**
-	 * This adds a property descriptor for the Percentage feature.
+	 * This adds a property descriptor for the Name feature.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected void addPercentagePropertyDescriptor(Object object) {
+	protected void addNamePropertyDescriptor(Object object) {
 		itemPropertyDescriptors.add
 			(createItemPropertyDescriptor
 				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
 				 getResourceLocator(),
-				 getString("_UI_Discount_percentage_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Discount_percentage_feature", "_UI_Discount_type"),
-				 MallDsmPackage.Literals.DISCOUNT__PERCENTAGE,
+				 getString("_UI_SubCategory_name_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SubCategory_name_feature", "_UI_SubCategory_type"),
+				 MallDsmPackage.Literals.SUB_CATEGORY__NAME,
 				 true,
 				 false,
 				 false,
@@ -90,58 +88,14 @@ public class DiscountItemProvider
 	}
 
 	/**
-	 * This adds a property descriptor for the Time Start feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTimeStartPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Discount_timeStart_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Discount_timeStart_feature", "_UI_Discount_type"),
-				 MallDsmPackage.Literals.DISCOUNT__TIME_START,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This adds a property descriptor for the Time End feature.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected void addTimeEndPropertyDescriptor(Object object) {
-		itemPropertyDescriptors.add
-			(createItemPropertyDescriptor
-				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
-				 getResourceLocator(),
-				 getString("_UI_Discount_timeEnd_feature"),
-				 getString("_UI_PropertyDescriptor_description", "_UI_Discount_timeEnd_feature", "_UI_Discount_type"),
-				 MallDsmPackage.Literals.DISCOUNT__TIME_END,
-				 true,
-				 false,
-				 false,
-				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
-				 null,
-				 null));
-	}
-
-	/**
-	 * This returns Discount.gif.
+	 * This returns SubCategory.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
 	public Object getImage(Object object) {
-		return overlayImage(object, getResourceLocator().getImage("full/obj16/Discount"));
+		return overlayImage(object, getResourceLocator().getImage("full/obj16/SubCategory"));
 	}
 
 	/**
@@ -152,11 +106,10 @@ public class DiscountItemProvider
 	 */
 	@Override
 	public String getText(Object object) {
-		Integer labelValue = ((Discount)object).getPercentage();
-		String label = labelValue == null ? null : labelValue.toString();
+		String label = ((SubCategory)object).getName();
 		return label == null || label.length() == 0 ?
-			getString("_UI_Discount_type") :
-			getString("_UI_Discount_type") + " " + label;
+			getString("_UI_SubCategory_type") :
+			getString("_UI_SubCategory_type") + " " + label;
 	}
 
 
@@ -171,10 +124,8 @@ public class DiscountItemProvider
 	public void notifyChanged(Notification notification) {
 		updateChildren(notification);
 
-		switch (notification.getFeatureID(Discount.class)) {
-			case MallDsmPackage.DISCOUNT__PERCENTAGE:
-			case MallDsmPackage.DISCOUNT__TIME_START:
-			case MallDsmPackage.DISCOUNT__TIME_END:
+		switch (notification.getFeatureID(SubCategory.class)) {
+			case MallDsmPackage.SUB_CATEGORY__NAME:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

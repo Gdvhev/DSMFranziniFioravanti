@@ -43,6 +43,7 @@ public class WeeklyScheduleImpl extends EObjectImpl implements WeeklySchedule {
 	 * @ordered
 	 */
 	protected EList<TimeSpan> shifts;
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

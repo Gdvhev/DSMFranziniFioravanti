@@ -233,26 +233,26 @@ public class MallDsmItemProviderAdapterFactory extends MallDsmAdapterFactory imp
 	}
 
 	/**
-	 * This keeps track of the one adapter used for all {@link MallDsm.SubCatecory} instances.
+	 * This keeps track of the one adapter used for all {@link MallDsm.SubCategory} instances.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected SubCatecoryItemProvider subCatecoryItemProvider;
+	protected SubCategoryItemProvider subCategoryItemProvider;
 
 	/**
-	 * This creates an adapter for a {@link MallDsm.SubCatecory}.
+	 * This creates an adapter for a {@link MallDsm.SubCategory}.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override
-	public Adapter createSubCatecoryAdapter() {
-		if (subCatecoryItemProvider == null) {
-			subCatecoryItemProvider = new SubCatecoryItemProvider(this);
+	public Adapter createSubCategoryAdapter() {
+		if (subCategoryItemProvider == null) {
+			subCategoryItemProvider = new SubCategoryItemProvider(this);
 		}
 
-		return subCatecoryItemProvider;
+		return subCategoryItemProvider;
 	}
 
 	/**
@@ -568,7 +568,7 @@ public class MallDsmItemProviderAdapterFactory extends MallDsmAdapterFactory imp
 		if (itemInStockItemProvider != null) itemInStockItemProvider.dispose();
 		if (listedGoodItemProvider != null) listedGoodItemProvider.dispose();
 		if (featureItemProvider != null) featureItemProvider.dispose();
-		if (subCatecoryItemProvider != null) subCatecoryItemProvider.dispose();
+		if (subCategoryItemProvider != null) subCategoryItemProvider.dispose();
 		if (categoryItemProvider != null) categoryItemProvider.dispose();
 		if (employeeItemProvider != null) employeeItemProvider.dispose();
 		if (timeSpanItemProvider != null) timeSpanItemProvider.dispose();

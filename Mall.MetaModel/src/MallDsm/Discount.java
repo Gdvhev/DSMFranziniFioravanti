@@ -4,8 +4,6 @@ package MallDsm;
 
 import java.util.Date;
 
-import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -31,7 +29,7 @@ public interface Discount extends EObject {
 	 * Returns the value of the '<em><b>Percentage</b></em>' attribute.
 	 * <!-- begin-user-doc -->
 	 * <p>
-	 * If the meaning of the '<em>Percentage</em>' attribute list isn't clear,
+	 * If the meaning of the '<em>Percentage</em>' attribute isn't clear,
 	 * there really should be more of a description here...
 	 * </p>
 	 * <!-- end-user-doc -->

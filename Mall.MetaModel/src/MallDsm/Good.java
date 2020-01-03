@@ -50,12 +50,12 @@ public interface Good extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Has Sub Category</em>' reference.
-	 * @see #setHasSubCategory(SubCatecory)
+	 * @see #setHasSubCategory(SubCategory)
 	 * @see MallDsm.MallDsmPackage#getGood_HasSubCategory()
 	 * @model required="true"
 	 * @generated
 	 */
-	SubCatecory getHasSubCategory();
+	SubCategory getHasSubCategory();
 
 	/**
 	 * Sets the value of the '{@link MallDsm.Good#getHasSubCategory <em>Has Sub Category</em>}' reference.
@@ -65,7 +65,7 @@ public interface Good extends EObject {
 	 * @see #getHasSubCategory()
 	 * @generated
 	 */
-	void setHasSubCategory(SubCatecory value);
+	void setHasSubCategory(SubCategory value);
 
 	/**
 	 * Returns the value of the '<em><b>Model Number</b></em>' attribute.
