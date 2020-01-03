@@ -16,7 +16,8 @@ package MallDsm;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getSpecialisticShop()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='categoryConstraint'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot categoryConstraint='self.soldGoods.good-&gt;forAll(g|self.speciality.contains-&gt;includes(g.hasSubCategory))'"
  * @generated
  */
 public interface SpecialisticShop extends Shop {

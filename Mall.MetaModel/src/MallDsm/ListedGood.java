@@ -21,7 +21,8 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getListedGood()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='posPrice'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot posPrice='self.defaultPrice&gt;0'"
  * @generated
  */
 public interface ListedGood extends EObject {

@@ -21,7 +21,8 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getMall()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='uniqueShopName uniqueMnumber uniqueCatName uniqueSubCatName uniqueBrandName uniqueGoodBrand'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot uniqueShopName='self.shops-&gt;forAll(s1,s2|s1&lt;&gt;s2 implies s1.name&lt;&gt;s2.name)' uniqueMnumber='self.availableBrands.producedGoods-&gt;forAll(g1,g2|g1&lt;&gt;g2 implies g1.modelNumber&lt;&gt;g2.modelNumber)' uniqueCatName='self.categories-&gt;forAll(c1,c2|c1&lt;&gt;c2 implies c1.name &lt;&gt; c2.name)' uniqueSubCatName='self.categories.contains-&gt;forAll(sc1,sc2|sc1&lt;&gt;sc2 implies sc1.name&lt;&gt;sc2.name)' uniqueBrandName='self.availableBrands-&gt;forAll(b1,b2|b1&lt;&gt;b2 implies b1.name&lt;&gt;b2.name)' uniqueGoodBrand='self.availableBrands-&gt;forAll(b1,b2|b1&lt;&gt;b2 implies b1.producedGoods-&gt;intersection(b2.producedGoods)-&gt;isEmpty())'"
  * @generated
  */
 public interface Mall extends EObject {

@@ -21,7 +21,8 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getDiscount()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='validPerc validDateInterval'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot validPerc='self.percentage &lt;=100 and self.percentage &gt;=0' validDateInterval='self.timeEnd.compareTo(self.timeStart)&gt;0'"
  * @generated
  */
 public interface Discount extends EObject {

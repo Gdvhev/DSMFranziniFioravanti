@@ -16,7 +16,8 @@ package MallDsm;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getBrandShop()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='brandConstraint'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot brandConstraint='self.soldGoods.good-&gt;forAll(g|self.brand.producedGoods-&gt;includes(g))'"
  * @generated
  */
 public interface BrandShop extends Shop {

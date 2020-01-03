@@ -1,59 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="MallDsm" nsURI="http://mall.com" nsPrefix="Mall">
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    name="MallDsm" nsURI="http://mall.com" nsPrefix="Mall">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore#/"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Shop" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Container"
-        containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="soldGoods" upperBound="-1"
-        eType="#//ListedGood" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="employees" upperBound="-1"
-        eType="#//Employee" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="manager" lowerBound="1"
-        eType="#//Employee" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="openSchedule" lowerBound="1"
-        eType="#//WeeklySchedule" containment="true"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="noStockWithoutPrice noDoubleListing"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="noStockWithoutPrice" value="self.has->forAll(cont|cont.containedGood->forAll(g|self.soldGoods.good->includes(g.contains)))"/>
+      <details key="noDoubleListing" value="self.soldGoods->forAll(l1,l2|l1&lt;>l2 implies l1.good&lt;>l2.good)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Container" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="soldGoods" upperBound="-1" eType="#//ListedGood" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="employees" upperBound="-1" eType="#//Employee" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="manager" lowerBound="1" eType="#//Employee" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="openSchedule" lowerBound="1" eType="#//WeeklySchedule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="photosPaths" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="mapPath" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="BrandShop" eSuperTypes="#//Shop">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="brandConstraint"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="brandConstraint" value="self.soldGoods.good->forAll(g|self.brand.producedGoods->includes(g))"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="brand" lowerBound="1" eType="#//Brand"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="SpecialisticShop" eSuperTypes="#//Shop">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="speciality" lowerBound="1"
-        eType="#//Category"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="categoryConstraint"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="categoryConstraint" value="self.soldGoods.good->forAll(g|self.speciality.contains->includes(g.hasSubCategory))"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="speciality" lowerBound="1" eType="#//Category"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Brand">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="producedGoods" upperBound="-1"
-        eType="#//Good" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="producedGoods" upperBound="-1" eType="#//Good" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Container" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="containedGood" upperBound="-1"
-        eType="#//ItemInStock" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="containedGood" upperBound="-1" eType="#//ItemInStock" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Good">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="features" upperBound="-1"
-        eType="#//Feature" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSubCategory" lowerBound="1"
-        eType="#//SubCategory"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelNumber" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="features" upperBound="-1" eType="#//Feature" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hasSubCategory" lowerBound="1" eType="#//SubCategory"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelNumber" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ItemInStock">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contains" lowerBound="1"
-        eType="#//Good"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="itemCount" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contains" lowerBound="1" eType="#//Good"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="itemCount" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="ListedGood">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="posPrice"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="posPrice" value="self.defaultPrice>0"/>
+    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EReference" name="good" lowerBound="1" eType="#//Good"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="sales" upperBound="-1"
-        eType="#//Discount" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultPrice" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="sales" upperBound="-1" eType="#//Discount" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="defaultPrice" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Feature">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -63,49 +80,71 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Category">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="contains" upperBound="-1"
-        eType="#//SubCategory" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="contains" upperBound="-1" eType="#//SubCategory" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Employee">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="shiftSchedule" lowerBound="1"
-        eType="#//WeeklySchedule" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shiftSchedule" lowerBound="1" eType="#//WeeklySchedule" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="TimeSpan">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startHour" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDay" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDay" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endHour" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="validInterval"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="validInterval" value="if(self.endDay=self.startDay) &#xA;&#x9;&#x9;&#x9;then&#xA;&#x9;&#x9;&#x9;&#x9;self.startHour&lt;=self.endHour&#xA;&#x9;&#x9;&#x9;else&#xA;&#x9;&#x9;&#x9;&#x9;true&#xA;&#x9;&#x9;&#x9;endif and&#xA;&#x9;&#x9;&#x9;self.startHour>=0 and self.startHour&lt;=23 and&#xA;&#x9;&#x9;&#x9;self.startDay>=0 and self.startDay&lt;=6 and&#xA;&#x9;&#x9;&#x9;self.endHour>=0 and self.endHour&lt;=23 and&#xA;&#x9;&#x9;&#x9;self.endDay>=0 and self.endDay&lt;=6"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startHour" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDay" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDay" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endHour" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="WeeklySchedule">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="shifts" upperBound="-1"
-        eType="#//TimeSpan" containment="true"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="noOverlappingShifts"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="noOverlappingShifts" value="self.shifts->forAll(s1,s2|s1&lt;>s2 implies &#xA;&#x9;&#x9;&#x9;let startAbs1: Integer =(s1.startDay*24+s1.startHour) in&#xA;&#x9;&#x9;&#x9;let endAbs1: Integer =(s1.endDay*24+s1.endHour) in&#xA;&#x9;&#x9;&#x9;let startAbs2: Integer =(s2.startDay*24+s2.startHour) in&#xA;&#x9;&#x9;&#x9;let endAbs2: Integer =(s2.endDay*24+s2.endHour) in&#xA;&#x9;&#x9;&#x9;if(startAbs1>startAbs2)then&#xA;&#x9;&#x9;&#x9;&#x9;startAbs1>endAbs2 and (endAbs1&lt;startAbs1 implies endAbs1&lt;startAbs2)&#xA;&#x9;&#x9;&#x9;else--Opposite case taken care by the double iterator&#xA;&#x9;&#x9;&#x9;&#x9;startAbs1&lt;>startAbs2&#xA;&#x9;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;endif&#xA;&#x9;&#x9;)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shifts" upperBound="-1" eType="#//TimeSpan" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Discount">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="percentage" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeStart" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeEnd" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="validPerc validDateInterval"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="validPerc" value="self.percentage &lt;=100 and self.percentage >=0"/>
+      <details key="validDateInterval" value="self.timeEnd.compareTo(self.timeStart)>0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="percentage" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeStart" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="timeEnd" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Shelf" eSuperTypes="#//Container">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="layers" lowerBound="1"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="posLayers"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="posLayers" value="self.layers>0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="layers" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EIntegerObject"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Refrigerator" eSuperTypes="#//Container"/>
   <eClassifiers xsi:type="ecore:EClass" name="Table" eSuperTypes="#//Container"/>
   <eClassifiers xsi:type="ecore:EClass" name="Mall">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="shops" upperBound="-1"
-        eType="#//Shop" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="availableBrands" upperBound="-1"
-        eType="#//Brand" containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1"
-        eType="#//Category" containment="true"/>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="uniqueShopName uniqueMnumber uniqueCatName uniqueSubCatName uniqueBrandName uniqueGoodBrand"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="uniqueShopName" value="self.shops->forAll(s1,s2|s1&lt;>s2 implies s1.name&lt;>s2.name)"/>
+      <details key="uniqueMnumber" value="self.availableBrands.producedGoods->forAll(g1,g2|g1&lt;>g2 implies g1.modelNumber&lt;>g2.modelNumber)"/>
+      <details key="uniqueCatName" value="self.categories->forAll(c1,c2|c1&lt;>c2 implies c1.name &lt;> c2.name)"/>
+      <details key="uniqueSubCatName" value="self.categories.contains->forAll(sc1,sc2|sc1&lt;>sc2 implies sc1.name&lt;>sc2.name)"/>
+      <details key="uniqueBrandName" value="self.availableBrands->forAll(b1,b2|b1&lt;>b2 implies b1.name&lt;>b2.name)"/>
+      <details key="uniqueGoodBrand" value="self.availableBrands->forAll(b1,b2|b1&lt;>b2 implies b1.producedGoods->intersection(b2.producedGoods)->isEmpty())"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shops" upperBound="-1" eType="#//Shop" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="availableBrands" upperBound="-1" eType="#//Brand" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="categories" upperBound="-1" eType="#//Category" containment="true"/>
   </eClassifiers>
 </ecore:EPackage>

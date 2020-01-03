@@ -20,7 +20,8 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getTimeSpan()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='validInterval'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot validInterval='if(self.endDay=self.startDay) \n\t\t\tthen\n\t\t\t\tself.startHour&lt;=self.endHour\n\t\t\telse\n\t\t\t\ttrue\n\t\t\tendif and\n\t\t\tself.startHour&gt;=0 and self.startHour&lt;=23 and\n\t\t\tself.startDay&gt;=0 and self.startDay&lt;=6 and\n\t\t\tself.endHour&gt;=0 and self.endHour&lt;=23 and\n\t\t\tself.endDay&gt;=0 and self.endDay&lt;=6'"
  * @generated
  */
 public interface TimeSpan extends EObject {

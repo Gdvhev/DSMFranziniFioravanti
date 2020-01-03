@@ -23,11 +23,13 @@ import MallDsm.Table;
 import MallDsm.TimeSpan;
 import MallDsm.WeeklySchedule;
 
+import MallDsm.util.MallDsmValidator;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
+import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
 /**
@@ -222,6 +224,15 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 
 		// Initialize created meta-data
 		theMallDsmPackage.initializePackageContents();
+
+		// Register package validator
+		EValidator.Registry.INSTANCE.put
+			(theMallDsmPackage,
+			 new EValidator.Descriptor() {
+				 public EValidator getEValidator() {
+					 return MallDsmValidator.INSTANCE;
+				 }
+			 });
 
 		// Mark meta-data to indicate it can't be changed
 		theMallDsmPackage.freeze();
@@ -995,6 +1006,173 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 
 		// Create resource
 		createResource(eNS_URI);
+
+		// Create annotations
+		// http://www.eclipse.org/OCL/Import
+		createImportAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore
+		createEcoreAnnotations();
+		// http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot
+		createPivotAnnotations();
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/OCL/Import</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createImportAnnotations() {
+		String source = "http://www.eclipse.org/OCL/Import";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "ecore", "http://www.eclipse.org/emf/2002/Ecore#/"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createEcoreAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore";
+		addAnnotation
+		  (this,
+		   source,
+		   new String[] {
+			   "invocationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			   "settingDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+			   "validationDelegates", "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"
+		   });
+		addAnnotation
+		  (shopEClass,
+		   source,
+		   new String[] {
+			   "constraints", "noStockWithoutPrice noDoubleListing"
+		   });
+		addAnnotation
+		  (brandShopEClass,
+		   source,
+		   new String[] {
+			   "constraints", "brandConstraint"
+		   });
+		addAnnotation
+		  (specialisticShopEClass,
+		   source,
+		   new String[] {
+			   "constraints", "categoryConstraint"
+		   });
+		addAnnotation
+		  (listedGoodEClass,
+		   source,
+		   new String[] {
+			   "constraints", "posPrice"
+		   });
+		addAnnotation
+		  (timeSpanEClass,
+		   source,
+		   new String[] {
+			   "constraints", "validInterval"
+		   });
+		addAnnotation
+		  (weeklyScheduleEClass,
+		   source,
+		   new String[] {
+			   "constraints", "noOverlappingShifts"
+		   });
+		addAnnotation
+		  (discountEClass,
+		   source,
+		   new String[] {
+			   "constraints", "validPerc validDateInterval"
+		   });
+		addAnnotation
+		  (shelfEClass,
+		   source,
+		   new String[] {
+			   "constraints", "posLayers"
+		   });
+		addAnnotation
+		  (mallEClass,
+		   source,
+		   new String[] {
+			   "constraints", "uniqueShopName uniqueMnumber uniqueCatName uniqueSubCatName uniqueBrandName uniqueGoodBrand"
+		   });
+	}
+
+	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createPivotAnnotations() {
+		String source = "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot";
+		addAnnotation
+		  (shopEClass,
+		   source,
+		   new String[] {
+			   "noStockWithoutPrice", "self.has->forAll(cont|cont.containedGood->forAll(g|self.soldGoods.good->includes(g.contains)))",
+			   "noDoubleListing", "self.soldGoods->forAll(l1,l2|l1<>l2 implies l1.good<>l2.good)"
+		   });
+		addAnnotation
+		  (brandShopEClass,
+		   source,
+		   new String[] {
+			   "brandConstraint", "self.soldGoods.good->forAll(g|self.brand.producedGoods->includes(g))"
+		   });
+		addAnnotation
+		  (specialisticShopEClass,
+		   source,
+		   new String[] {
+			   "categoryConstraint", "self.soldGoods.good->forAll(g|self.speciality.contains->includes(g.hasSubCategory))"
+		   });
+		addAnnotation
+		  (listedGoodEClass,
+		   source,
+		   new String[] {
+			   "posPrice", "self.defaultPrice>0"
+		   });
+		addAnnotation
+		  (timeSpanEClass,
+		   source,
+		   new String[] {
+			   "validInterval", "if(self.endDay=self.startDay) \n\t\t\tthen\n\t\t\t\tself.startHour<=self.endHour\n\t\t\telse\n\t\t\t\ttrue\n\t\t\tendif and\n\t\t\tself.startHour>=0 and self.startHour<=23 and\n\t\t\tself.startDay>=0 and self.startDay<=6 and\n\t\t\tself.endHour>=0 and self.endHour<=23 and\n\t\t\tself.endDay>=0 and self.endDay<=6"
+		   });
+		addAnnotation
+		  (weeklyScheduleEClass,
+		   source,
+		   new String[] {
+			   "noOverlappingShifts", "self.shifts->forAll(s1,s2|s1<>s2 implies \n\t\t\tlet startAbs1: Integer =(s1.startDay*24+s1.startHour) in\n\t\t\tlet endAbs1: Integer =(s1.endDay*24+s1.endHour) in\n\t\t\tlet startAbs2: Integer =(s2.startDay*24+s2.startHour) in\n\t\t\tlet endAbs2: Integer =(s2.endDay*24+s2.endHour) in\n\t\t\tif(startAbs1>startAbs2)then\n\t\t\t\tstartAbs1>endAbs2 and (endAbs1<startAbs1 implies endAbs1<startAbs2)\n\t\t\telse--Opposite case taken care by the double iterator\n\t\t\t\tstartAbs1<>startAbs2\n\t\t\t\t\n\t\t\tendif\n\t\t)"
+		   });
+		addAnnotation
+		  (discountEClass,
+		   source,
+		   new String[] {
+			   "validPerc", "self.percentage <=100 and self.percentage >=0",
+			   "validDateInterval", "self.timeEnd.compareTo(self.timeStart)>0"
+		   });
+		addAnnotation
+		  (shelfEClass,
+		   source,
+		   new String[] {
+			   "posLayers", "self.layers>0"
+		   });
+		addAnnotation
+		  (mallEClass,
+		   source,
+		   new String[] {
+			   "uniqueShopName", "self.shops->forAll(s1,s2|s1<>s2 implies s1.name<>s2.name)",
+			   "uniqueMnumber", "self.availableBrands.producedGoods->forAll(g1,g2|g1<>g2 implies g1.modelNumber<>g2.modelNumber)",
+			   "uniqueCatName", "self.categories->forAll(c1,c2|c1<>c2 implies c1.name <> c2.name)",
+			   "uniqueSubCatName", "self.categories.contains->forAll(sc1,sc2|sc1<>sc2 implies sc1.name<>sc2.name)",
+			   "uniqueBrandName", "self.availableBrands->forAll(b1,b2|b1<>b2 implies b1.name<>b2.name)",
+			   "uniqueGoodBrand", "self.availableBrands->forAll(b1,b2|b1<>b2 implies b1.producedGoods->intersection(b2.producedGoods)->isEmpty())"
+		   });
 	}
 
 } //MallDsmPackageImpl

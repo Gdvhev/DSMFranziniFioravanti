@@ -28,6 +28,8 @@ import org.eclipse.emf.ecore.EObject;
  *
  * @see MallDsm.MallDsmPackage#getShop()
  * @model abstract="true"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore constraints='noStockWithoutPrice noDoubleListing'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot noStockWithoutPrice='self.has-&gt;forAll(cont|cont.containedGood-&gt;forAll(g|self.soldGoods.good-&gt;includes(g.contains)))' noDoubleListing='self.soldGoods-&gt;forAll(l1,l2|l1&lt;&gt;l2 implies l1.good&lt;&gt;l2.good)'"
  * @generated
  */
 public interface Shop extends EObject {

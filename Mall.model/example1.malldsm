@@ -27,11 +27,13 @@
       </shiftSchedule>
     </manager>
     <openSchedule>
-      <shifts startHour="2" startDay="1" endDay="1" endHour="2222"/>
+      <shifts startHour="3" startDay="1" endDay="1" endHour="23"/>
+      <shifts startHour="4" startDay="3" endDay="1" endHour="2"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:SpecialisticShop" name="Shop2" address="yy blv" speciality="//@categories.0">
+  <shops xsi:type="Mall:SpecialisticShop" name="Shop2" address="yy blv" speciality="//@categories.1">
     <has xsi:type="Mall:Shelf" layers="3"/>
+    <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="2"/>
     <manager name="Emp3">
       <shiftSchedule/>
     </manager>
@@ -42,8 +44,16 @@
       <features name="Size" value="100*100"/>
     </producedGoods>
   </availableBrands>
-  <availableBrands name="Brand2"/>
+  <availableBrands name="Brand2">
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Good2">
+      <features name="Size" value="100*100"/>
+    </producedGoods>
+  </availableBrands>
   <categories name="Category1">
     <contains name="SubCategory1"/>
+    <contains name="SubCategory2"/>
+  </categories>
+  <categories name="Category2">
+    <contains name="SubCategory3"/>
   </categories>
 </Mall:Mall>
