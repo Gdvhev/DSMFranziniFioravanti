@@ -8,6 +8,9 @@
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="6"/>
     </has>
     <has xsi:type="Mall:Table"/>
+    <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="100">
+      <sales percentage="50" timeStart="2010-01-01T00:00:00.000+0100" timeEnd="2020-12-31T00:00:00.000+0100"/>
+    </soldGoods>
     <employees name="Emp1">
       <shiftSchedule>
         <shifts startHour="1" startDay="1" endDay="1" endHour="1"/>
