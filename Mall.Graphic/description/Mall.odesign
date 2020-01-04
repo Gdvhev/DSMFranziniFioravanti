@@ -1,28 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" name="Mall" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="Mall" version="12.0.0.2017041100">
   <ownedViewpoints name="Mall Viewpoint">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Mall Diagram" domainClass="MallDsm::Mall" enablePopupBars="true">
       <metamodel href="http://mall.com#/"/>
+      <validationSet name="Validations">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UniqueCatNameRule" level="ERROR" message="Category name must be unique" targetClass="MallDsm::Category">
+          <audits auditExpression="aql:self.eContainer().categories->forAll(c1|c1&lt;>self implies c1.name&lt;>self.name)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UniqueSubCatNameRule" level="ERROR" message="SubCategory name must be unique" targetClass="MallDsm::SubCategory">
+          <audits auditExpression="aql:let subCats=self.eContainer().eContainer().categories.contains in subCats->forAll(s1|s1&lt;>self implies s1.name&lt;>self.name)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UniqueBrandNameRule" level="ERROR" message="Brand name must be unique" targetClass="MallDsm::Brand">
+          <audits auditExpression="aql:let brands=self.eContainer().availableBrands in brands->forAll(b1|b1&lt;>self implies b1.name&lt;>self.name)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UniqueGoodNameRule" level="ERROR" message="Good name must be unique" targetClass="MallDsm::Good">
+          <audits auditExpression="aql:let goods=self.eContainer().eContainer().availableBrands.producedGoods in goods->forAll(g1|g1&lt;>self implies g1.modelNumber&lt;>self.modelNumber)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UniqueShopNameRule" level="ERROR" message="Shop name must be unique" targetClass="MallDsm::Shop">
+          <audits auditExpression="aql:let shops=self.eContainer().shops in shops->forAll(s1|s1&lt;>self implies s1.name&lt;>self.name)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="NoDoubleListingRule" level="ERROR" message="The same good can't be listed twice in the same shop" targetClass="MallDsm::ListedGood">
+          <audits auditExpression="aql:let listings=self.eContainer().soldGoods in listings->forAll(l1|l1&lt;>self implies l1.good&lt;>self.good)"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="PosPriceRule" level="ERROR" message="Price must be positive" targetClass="MallDsm::ListedGood">
+          <audits auditExpression="[self.defaultPrice>0/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ValidPercentageDiscountRule" level="ERROR" message="Sale Percentage must be between 0 and 100" targetClass="MallDsm::Discount">
+          <audits auditExpression="[self.percentage&lt;=100 and self.percentage>=0/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ShelfLayersRule" level="ERROR" message="A shelf must have at least a layer" targetClass="MallDsm::Shelf">
+          <audits auditExpression="[self.layers>0/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ValidInterval" level="ERROR" message="Shift can't start after ending" targetClass="MallDsm::TimeSpan">
+          <audits auditExpression="aql:if(self.endDay=self.startDay) self.endHour>=self.startHour else true endif"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ValidTimeSpan" level="ERROR" message="Days must be 0-6 and hours 0-23" targetClass="MallDsm::TimeSpan">
+          <audits auditExpression="[self.startHour>=0 and self.startHour&lt;=23 and self.startDay>=0 and self.startDay&lt;=6 and self.endHour>=0 and self.endHour&lt;=23 and self.endDay>=0 and self.endDay&lt;=6/]"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="NoOverlappingShiftsRule" level="ERROR" message="Shifts in the same schedule can't overlap" targetClass="MallDsm::TimeSpan">
+          <audits auditExpression="aql:let shifts=self.eContainer().shifts in shifts->forAll(s1|s1&lt;>self implies let startAbs1: Integer =(s1.startDay*24+s1.startHour) in let endAbs1: Integer =(s1.endDay*24+s1.endHour) in let startAbs2: Integer =(self.startDay*24+self.startHour) in let endAbs2: Integer =(self.endDay*24+self.endHour) in if(startAbs1>startAbs2) startAbs1>endAbs2 and (endAbs1&lt;startAbs1 implies endAbs1&lt;startAbs2) else startAbs1&lt;>startAbs2 endif)"/>
+        </ownedRules>
+      </validationSet>
       <defaultLayer name="Default">
         <nodeMappings name="Brand Node" domainClass="MallDsm::Brand">
           <style xsi:type="style:SquareDescription" borderSizeComputationExpression="1" labelPosition="node" resizeKind="NSEW">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='yellow']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="Category Node" domainClass="MallDsm::Category">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_gray']"/>
-          </style>
-        </nodeMappings>
-        <nodeMappings name="SubCategory Node" domainClass="MallDsm::SubCategory">
-          <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
-            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="Employee Node" domainClass="MallDsm::Employee">
@@ -40,16 +64,8 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="SpecialisticCategoryEdge" sourceMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']" targetMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Category%20Node']" targetFinderExpression="aql:self.oclAsType(MallDsm::SpecialisticShop).speciality">
+        <edgeMappings name="SpecialisticCategoryEdge" sourceMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']" targetMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']" targetFinderExpression="aql:self.oclAsType(MallDsm::SpecialisticShop).speciality">
           <style sizeComputationExpression="2">
-            <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
-            <centerLabelStyleDescription>
-              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            </centerLabelStyleDescription>
-          </style>
-        </edgeMappings>
-        <edgeMappings name="SubCategoryOwnershipEdge" sourceMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Category%20Node']" targetMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='SubCategory%20Node']" targetFinderExpression="feature:contains">
-          <style sourceArrow="InputArrow" targetArrow="NoDecoration" sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -96,7 +112,7 @@
             </centerLabelStyleDescription>
           </style>
         </edgeMappings>
-        <edgeMappings name="GoodSubCategory Edge" sourceMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Good%20Node']" targetMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='SubCategory%20Node']" targetFinderExpression="feature:hasSubCategory">
+        <edgeMappings name="GoodSubCategory Edge" sourceMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Good%20Node']" targetMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']" targetFinderExpression="feature:hasSubCategory">
           <style sizeComputationExpression="2">
             <strokeColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
             <centerLabelStyleDescription>
@@ -172,6 +188,47 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='dark_chocolate']"/>
           </style>
         </containerMappings>
+        <containerMappings name="Category Node" domainClass="MallDsm::Category">
+          <subNodeMappings name="SubCategory Node" semanticCandidatesExpression="feature:contains" domainClass="MallDsm::SubCategory">
+            <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
+              <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+              <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+            </style>
+          </subNodeMappings>
+          <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+            <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
+            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
+            <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
+          </style>
+        </containerMappings>
+        <toolSections name="New">
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Brand" nodeMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@nodeMappings[name='Brand%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Brand" referenceName="availableBrands">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="new Brand"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Category">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+        </toolSections>
+        <toolSections name="Edit">
+          <ownedTools xsi:type="tool:DirectEditLabel" name="Category Name Edit" forceRefresh="true">
+            <mask mask="{0}"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="a"/>
+            </initialOperation>
+          </ownedTools>
+        </toolSections>
       </defaultLayer>
     </ownedRepresentations>
   </ownedViewpoints>

@@ -27,7 +27,7 @@
       </shiftSchedule>
     </manager>
     <openSchedule>
-      <shifts startHour="3" startDay="1" endDay="1" endHour="23"/>
+      <shifts startHour="3" startDay="1" endDay="1" endHour="12"/>
       <shifts startHour="4" startDay="3" endDay="1" endHour="2"/>
     </openSchedule>
   </shops>
@@ -43,6 +43,7 @@
     <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Good1">
       <features name="Size" value="100*100"/>
     </producedGoods>
+    <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Good3"/>
   </availableBrands>
   <availableBrands name="Brand2">
     <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Good2">
