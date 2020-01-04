@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="Mall" version="12.0.0.2017041100">
+<description:Group xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:properties="http://www.eclipse.org/sirius/properties/1.0.0" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:tool="http://www.eclipse.org/sirius/diagram/description/tool/1.1.0" xmlns:tool_1="http://www.eclipse.org/sirius/description/tool/1.1.0" xmlns:validation="http://www.eclipse.org/sirius/description/validation/1.1.0" name="Mall" version="12.0.0.2017041100">
   <ownedViewpoints name="Mall Viewpoint">
     <ownedRepresentations xsi:type="description_1:DiagramDescription" name="Mall Diagram" domainClass="MallDsm::Mall" enablePopupBars="true">
       <metamodel href="http://mall.com#/"/>
@@ -46,7 +46,7 @@
         <ownedRules xsi:type="validation:SemanticValidationRule" name="BrandShopConstraintRule" level="ERROR" message="['All goods from '+self.name+' must be from brand '+self.brand.name/]" targetClass="MallDsm::BrandShop">
           <audits auditExpression="aql:self.soldGoods->forAll(l1|self.brand.producedGoods->includes(l1.good) )"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" name="ItemInStockMustBeSoldRule" level="ERROR" message="['Good '+self.contains.modelNumber+' is is stock but is not listed'/]" targetClass="MallDsm::ItemInStock">
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ItemInStockMustBeSoldRule" level="ERROR" message="['Good '+self.contains.modelNumber+' is in stock but is not listed'/]" targetClass="MallDsm::ItemInStock">
           <audits auditExpression="aql:self.eContainer().eContainer().soldGoods.good->includes(self.contains)"/>
         </ownedRules>
       </validationSet>
@@ -217,24 +217,83 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container.">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Brand" referenceName="availableBrands">
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="new Brand"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'new Brand'+container.availableBrands->size()"/>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Category">
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Category" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
-            <initialOperation/>
-          </ownedTools>
-        </toolSections>
-        <toolSections name="Edit">
-          <ownedTools xsi:type="tool:DirectEditLabel" name="Category Name Edit" forceRefresh="true">
-            <mask mask="{0}"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="a"/>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Category" referenceName="categories">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'new Category'+container.categories->size()"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New SubCategory" nodeMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::SubCategory" referenceName="contains">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'new SubCategory'"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Specialistic Shop" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::SpecialisticShop" referenceName="shops">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'new Shop'+container.shops->size()"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="address" valueExpression="No Address Present"/>
+                  <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::WeeklySchedule" referenceName="openSchedule" variableName="schedInstance"/>
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="openSchedule" valueExpression="var:schedInstance"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:EdgeCreationDescription" name="Set Category" edgeMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SpecialisticCategoryEdge']" connectionStartPrecondition="aql:preSource.oclAsType(MallDsm::SpecialisticShop)">
+            <sourceVariable name="source"/>
+            <targetVariable name="target"/>
+            <sourceViewVariable name="sourceView"/>
+            <targetViewVariable name="targetView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:source">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="New Dialog">
+                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                    <initialOperation/>
+                  </buttons>
+                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                    <initialOperation>
+                      <firstModelOperations xsi:type="tool_1:SetValue" featureName="speciality" valueExpression="var:target">
+                        <subModelOperations xsi:type="tool_1:For" expression="aql:source.soldGoods">
+                          <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:not source.speciality.contains->includes(i.good.hasSubCategory)">
+                            <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="i">
+                              <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                            </subModelOperations>
+                          </subModelOperations>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool_1:For" expression="aql:source.has.containedGood">
+                          <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:not source.speciality.contains->includes(i.contains.hasSubCategory)">
+                            <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="i">
+                              <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                            </subModelOperations>
+                          </subModelOperations>
+                        </subModelOperations>
+                      </firstModelOperations>
+                    </initialOperation>
+                  </buttons>
+                  <page name="Default Page" labelExpression="Warning, changing Speciality will remove from stock all invalid Goods, are you sure?" semanticCandidateExpression="var:self" indented="true"/>
+                </subModelOperations>
+              </firstModelOperations>
             </initialOperation>
           </ownedTools>
         </toolSections>

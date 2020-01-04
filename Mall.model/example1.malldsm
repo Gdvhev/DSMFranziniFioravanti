@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
+<Mall:aa xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
   <shops xsi:type="Mall:BrandShop" name="aa" address="xx blv" brand="//@availableBrands.0">
     <has xsi:type="Mall:Shelf" layers="2">
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="5"/>
@@ -32,7 +32,9 @@
     </openSchedule>
   </shops>
   <shops xsi:type="Mall:SpecialisticShop" name="Shop2" address="yy blv" speciality="//@categories.1">
-    <has xsi:type="Mall:Shelf" layers="3"/>
+    <has xsi:type="Mall:Shelf" layers="3">
+      <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="5"/>
+    </has>
     <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="2"/>
     <manager name="Emp3">
       <shiftSchedule/>
@@ -57,4 +59,4 @@
   <categories name="Category2">
     <contains name="SubCategory3"/>
   </categories>
-</Mall:Mall>
+</Mall:aa>
