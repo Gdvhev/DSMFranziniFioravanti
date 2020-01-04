@@ -40,6 +40,15 @@
         <ownedRules xsi:type="validation:SemanticValidationRule" name="NoOverlappingShiftsRule" level="ERROR" message="Shifts in the same schedule can't overlap" targetClass="MallDsm::TimeSpan">
           <audits auditExpression="aql:let shifts=self.eContainer().shifts in shifts->forAll(s1|s1&lt;>self implies let startAbs1: Integer =(s1.startDay*24+s1.startHour) in let endAbs1: Integer =(s1.endDay*24+s1.endHour) in let startAbs2: Integer =(self.startDay*24+self.startHour) in let endAbs2: Integer =(self.endDay*24+self.endHour) in if(startAbs1>startAbs2) startAbs1>endAbs2 and (endAbs1&lt;startAbs1 implies endAbs1&lt;startAbs2) else startAbs1&lt;>startAbs2 endif)"/>
         </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="SpecialisticShopConstraintRule" level="ERROR" message="['All goods from '+self.name+' must be from category '+self.speciality.name/]" targetClass="MallDsm::SpecialisticShop">
+          <audits auditExpression="aql:self.soldGoods->forAll(l1| self.speciality.contains->includes(l1.good.hasSubCategory))"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="BrandShopConstraintRule" level="ERROR" message="['All goods from '+self.name+' must be from brand '+self.brand.name/]" targetClass="MallDsm::BrandShop">
+          <audits auditExpression="aql:self.soldGoods->forAll(l1|self.brand.producedGoods->includes(l1.good) )"/>
+        </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ItemInStockMustBeSoldRule" level="ERROR" message="['Good '+self.contains.modelNumber+' is is stock but is not listed'/]" targetClass="MallDsm::ItemInStock">
+          <audits auditExpression="aql:self.eContainer().eContainer().soldGoods.good->includes(self.contains)"/>
+        </ownedRules>
       </validationSet>
       <defaultLayer name="Default">
         <nodeMappings name="Brand Node" domainClass="MallDsm::Brand">
