@@ -588,6 +588,42 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Sale" nodeMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@subNodeMappings[name='DiscountNode']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Discount" referenceName="sales">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="timeStart" valueExpression="1900-01-01">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="timeEnd" valueExpression="2100-01-01">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="percentage" valueExpression="0"/>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="Add Shift" nodeMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node'] //@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::TimeSpan" referenceName="shifts">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="startHour" valueExpression="0">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="endHour" valueExpression="1">
+                        <subModelOperations xsi:type="tool_1:SetValue" featureName="startDay" valueExpression="0">
+                          <subModelOperations xsi:type="tool_1:SetValue" featureName="endDay" valueExpression="1"/>
+                        </subModelOperations>
+                      </subModelOperations>
+                    </subModelOperations>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <toolSections name="Good">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Good" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']">
