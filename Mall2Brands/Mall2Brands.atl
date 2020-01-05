@@ -58,7 +58,7 @@ lazy rule WeeklySchedule2WeeklySchedyle
 		
 	to
 		t: Brands!WeeklySchedule(
-			Shift <- s.Shift->collect(e | thisModule.TimeSpan2TimeSpan(e))	
+			Shift <- s.shifts->collect(e | thisModule.TimeSpan2TimeSpan(e))	
 		)
 }
 

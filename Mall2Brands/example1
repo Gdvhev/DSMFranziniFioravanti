@@ -17,4 +17,5 @@
       </shiftSchedule>
     </workers>
   </brands>
+  <brands name="Brand2"/>
 </BrandsList>

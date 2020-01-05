@@ -45,11 +45,11 @@
 					</li>
 					<li>
 					Opening Times:
-						[if (shop.openSchedule = null or shop.openSchedule.Shift = null)]
+						[if (shop.openSchedule = null or shop.openSchedule.shifts = null)]
 							<b>WE ARE OUT OF TIME</b>
 						[/if]
-						[if (not (shop.openSchedule = null or shop.openSchedule.Shift = null))]
-						[for (time : TimeSpan | shop.openSchedule.Shift->sortedBy(t : TimeSpan | t.startDay * 1000 + t.startHour))]
+						[if (not (shop.openSchedule = null or shop.openSchedule.shifts = null))]
+						[for (time : TimeSpan | shop.openSchedule.shifts->sortedBy(t : TimeSpan | t.startDay * 1000 + t.startHour))]
 							<p>from [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.startDay)/] [time.startHour/] 
 								to [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.endDay)/] [time.endHour/]<p>							
 						[/for]
