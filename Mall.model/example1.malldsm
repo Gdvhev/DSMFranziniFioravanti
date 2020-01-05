@@ -36,7 +36,10 @@
       <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="5"/>
     </has>
     <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="2"/>
-    <manager name="Emp3">
+    <employees name="Emp3">
+      <shiftSchedule/>
+    </employees>
+    <manager name="Shop2 Manager">
       <shiftSchedule/>
     </manager>
     <openSchedule/>

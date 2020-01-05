@@ -1028,7 +1028,7 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 		  (this,
 		   source,
 		   new String[] {
-			   "ecore", "http://www.eclipse.org/emf/2002/Ecore#/"
+			   "ecore", "http://www.eclipse.org/emf/2002/Ecore"
 		   });
 	}
 
@@ -1065,6 +1065,12 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 		   source,
 		   new String[] {
 			   "constraints", "categoryConstraint"
+		   });
+		addAnnotation
+		  (goodEClass,
+		   source,
+		   new String[] {
+			   "constraints", "uniqueFeatures"
 		   });
 		addAnnotation
 		  (listedGoodEClass,
@@ -1130,6 +1136,12 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 		   source,
 		   new String[] {
 			   "categoryConstraint", "self.soldGoods.good->forAll(g|self.speciality.contains->includes(g.hasSubCategory))"
+		   });
+		addAnnotation
+		  (goodEClass,
+		   source,
+		   new String[] {
+			   "uniqueFeatures", "self.features->forAll(f1,f2|f1<>f2 implies f1.name<>f2.name)"
 		   });
 		addAnnotation
 		  (listedGoodEClass,

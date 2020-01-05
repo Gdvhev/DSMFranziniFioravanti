@@ -307,6 +307,24 @@
               <styles xmi:type="notation:ShapeStyle" xmi:id="_WGdVgS-zEeqbGJGcXnznlQ" fontName="Ubuntu" fontHeight="8"/>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WGdVgi-zEeqbGJGcXnznlQ" x="631" y="29"/>
             </children>
+            <children xmi:type="notation:Node" xmi:id="_TYesgC_YEeqkgOPUybRMTA" type="3008" element="_TXrbQC_YEeqkgOPUybRMTA">
+              <children xmi:type="notation:Node" xmi:id="_TYfTkC_YEeqkgOPUybRMTA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_TYfTkS_YEeqkgOPUybRMTA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_TYfTlC_YEeqkgOPUybRMTA" type="3008" element="_TYQqEC_YEeqkgOPUybRMTA">
+                  <children xmi:type="notation:Node" xmi:id="_TYf6oC_YEeqkgOPUybRMTA" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_TYf6oS_YEeqkgOPUybRMTA" type="7002">
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_TYf6oi_YEeqkgOPUybRMTA"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_TYf6oy_YEeqkgOPUybRMTA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_TYfTlS_YEeqkgOPUybRMTA" fontName="Ubuntu" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TYfTli_YEeqkgOPUybRMTA" x="180" y="36"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_TYfTki_YEeqkgOPUybRMTA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_TYfTky_YEeqkgOPUybRMTA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_TYesgS_YEeqkgOPUybRMTA" fontName="Ubuntu" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_TYesgi_YEeqkgOPUybRMTA" x="271" y="113"/>
+            </children>
             <styles xmi:type="notation:SortingStyle" xmi:id="_WGNd4S-zEeqbGJGcXnznlQ"/>
             <styles xmi:type="notation:FilteringStyle" xmi:id="_WGNd4i-zEeqbGJGcXnznlQ"/>
           </children>
@@ -685,7 +703,7 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WGJzpi-zEeqbGJGcXnznlQ" name="Manager1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WGJzpi-zEeqbGJGcXnznlQ" name="Manager Manager1">
         <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@manager"/>
         <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.0/@manager"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WGJzpy-zEeqbGJGcXnznlQ" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
@@ -750,16 +768,35 @@
         <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']"/>
       </ownedDiagramElements>
       <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WGJzti-zEeqbGJGcXnznlQ" name="Emp3">
-        <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.1/@manager"/>
-        <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.1/@manager"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WGJzty-zEeqbGJGcXnznlQ" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
-          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@conditionnalStyles.1/@style"/>
+        <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.1/@employees.0"/>
+        <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.1/@employees.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WKqgQC_YEeqkgOPUybRMTA" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@conditionnalStyles.0/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']"/>
         <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WGJzuC-zEeqbGJGcXnznlQ" name="Employee Schedule">
+          <target xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.1/@employees.0/@shiftSchedule"/>
+          <semanticElements xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.1/@employees.0/@shiftSchedule"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WGJzuS-zEeqbGJGcXnznlQ" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_TXrbQC_YEeqkgOPUybRMTA" name="Manager Shop2 Manager">
+        <target xmi:type="Mall:Employee" href="example1.malldsm#//@shops.1/@manager"/>
+        <semanticElements xmi:type="Mall:Employee" href="example1.malldsm#//@shops.1/@manager"/>
+        <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+        <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+        <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WKqgQS_YEeqkgOPUybRMTA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_TYQqEC_YEeqkgOPUybRMTA" name="Employee Schedule">
           <target xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.1/@manager/@shiftSchedule"/>
           <semanticElements xmi:type="Mall:WeeklySchedule" href="example1.malldsm#//@shops.1/@manager/@shiftSchedule"/>
-          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WGJzuS-zEeqbGJGcXnznlQ" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_TYQqES_YEeqkgOPUybRMTA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
             <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@style"/>
           </ownedStyle>
           <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']"/>

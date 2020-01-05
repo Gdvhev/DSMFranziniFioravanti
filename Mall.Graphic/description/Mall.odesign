@@ -49,6 +49,9 @@
         <ownedRules xsi:type="validation:SemanticValidationRule" name="ItemInStockMustBeSoldRule" level="ERROR" message="['Good '+self.contains.modelNumber+' is in stock but is not listed'/]" targetClass="MallDsm::ItemInStock">
           <audits auditExpression="aql:self.eContainer().eContainer().soldGoods.good->includes(self.contains)"/>
         </ownedRules>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="UniqueFeaturePerGoodRule" level="ERROR" message="The same feature is defined twice for this good" targetClass="MallDsm::Feature">
+          <audits auditExpression="aql:let features=self.eContainer().features in features->forAll(f1|f1&lt;>self implies f1.name&lt;>self.name)"/>
+        </ownedRules>
       </validationSet>
       <defaultLayer name="Default">
         <edgeMappings name="ShopBrandEdge" sourceMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']" targetMapping="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']" targetFinderExpression="aql:self.oclAsType(MallDsm::BrandShop).brand">
@@ -84,7 +87,7 @@
                 <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
               </style>
             </subNodeMappings>
-            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="aql:if (self.eClass().name='Shelf')'Shelf '.concat(self.oclAsType(MallDsm::Shelf).layers.toString())if(self.eClass().name='Table')'Table 'else'Refrigerator 'endif endif">
+            <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="aql:if (self.eClass().name='Shelf')'Shelf '.concat(self.layers.toString())if(self.eClass().name='Table')'Table 'else'Refrigerator 'endif endif">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='white']"/>
@@ -146,7 +149,7 @@
               </style>
             </conditionnalStyles>
             <conditionnalStyles predicateExpression="aql:self.eContainer().manager=self">
-              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1">
+              <style xsi:type="style:FlatContainerStyleDescription" borderSizeComputationExpression="1" labelExpression="aql:'Manager '+self.name">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
                 <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_orange']"/>
@@ -246,7 +249,7 @@
             <variable name="container"/>
             <viewVariable name="containerView"/>
             <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container.">
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Brand" referenceName="availableBrands">
                   <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'new Brand'+container.availableBrands->size()"/>
                 </subModelOperations>
@@ -356,6 +359,20 @@
                       </actions>
                     </controls>
                   </groups>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Employee" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Employee" referenceName="employees">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'New Employee '+(container.eContainer().shops.employees->size()+container.eContainer().shops.manager->size())"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::WeeklySchedule" referenceName="shiftSchedule" variableName="schedule"/>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
@@ -558,6 +575,19 @@
             <containerView name="containerView"/>
             <initialOperation/>
           </ownedTools>
+          <ownedTools xsi:type="tool_1:ToolDescription" name="Select Manager" precondition="aql:element.oclIsKindOf(MallDsm::Employee)">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:element.eContainer()">
+                <subModelOperations xsi:type="tool_1:If" conditionExpression="aql:element.eContainer().manager&lt;>element">
+                  <subModelOperations xsi:type="tool_1:SetValue" featureName="employees" valueExpression="aql:element.eContainer().manager">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="manager" valueExpression="var:element"/>
+                  </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
         </toolSections>
         <toolSections name="Good">
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Good" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']">
@@ -676,6 +706,21 @@
                   </buttons>
                   <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Set%20Good%20SubCategory']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0" indented="true"/>
                   <groups name="Group" labelExpression="Warning, changing SubCategory will remove from Specialistic Shops all invalid Goods, are you sure?"/>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:NodeCreationDescription" name="New Feature" nodeMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@subNodeMappings[name='Feature%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Feature" referenceName="features">
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="aql:'new Feature '+container.features->size()">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="NaN"/>
+                    </subModelOperations>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>

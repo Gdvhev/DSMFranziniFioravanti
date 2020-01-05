@@ -21,7 +21,8 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see MallDsm.MallDsmPackage#getGood()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='uniqueFeatures'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot uniqueFeatures='self.features-&gt;forAll(f1,f2|f1&lt;&gt;f2 implies f1.name&lt;&gt;f2.name)'"
  * @generated
  */
 public interface Good extends EObject {

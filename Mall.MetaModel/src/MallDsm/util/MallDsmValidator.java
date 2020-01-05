@@ -331,7 +331,46 @@ public class MallDsmValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGood(Good good, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return validate_EveryDefaultConstraint(good, diagnostics, context);
+		if (!validate_NoCircularContainment(good, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(good, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGood_uniqueFeatures(good, diagnostics, context);
+		return result;
+	}
+
+	/**
+	 * The cached validation expression for the uniqueFeatures constraint of '<em>Good</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected static final String GOOD__UNIQUE_FEATURES__EEXPRESSION = "self.features->forAll(f1,f2|f1<>f2 implies f1.name<>f2.name)";
+
+	/**
+	 * Validates the uniqueFeatures constraint of '<em>Good</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateGood_uniqueFeatures(Good good, DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return
+			validate
+				(MallDsmPackage.Literals.GOOD,
+				 good,
+				 diagnostics,
+				 context,
+				 "http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot",
+				 "uniqueFeatures",
+				 GOOD__UNIQUE_FEATURES__EEXPRESSION,
+				 Diagnostic.ERROR,
+				 DIAGNOSTIC_SOURCE,
+				 0);
 	}
 
 	/**
