@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Mall:aa xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
+<Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
   <shops xsi:type="Mall:BrandShop" name="aa" address="xx blv" brand="//@availableBrands.0">
     <has xsi:type="Mall:Shelf" layers="2">
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="5"/>
@@ -51,6 +51,7 @@
     <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Good2">
       <features name="Size" value="100*100"/>
     </producedGoods>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="New Good"/>
   </availableBrands>
   <categories name="Category1">
     <contains name="SubCategory1"/>
@@ -58,5 +59,6 @@
   </categories>
   <categories name="Category2">
     <contains name="SubCategory3"/>
+    <contains name="new SubCategory4"/>
   </categories>
-</Mall:aa>
+</Mall:Mall>
