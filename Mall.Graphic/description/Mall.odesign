@@ -109,7 +109,7 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="Shop Schedule Node" semanticCandidatesExpression="feature:openSchedule" domainClass="MallDsm::WeeklySchedule">
+          <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="Shop Schedule Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='NoScheduleDelete']" semanticCandidatesExpression="feature:openSchedule" domainClass="MallDsm::WeeklySchedule">
             <subNodeMappings name="TimeSpan Node" semanticCandidatesExpression="feature:shifts" domainClass="MallDsm::TimeSpan">
               <style xsi:type="style:SquareDescription" labelExpression="['From '+startDay+'d -  '+startHour+ 'h to '+endDay+ 'd - '+endHour+'h'/]" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -124,8 +124,8 @@
               <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
             </style>
           </subContainerMappings>
-          <subContainerMappings name="Employee Node" semanticCandidatesExpression="feature:eAllContents" domainClass="MallDsm::Employee">
-            <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="Employee Schedule Node" semanticCandidatesExpression="feature:shiftSchedule" domainClass="MallDsm::WeeklySchedule">
+          <subContainerMappings name="Employee Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Employee%20deletion']" semanticCandidatesExpression="feature:eAllContents" domainClass="MallDsm::Employee">
+            <subContainerMappings xsi:type="description_1:ContainerMappingImport" name="Employee Schedule Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='NoScheduleDelete']" semanticCandidatesExpression="feature:shiftSchedule" domainClass="MallDsm::WeeklySchedule">
               <subNodeMappings name="TimeSpan Node" semanticCandidatesExpression="feature:shifts" domainClass="MallDsm::TimeSpan">
                 <style xsi:type="style:SquareDescription" labelExpression="['From '+startDay+'d -  '+startHour+ 'h to '+endDay+ 'd - '+endHour+'h'/]" labelPosition="node" resizeKind="NSEW">
                   <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -164,8 +164,8 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
-        <containerMappings name="Category Node" domainClass="MallDsm::Category">
-          <subNodeMappings name="SubCategory Node" semanticCandidatesExpression="feature:contains" domainClass="MallDsm::SubCategory">
+        <containerMappings name="Category Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20Sub%20and%20Category']" domainClass="MallDsm::Category">
+          <subNodeMappings name="SubCategory Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20Sub%20and%20Category']" semanticCandidatesExpression="feature:contains" domainClass="MallDsm::SubCategory">
             <style xsi:type="style:SquareDescription" labelPosition="node" resizeKind="NSEW">
               <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
               <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -179,8 +179,8 @@
             <foregroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_gray']"/>
           </style>
         </containerMappings>
-        <containerMappings name="Brand Node" domainClass="MallDsm::Brand">
-          <subContainerMappings name="Good Node" semanticCandidatesExpression="feature:producedGoods" domainClass="MallDsm::Good">
+        <containerMappings name="Brand Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20GoodorBrand']" domainClass="MallDsm::Brand">
+          <subContainerMappings name="Good Node" deletionDescription="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20GoodorBrand']" semanticCandidatesExpression="feature:producedGoods" domainClass="MallDsm::Good">
             <subNodeMappings name="Feature Node" semanticCandidatesExpression="feature:eAllContents" domainClass="MallDsm::Feature">
               <style xsi:type="style:DotDescription" labelExpression="[self.name+' '+self.value/]" labelPosition="node" resizeKind="NSEW">
                 <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
@@ -569,12 +569,6 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:DeleteElementDescription" name="Delete Schedule">
-            <element name="element"/>
-            <elementView name="elementView"/>
-            <containerView name="containerView"/>
-            <initialOperation/>
-          </ownedTools>
           <ownedTools xsi:type="tool_1:ToolDescription" name="Select Manager" precondition="aql:element.oclIsKindOf(MallDsm::Employee)">
             <element name="element"/>
             <elementView name="elementView"/>
@@ -621,6 +615,29 @@
                     </subModelOperations>
                   </subModelOperations>
                 </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="Employee deletion">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:Switch">
+                <cases conditionExpression="aql:element.eContainer().manager=element">
+                  <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Error">
+                    <buttons labelExpression="Accept" default="true" closeDialogOnClick="true">
+                      <initialOperation/>
+                    </buttons>
+                    <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='Employee%20deletion']/@initialOperation/@firstModelOperations/@cases.0/@subModelOperations.0/@groups.0"/>
+                    <groups name="Default Group" labelExpression="Please change the manager of the shop before firing him." semanticCandidateExpression="var:self"/>
+                  </subModelOperations>
+                </cases>
+                <default>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                    <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                  </subModelOperations>
+                </default>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
@@ -686,7 +703,7 @@
                       <initialOperation/>
                     </buttons>
                     <page name="Insert new Item" labelExpression="New Item" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='New%20ItemInStock']/@initialOperation/@firstModelOperations/@subModelOperations.0/@subModelOperations.1/@groups.0"/>
-                    <groups name="Default Group" labelExpression="Please select good type and number of items" semanticCandidateExpression="var:self">
+                    <groups name="Default Group" labelExpression="Please select good type" semanticCandidateExpression="var:self">
                       <controls xsi:type="properties:SelectDescription" name="Select Good" labelExpression="Select Good:" valueExpression="aql:instance.contains" candidatesExpression="aql:self.eContainer().soldGoods.good" candidateDisplayExpression="aql:candidate.modelNumber">
                         <initialOperation>
                           <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="aql:instance">
@@ -757,6 +774,142 @@
                       <subModelOperations xsi:type="tool_1:SetValue" featureName="value" valueExpression="NaN"/>
                     </subModelOperations>
                   </subModelOperations>
+                </subModelOperations>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="Delete GoodorBrand">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Confirmation">
+                <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                  <initialOperation/>
+                </buttons>
+                <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                  <initialOperation>
+                    <firstModelOperations xsi:type="tool_1:Switch">
+                      <cases conditionExpression="aql:element.oclIsKindOf(MallDsm::Brand)">
+                        <subModelOperations xsi:type="tool_1:For" expression="aql:element.producedGoods" iteratorName="iG">
+                          <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:iG">
+                            <subModelOperations xsi:type="tool_1:For" expression="aql:iG.eContainer().eContainer().shops.soldGoods->select(l | l.good=iG)">
+                              <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:i">
+                                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                              </subModelOperations>
+                            </subModelOperations>
+                            <subModelOperations xsi:type="tool_1:For" expression="aql:iG.eContainer().eContainer().shops.has.containedGood->select(is | is.contains=iG)">
+                              <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:i">
+                                <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                              </subModelOperations>
+                            </subModelOperations>
+                            <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                          </subModelOperations>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool_1:Switch">
+                          <cases conditionExpression="aql:element.eContainer().shops->select(s| s.oclIsKindOf(MallDsm::BrandShop) and s.brand=element)->size()>0">
+                            <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Notice">
+                              <buttons labelExpression="Accept" default="true" closeDialogOnClick="true">
+                                <initialOperation/>
+                              </buttons>
+                              <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20GoodorBrand']/@initialOperation/@firstModelOperations/@groups.2"/>
+                            </subModelOperations>
+                          </cases>
+                          <default>
+                            <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                              <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                            </subModelOperations>
+                          </default>
+                        </subModelOperations>
+                      </cases>
+                      <default>
+                        <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                          <subModelOperations xsi:type="tool_1:For" expression="aql:element.eContainer().eContainer().shops.soldGoods->select(l | l.good=element)">
+                            <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:i">
+                              <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                            </subModelOperations>
+                          </subModelOperations>
+                          <subModelOperations xsi:type="tool_1:For" expression="aql:element.eContainer().eContainer().shops.has.containedGood->select(is | is.contains=element)">
+                            <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:i">
+                              <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                            </subModelOperations>
+                          </subModelOperations>
+                          <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                        </subModelOperations>
+                      </default>
+                    </firstModelOperations>
+                  </initialOperation>
+                </buttons>
+                <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20GoodorBrand']/@initialOperation/@firstModelOperations/@groups.0 //@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20GoodorBrand']/@initialOperation/@firstModelOperations/@groups.1"/>
+                <groups name="Good Group" labelExpression="Warning: Removing a good will delete it from stock items and listings too, are you sure?" semanticCandidateExpression="var:self" preconditionExpression="aql:element.oclIsKindOf(MallDsm::Good)"/>
+                <groups name="Brand Group" labelExpression="Warning: Removing a brand will delete contained goods from stock items and listings too, are you sure?" semanticCandidateExpression="var:self" preconditionExpression="aql:element.oclIsKindOf(MallDsm::Brand)"/>
+                <groups name="NoDelete Brand" labelExpression="The Brand cannot be fully deleted while it is still referenced by some shops. Please change their brands first." semanticCandidateExpression="var:self"/>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="NoScheduleDelete">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation/>
+          </ownedTools>
+          <ownedTools xsi:type="tool:DeleteElementDescription" name="Delete Sub and Category">
+            <element name="element"/>
+            <elementView name="elementView"/>
+            <containerView name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext">
+                <subModelOperations xsi:type="tool_1:Switch">
+                  <cases conditionExpression="aql:element.oclIsTypeOf(MallDsm::Category)">
+                    <subModelOperations xsi:type="tool_1:Switch">
+                      <cases conditionExpression="aql:element.eContainer().shops->select(s|s.oclIsKindOf(MallDsm::SpecialisticShop) and s.speciality=element)->size()>0">
+                        <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Error">
+                          <buttons labelExpression="Accept" default="true" closeDialogOnClick="true">
+                            <initialOperation/>
+                          </buttons>
+                          <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20Sub%20and%20Category']/@initialOperation/@firstModelOperations/@subModelOperations.0/@cases.0/@subModelOperations.0/@cases.0/@subModelOperations.0/@groups.0"/>
+                          <groups name="Default Group" labelExpression="There are still specialistic shops referencing this category, please change their speciality before removing." semanticCandidateExpression="var:self"/>
+                        </subModelOperations>
+                      </cases>
+                      <cases conditionExpression="aql:element.eContainer().availableBrands.producedGoods->select(g| element.contains->includes(g.hasSubCategory))->size()>0">
+                        <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Error">
+                          <buttons labelExpression="Accept" default="true" closeDialogOnClick="true">
+                            <initialOperation/>
+                          </buttons>
+                          <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20Sub%20and%20Category']/@initialOperation/@firstModelOperations/@subModelOperations.0/@cases.0/@subModelOperations.0/@cases.1/@subModelOperations.0/@groups.0"/>
+                          <groups name="Default Group" labelExpression="Some subcategories are still being referenced from goods. Please change those references before deleting this category and subcategories." semanticCandidateExpression="var:self"/>
+                        </subModelOperations>
+                      </cases>
+                      <default>
+                        <subModelOperations xsi:type="tool_1:For" expression="var:element.contains">
+                          <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:i">
+                            <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                          </subModelOperations>
+                        </subModelOperations>
+                        <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                          <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                        </subModelOperations>
+                      </default>
+                    </subModelOperations>
+                  </cases>
+                  <default>
+                    <subModelOperations xsi:type="tool_1:Switch">
+                      <cases conditionExpression="aql:element.eContainer().eContainer().availableBrands.producedGoods->exists(g|g.hasSubCategory=element)">
+                        <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Error">
+                          <buttons labelExpression="Accept" default="true" closeDialogOnClick="true">
+                            <initialOperation/>
+                          </buttons>
+                          <page name="Default Page" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.2/@ownedTools[name='Delete%20Sub%20and%20Category']/@initialOperation/@firstModelOperations/@subModelOperations.0/@default/@subModelOperations.0/@cases.0/@subModelOperations.0/@groups.0"/>
+                          <groups name="Default Group" labelExpression="Can't remove a subcategory while there are still goods referencing it, please change the subcategory of those goods first." semanticCandidateExpression="var:self"/>
+                        </subModelOperations>
+                      </cases>
+                      <default>
+                        <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:element">
+                          <subModelOperations xsi:type="tool_1:RemoveElement"/>
+                        </subModelOperations>
+                      </default>
+                    </subModelOperations>
+                  </default>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
