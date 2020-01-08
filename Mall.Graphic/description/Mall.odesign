@@ -240,7 +240,12 @@
                     </groups>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::WeeklySchedule" referenceName="openSchedule" variableName="schedInstance"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="openSchedule" valueExpression="var:schedInstance"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Employee" referenceName="manager" variableName="man">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Default Manager"/>
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::WeeklySchedule" referenceName="shiftSchedule" variableName="aa"/>
+                    </subModelOperations>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
@@ -315,7 +320,12 @@
                     </groups>
                   </subModelOperations>
                   <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::WeeklySchedule" referenceName="openSchedule" variableName="schedInstance"/>
-                  <subModelOperations xsi:type="tool_1:SetValue" featureName="openSchedule" valueExpression="var:schedInstance"/>
+                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                    <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Employee" referenceName="manager" variableName="man">
+                      <subModelOperations xsi:type="tool_1:SetValue" featureName="name" valueExpression="Default Manager"/>
+                      <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::WeeklySchedule" referenceName="shiftSchedule" variableName="aa"/>
+                    </subModelOperations>
+                  </subModelOperations>
                 </subModelOperations>
               </firstModelOperations>
             </initialOperation>
