@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis xmi:id="_WyQ4cDMdEeqvu8ddLPu0Tg" selectedViews="_ktnZADMdEeqpHfa-wFJPiA" version="13.0.0.201804031646">
+    <semanticResources>platform:/resource/Mall.MetaModel/Mall.ecore</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <semanticResources>example2.malldsm</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" xmi:id="_ktnZADMdEeqpHfa-wFJPiA">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_lHR2MDMdEeqpHfa-wFJPiA" name="new Mall Diagram" repPath="#_lEirQDMdEeqpHfa-wFJPiA">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
+        <target xmi:type="Mall:Mall" href="example2.malldsm#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram xmi:id="_lHRPIDMdEeqpHfa-wFJPiA" name="new Mall Diagram" uid="_lEirQDMdEeqpHfa-wFJPiA">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_lHRPITMdEeqpHfa-wFJPiA" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_lHRPIjMdEeqpHfa-wFJPiA"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_lHSdQDMdEeqpHfa-wFJPiA" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_lHSdQTMdEeqpHfa-wFJPiA" type="Sirius" element="_lHRPIDMdEeqpHfa-wFJPiA" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_lHWHoDMdEeqpHfa-wFJPiA" type="2002" element="_lHRPJDMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lHWusDMdEeqpHfa-wFJPiA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_lHWusTMdEeqpHfa-wFJPiA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lHnNZDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPJjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lHnNZzMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lHnNaDMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lHw-YzMdEeqpHfa-wFJPiA" type="3007" element="_lHRPKDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lHxlcDMdEeqpHfa-wFJPiA" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_lHxlcTMdEeqpHfa-wFJPiA" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_lHxlcjMdEeqpHfa-wFJPiA" type="3016" element="_lHRPKTMdEeqpHfa-wFJPiA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_lHxlczMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHxldDMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lHw-ZDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHw-ZTMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lHnNaTMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lHnNajMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lHnNZTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHnNZjMdEeqpHfa-wFJPiA" x="31" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lHn0cDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPKjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lHn0czMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lHn0dDMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lHyMgDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPLDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lHyMgzMdEeqpHfa-wFJPiA" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_lHyMhDMdEeqpHfa-wFJPiA" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_lHyzkDMdEeqpHfa-wFJPiA" type="3016" element="_lHRPLTMdEeqpHfa-wFJPiA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_lHyzkTMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHyzkjMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lHyMgTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHyMgjMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lHn0dTMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lHn0djMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lHn0cTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHn0cjMdEeqpHfa-wFJPiA" x="211" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lHn0dzMdEeqpHfa-wFJPiA" type="3008" element="_lHRPLjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lHobgDMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lHobgTMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lHzaoDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPMDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lHzaozMdEeqpHfa-wFJPiA" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_lHzapDMdEeqpHfa-wFJPiA" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_lH0BsDMdEeqpHfa-wFJPiA" type="3003" element="_lHRPMTMdEeqpHfa-wFJPiA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_lH0BsTMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH0BsjMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lHzaoTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHzaojMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lHobgjMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lHobgzMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lHn0eDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHn0eTMdEeqpHfa-wFJPiA" x="475" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lHobhDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPMjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lHppoDMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lHppoTMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lH0BszMdEeqpHfa-wFJPiA" type="3008" element="_lHRPNDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lH0owDMdEeqpHfa-wFJPiA" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_lH0owTMdEeqpHfa-wFJPiA" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_lH0oxDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPNjMdEeqpHfa-wFJPiA">
+                      <children xmi:type="notation:Node" xmi:id="_lH1P0DMdEeqpHfa-wFJPiA" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_lH1P0TMdEeqpHfa-wFJPiA" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_lH124DMdEeqpHfa-wFJPiA" type="3003" element="_lHRPNzMdEeqpHfa-wFJPiA">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_lH124TMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH124jMdEeqpHfa-wFJPiA"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_lH0oxTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH0oxjMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                    </children>
+                    <children xmi:type="notation:Node" xmi:id="_lH1P0jMdEeqpHfa-wFJPiA" type="3007" element="_lHRPODMdEeqpHfa-wFJPiA">
+                      <children xmi:type="notation:Node" xmi:id="_lH1P1TMdEeqpHfa-wFJPiA" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_lH1P1jMdEeqpHfa-wFJPiA" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_lH124zMdEeqpHfa-wFJPiA" type="3003" element="_lHRPOTMdEeqpHfa-wFJPiA">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_lH125DMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH125TMdEeqpHfa-wFJPiA"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_lH1P0zMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH1P1DMdEeqpHfa-wFJPiA" x="91" y="30" width="30" height="30"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_lH0owjMdEeqpHfa-wFJPiA"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_lH0owzMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lH0BtDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH0BtTMdEeqpHfa-wFJPiA" x="31" y="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lHppojMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lHppozMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lHobhTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHobhjMdEeqpHfa-wFJPiA" x="679" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lHvwQDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPOjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lHwXUjMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lHw-YDMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lH2d8DMdEeqpHfa-wFJPiA" type="3008" element="_lHRPPDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lH2d8zMdEeqpHfa-wFJPiA" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_lH2d9DMdEeqpHfa-wFJPiA" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_lH2d9zMdEeqpHfa-wFJPiA" type="3007" element="_lHRPPjMdEeqpHfa-wFJPiA">
+                      <children xmi:type="notation:Node" xmi:id="_lH3FADMdEeqpHfa-wFJPiA" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_lH3FATMdEeqpHfa-wFJPiA" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_lH3FAjMdEeqpHfa-wFJPiA" type="3003" element="_lHRPPzMdEeqpHfa-wFJPiA">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_lH3FAzMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH3FBDMdEeqpHfa-wFJPiA"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_lH2d-DMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH2d-TMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_lH2d9TMdEeqpHfa-wFJPiA"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_lH2d9jMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lH2d8TMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH2d8jMdEeqpHfa-wFJPiA" x="31" y="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lHw-YTMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lHw-YjMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lHwXUDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHwXUTMdEeqpHfa-wFJPiA" x="943" y="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_lHWusjMdEeqpHfa-wFJPiA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_lHWuszMdEeqpHfa-wFJPiA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lHWHoTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHWHojMdEeqpHfa-wFJPiA" x="900" y="132"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lHZK8DMdEeqpHfa-wFJPiA" type="2002" element="_lHRPQDMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lHaZEDMdEeqpHfa-wFJPiA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_lHaZETMdEeqpHfa-wFJPiA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lH3sEDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPQjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH3sEzMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lH3sFDMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lH5hQDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPRDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lH5hQzMdEeqpHfa-wFJPiA" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_lH5hRDMdEeqpHfa-wFJPiA" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_lH5hRTMdEeqpHfa-wFJPiA" type="3016" element="_lHRPRTMdEeqpHfa-wFJPiA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_lH5hRjMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH5hRzMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lH5hQTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH5hQjMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lH3sFTMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lH3sFjMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH3sETMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH3sEjMdEeqpHfa-wFJPiA" x="31" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH3sFzMdEeqpHfa-wFJPiA" type="3008" element="_lHRPRjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH4TIDMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lH4TITMdEeqpHfa-wFJPiA" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lH4TIjMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lH4TIzMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH3sGDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH3sGTMdEeqpHfa-wFJPiA" x="211" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH4TJDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPSDMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH46MDMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lH46MTMdEeqpHfa-wFJPiA" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lH46MjMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lH46MzMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH4TJTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH4TJjMdEeqpHfa-wFJPiA" x="415" y="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH46NDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPSjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH46NzMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lH46ODMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lH6IUDMdEeqpHfa-wFJPiA" type="3008" element="_lHRPTDMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lH6IUzMdEeqpHfa-wFJPiA" type="5005"/>
+                  <children xmi:type="notation:Node" xmi:id="_lH6IVDMdEeqpHfa-wFJPiA" type="7002">
+                    <children xmi:type="notation:Node" xmi:id="_lH6vYDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPTjMdEeqpHfa-wFJPiA">
+                      <children xmi:type="notation:Node" xmi:id="_lH6vYzMdEeqpHfa-wFJPiA" type="5003">
+                        <layoutConstraint xmi:type="notation:Location" xmi:id="_lH6vZDMdEeqpHfa-wFJPiA" y="5"/>
+                      </children>
+                      <children xmi:type="notation:Node" xmi:id="_lH6vZTMdEeqpHfa-wFJPiA" type="3003" element="_lHRPTzMdEeqpHfa-wFJPiA">
+                        <styles xmi:type="notation:ShapeStyle" xmi:id="_lH6vZjMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH6vZzMdEeqpHfa-wFJPiA"/>
+                      </children>
+                      <styles xmi:type="notation:ShapeStyle" xmi:id="_lH6vYTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH6vYjMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+                    </children>
+                    <styles xmi:type="notation:SortingStyle" xmi:id="_lH6IVTMdEeqpHfa-wFJPiA"/>
+                    <styles xmi:type="notation:FilteringStyle" xmi:id="_lH6IVjMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lH6IUTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH6IUjMdEeqpHfa-wFJPiA" x="31" y="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lH46OTMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lH46OjMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH46NTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH46NjMdEeqpHfa-wFJPiA" x="631" y="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_lHaZEjMdEeqpHfa-wFJPiA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_lHaZEzMdEeqpHfa-wFJPiA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lHZK8TMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHZK8jMdEeqpHfa-wFJPiA" x="180" y="360"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lHaZFDMdEeqpHfa-wFJPiA" type="2002" element="_lHRPUDMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lHgfsDMdEeqpHfa-wFJPiA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_lHkxIDMdEeqpHfa-wFJPiA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lH7WcDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPUjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH7WczMdEeqpHfa-wFJPiA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_lH7WdDMdEeqpHfa-wFJPiA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lH79gjMdEeqpHfa-wFJPiA" type="3003" element="_lHRPUzMdEeqpHfa-wFJPiA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lH79gzMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH79hDMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH7WcTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH7WcjMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH7WdTMdEeqpHfa-wFJPiA" type="3007" element="_lHRPVDMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH79gDMdEeqpHfa-wFJPiA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_lH79gTMdEeqpHfa-wFJPiA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lH79hTMdEeqpHfa-wFJPiA" type="3003" element="_lHRPVTMdEeqpHfa-wFJPiA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lH79hjMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH79hzMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH7WdjMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH7WdzMdEeqpHfa-wFJPiA" x="91" y="30" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_lHkxITMdEeqpHfa-wFJPiA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_lHkxIjMdEeqpHfa-wFJPiA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lHaZFTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHaZFjMdEeqpHfa-wFJPiA" x="564"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lHlYMDMdEeqpHfa-wFJPiA" type="2002" element="_lHRPVjMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lHl_QDMdEeqpHfa-wFJPiA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_lHl_QTMdEeqpHfa-wFJPiA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lH8kkDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPWDMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH8kkzMdEeqpHfa-wFJPiA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_lH8klDMdEeqpHfa-wFJPiA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lH9LojMdEeqpHfa-wFJPiA" type="3003" element="_lHRPWTMdEeqpHfa-wFJPiA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lH9LozMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH9LpDMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH8kkTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH8kkjMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH8klTMdEeqpHfa-wFJPiA" type="3007" element="_lHRPWjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH9LoDMdEeqpHfa-wFJPiA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_lH9LoTMdEeqpHfa-wFJPiA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lH9ysDMdEeqpHfa-wFJPiA" type="3003" element="_lHRPWzMdEeqpHfa-wFJPiA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lH9ysTMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH9ysjMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH8kljMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH8klzMdEeqpHfa-wFJPiA" x="91" y="30" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_lHl_QjMdEeqpHfa-wFJPiA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_lHl_QzMdEeqpHfa-wFJPiA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lHlYMTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHlYMjMdEeqpHfa-wFJPiA"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lHl_RDMdEeqpHfa-wFJPiA" type="2002" element="_lHRPXDMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lHmmUDMdEeqpHfa-wFJPiA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_lHmmUTMdEeqpHfa-wFJPiA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lH9yszMdEeqpHfa-wFJPiA" type="3007" element="_lHRPXjMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH9ytjMdEeqpHfa-wFJPiA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_lH9ytzMdEeqpHfa-wFJPiA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lH_A0DMdEeqpHfa-wFJPiA" type="3003" element="_lHRPXzMdEeqpHfa-wFJPiA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lH_A0TMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH_A0jMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH9ytDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH9ytTMdEeqpHfa-wFJPiA" x="31" y="30" width="30" height="30"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH-ZwDMdEeqpHfa-wFJPiA" type="3007" element="_lHRPYDMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH-ZwzMdEeqpHfa-wFJPiA" type="5003">
+                <layoutConstraint xmi:type="notation:Location" xmi:id="_lH-ZxDMdEeqpHfa-wFJPiA" y="5"/>
+              </children>
+              <children xmi:type="notation:Node" xmi:id="_lH_A0zMdEeqpHfa-wFJPiA" type="3003" element="_lHRPYTMdEeqpHfa-wFJPiA">
+                <styles xmi:type="notation:ShapeStyle" xmi:id="_lH_A1DMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH_A1TMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH-ZwTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH-ZwjMdEeqpHfa-wFJPiA" x="91" y="30" width="30" height="30"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_lHmmUjMdEeqpHfa-wFJPiA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_lHmmUzMdEeqpHfa-wFJPiA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lHl_RTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHl_RjMdEeqpHfa-wFJPiA" x="768"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_lHmmVDMdEeqpHfa-wFJPiA" type="2002" element="_lHRPYjMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lHnNYDMdEeqpHfa-wFJPiA" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_lHnNYTMdEeqpHfa-wFJPiA" type="7001">
+            <children xmi:type="notation:Node" xmi:id="_lH_n4DMdEeqpHfa-wFJPiA" type="3008" element="_lHRPZDMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lH_n4zMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lH_n5DMdEeqpHfa-wFJPiA" type="7002">
+                <children xmi:type="notation:Node" xmi:id="_lIAO9DMdEeqpHfa-wFJPiA" type="3007" element="_lHRPZjMdEeqpHfa-wFJPiA">
+                  <children xmi:type="notation:Node" xmi:id="_lIA2ADMdEeqpHfa-wFJPiA" type="5003">
+                    <layoutConstraint xmi:type="notation:Location" xmi:id="_lIA2ATMdEeqpHfa-wFJPiA" y="5"/>
+                  </children>
+                  <children xmi:type="notation:Node" xmi:id="_lIA2AjMdEeqpHfa-wFJPiA" type="3002" element="_lHRPZzMdEeqpHfa-wFJPiA">
+                    <styles xmi:type="notation:ShapeStyle" xmi:id="_lIA2AzMdEeqpHfa-wFJPiA" fontName="Noto Sans"/>
+                    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIA2BDMdEeqpHfa-wFJPiA"/>
+                  </children>
+                  <styles xmi:type="notation:ShapeStyle" xmi:id="_lIAO9TMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+                  <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIAO9jMdEeqpHfa-wFJPiA" x="31" y="31" width="30" height="30"/>
+                </children>
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lH_n5TMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lH_n5jMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH_n4TMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH_n4jMdEeqpHfa-wFJPiA" x="29" y="29"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_lH_n5zMdEeqpHfa-wFJPiA" type="3008" element="_lHRPaDMdEeqpHfa-wFJPiA">
+              <children xmi:type="notation:Node" xmi:id="_lIAO8DMdEeqpHfa-wFJPiA" type="5005"/>
+              <children xmi:type="notation:Node" xmi:id="_lIAO8TMdEeqpHfa-wFJPiA" type="7002">
+                <styles xmi:type="notation:SortingStyle" xmi:id="_lIAO8jMdEeqpHfa-wFJPiA"/>
+                <styles xmi:type="notation:FilteringStyle" xmi:id="_lIAO8zMdEeqpHfa-wFJPiA"/>
+              </children>
+              <styles xmi:type="notation:ShapeStyle" xmi:id="_lH_n6DMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lH_n6TMdEeqpHfa-wFJPiA" x="221" y="31"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_lHnNYjMdEeqpHfa-wFJPiA"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_lHnNYzMdEeqpHfa-wFJPiA"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_lHmmVTMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lHmmVjMdEeqpHfa-wFJPiA" x="434" y="132"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_lHSdQjMdEeqpHfa-wFJPiA"/>
+        <edges xmi:type="notation:Edge" xmi:id="_lICEIDMdEeqpHfa-wFJPiA" type="4001" element="_lHRPajMdEeqpHfa-wFJPiA" source="_lHZK8DMdEeqpHfa-wFJPiA" target="_lHmmVDMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lICEJDMdEeqpHfa-wFJPiA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lICEJTMdEeqpHfa-wFJPiA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lICrMDMdEeqpHfa-wFJPiA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lICrMTMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lICrMjMdEeqpHfa-wFJPiA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lICrMzMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lICEITMdEeqpHfa-wFJPiA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lICEIjMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lICEIzMdEeqpHfa-wFJPiA" points="[-1, 0, -1, 60]$[-1, -60, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIDSQDMdEeqpHfa-wFJPiA" id="(0.5011961722488039,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIDSQTMdEeqpHfa-wFJPiA" id="(0.5026041666666666,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_lIDSQjMdEeqpHfa-wFJPiA" type="4001" element="_lHRPbTMdEeqpHfa-wFJPiA" source="_lHWHoDMdEeqpHfa-wFJPiA" target="_lHl_RDMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lID5UDMdEeqpHfa-wFJPiA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lID5UTMdEeqpHfa-wFJPiA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lID5UjMdEeqpHfa-wFJPiA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lID5UzMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lID5VDMdEeqpHfa-wFJPiA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lID5VTMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lIDSQzMdEeqpHfa-wFJPiA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lIDSRDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lIDSRTMdEeqpHfa-wFJPiA" points="[-1, 0, 629, 60]$[-631, -60, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIGVkDMdEeqpHfa-wFJPiA" id="(0.5008896797153025,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIG8oDMdEeqpHfa-wFJPiA" id="(0.5067567567567568,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_lIG8oTMdEeqpHfa-wFJPiA" type="4001" element="_lHRPcDMdEeqpHfa-wFJPiA" source="_lH_n4DMdEeqpHfa-wFJPiA" target="_lH9yszMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lIG8pTMdEeqpHfa-wFJPiA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIG8pjMdEeqpHfa-wFJPiA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lIG8pzMdEeqpHfa-wFJPiA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIG8qDMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lIHjsDMdEeqpHfa-wFJPiA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIHjsTMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lIG8ojMdEeqpHfa-wFJPiA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lIG8ozMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lIG8pDMdEeqpHfa-wFJPiA" points="[1, 1, -15, -15]$[1, 1, -15, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIIKwDMdEeqpHfa-wFJPiA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIIKwTMdEeqpHfa-wFJPiA" id="(0.5,0.5)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_lIIKwjMdEeqpHfa-wFJPiA" type="4001" element="_lHRPczMdEeqpHfa-wFJPiA" source="_lH_n5zMdEeqpHfa-wFJPiA" target="_lH7WdTMdEeqpHfa-wFJPiA">
+          <children xmi:type="notation:Node" xmi:id="_lIIKxjMdEeqpHfa-wFJPiA" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIIKxzMdEeqpHfa-wFJPiA" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lIIKyDMdEeqpHfa-wFJPiA" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIIKyTMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_lIIKyjMdEeqpHfa-wFJPiA" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_lIIx0DMdEeqpHfa-wFJPiA" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_lIIKwzMdEeqpHfa-wFJPiA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_lIIKxDMdEeqpHfa-wFJPiA" fontName="Noto Sans" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_lIIKxTMdEeqpHfa-wFJPiA" points="[1, 1, -15, -15]$[1, 1, -15, -15]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIIx0TMdEeqpHfa-wFJPiA" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_lIIx0jMdEeqpHfa-wFJPiA" id="(0.5,0.5)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPJDMdEeqpHfa-wFJPiA" name="Specialistic Shop new Shop1" outgoingEdges="_lHRPbTMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:SpecialisticShop" href="example2.malldsm#//@shops.0"/>
+      <semanticElements xmi:type="Mall:SpecialisticShop" href="example2.malldsm#//@shops.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPJTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPJjMdEeqpHfa-wFJPiA" name="Refrigerator ">
+        <target xmi:type="Mall:Refrigerator" href="example2.malldsm#//@shops.0/@has.0"/>
+        <semanticElements xmi:type="Mall:Refrigerator" href="example2.malldsm#//@shops.0/@has.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPJzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPKDMdEeqpHfa-wFJPiA" name="Jinteki compiler collections 1" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="Mall:ItemInStock" href="example2.malldsm#//@shops.0/@has.0/@containedGood.0"/>
+          <semanticElements xmi:type="Mall:ItemInStock" href="example2.malldsm#//@shops.0/@has.0/@containedGood.0"/>
+          <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_lHRPKTMdEeqpHfa-wFJPiA" labelPosition="node">
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPKjMdEeqpHfa-wFJPiA" name="Jinteki compiler collections sold at 0">
+        <target xmi:type="Mall:ListedGood" href="example2.malldsm#//@shops.0/@soldGoods.0"/>
+        <semanticElements xmi:type="Mall:ListedGood" href="example2.malldsm#//@shops.0/@soldGoods.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPKzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPLDMdEeqpHfa-wFJPiA" name="Sale of 0% from Mon Jan 01 00:00:00 CET 1900 to Fri Jan 01 00:00:00 CET 2100" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="Mall:Discount" href="example2.malldsm#//@shops.0/@soldGoods.0/@sales.0"/>
+          <semanticElements xmi:type="Mall:Discount" href="example2.malldsm#//@shops.0/@soldGoods.0/@sales.0"/>
+          <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_lHRPLTMdEeqpHfa-wFJPiA" labelPosition="node">
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@subNodeMappings[name='DiscountNode']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@subNodeMappings[name='DiscountNode']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPLjMdEeqpHfa-wFJPiA" name="Schedule">
+        <target xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.0/@openSchedule"/>
+        <semanticElements xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.0/@openSchedule"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPLzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPMDMdEeqpHfa-wFJPiA" name="From 0d -  0h to 5d - 100h" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@openSchedule/@shifts.0"/>
+          <semanticElements xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@openSchedule/@shifts.0"/>
+          <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPMTMdEeqpHfa-wFJPiA" labelPosition="node">
+            <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPMjMdEeqpHfa-wFJPiA" name="Von Neumann">
+        <target xmi:type="Mall:Employee" href="example2.malldsm#//@shops.0/@employees.0"/>
+        <semanticElements xmi:type="Mall:Employee" href="example2.malldsm#//@shops.0/@employees.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPMzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@conditionnalStyles.0/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPNDMdEeqpHfa-wFJPiA" name="Employee Schedule">
+          <target xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.0/@employees.0/@shiftSchedule"/>
+          <semanticElements xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.0/@employees.0/@shiftSchedule"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPNTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPNjMdEeqpHfa-wFJPiA" name="From 0d -  0h to 1d - 1h" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@employees.0/@shiftSchedule/@shifts.0"/>
+            <semanticElements xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@employees.0/@shiftSchedule/@shifts.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPNzMdEeqpHfa-wFJPiA" labelPosition="node">
+              <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
+          </ownedDiagramElements>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPODMdEeqpHfa-wFJPiA" name="From 1d -  1h to 2d - 2h" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@employees.0/@shiftSchedule/@shifts.1"/>
+            <semanticElements xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@employees.0/@shiftSchedule/@shifts.1"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPOTMdEeqpHfa-wFJPiA" labelPosition="node">
+              <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPOjMdEeqpHfa-wFJPiA" name="Manager Ken Tompson">
+        <target xmi:type="Mall:Employee" href="example2.malldsm#//@shops.0/@manager"/>
+        <semanticElements xmi:type="Mall:Employee" href="example2.malldsm#//@shops.0/@manager"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPOzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPPDMdEeqpHfa-wFJPiA" name="Employee Schedule">
+          <target xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.0/@manager/@shiftSchedule"/>
+          <semanticElements xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.0/@manager/@shiftSchedule"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPPTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPPjMdEeqpHfa-wFJPiA" name="From 0d -  0h to 1d - 1h" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@manager/@shiftSchedule/@shifts.0"/>
+            <semanticElements xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.0/@manager/@shiftSchedule/@shifts.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPPzMdEeqpHfa-wFJPiA" labelPosition="node">
+              <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPQDMdEeqpHfa-wFJPiA" name="Brand Shop Jinteki Brand Shop" outgoingEdges="_lHRPajMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:BrandShop" href="example2.malldsm#//@shops.1"/>
+      <semanticElements xmi:type="Mall:BrandShop" href="example2.malldsm#//@shops.1"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPQTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPQjMdEeqpHfa-wFJPiA" name="Shelf 1">
+        <target xmi:type="Mall:Shelf" href="example2.malldsm#//@shops.1/@has.0"/>
+        <semanticElements xmi:type="Mall:Shelf" href="example2.malldsm#//@shops.1/@has.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPQzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPRDMdEeqpHfa-wFJPiA" name="MangoDB 1" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="Mall:ItemInStock" href="example2.malldsm#//@shops.1/@has.0/@containedGood.0"/>
+          <semanticElements xmi:type="Mall:ItemInStock" href="example2.malldsm#//@shops.1/@has.0/@containedGood.0"/>
+          <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_lHRPRTMdEeqpHfa-wFJPiA" labelPosition="node">
+            <description xmi:type="style:EllipseNodeDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPRjMdEeqpHfa-wFJPiA" name="MangoDB sold at 1">
+        <target xmi:type="Mall:ListedGood" href="example2.malldsm#//@shops.1/@soldGoods.0"/>
+        <semanticElements xmi:type="Mall:ListedGood" href="example2.malldsm#//@shops.1/@soldGoods.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPRzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPSDMdEeqpHfa-wFJPiA" name="Schedule">
+        <target xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.1/@openSchedule"/>
+        <semanticElements xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.1/@openSchedule"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPSTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPSjMdEeqpHfa-wFJPiA" name="Manager Chairman Hiro">
+        <target xmi:type="Mall:Employee" href="example2.malldsm#//@shops.1/@manager"/>
+        <semanticElements xmi:type="Mall:Employee" href="example2.malldsm#//@shops.1/@manager"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPSzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@conditionnalStyles.1/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPTDMdEeqpHfa-wFJPiA" name="Employee Schedule">
+          <target xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.1/@manager/@shiftSchedule"/>
+          <semanticElements xmi:type="Mall:WeeklySchedule" href="example2.malldsm#//@shops.1/@manager/@shiftSchedule"/>
+          <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPTTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" backgroundColor="255,245,181">
+            <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:ContainerMappingImport" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']"/>
+          <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPTjMdEeqpHfa-wFJPiA" name="From 0d -  0h to 4d - 12h" width="3" height="3" resizeKind="NSEW">
+            <target xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.1/@manager/@shiftSchedule/@shifts.0"/>
+            <semanticElements xmi:type="Mall:TimeSpan" href="example2.malldsm#//@shops.1/@manager/@shiftSchedule/@shifts.0"/>
+            <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPTzMdEeqpHfa-wFJPiA" labelPosition="node">
+              <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']/@style"/>
+            </ownedStyle>
+            <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
+          </ownedDiagramElements>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPUDMdEeqpHfa-wFJPiA" name="Food">
+      <target xmi:type="Mall:Category" href="example2.malldsm#//@categories.0"/>
+      <semanticElements xmi:type="Mall:Category" href="example2.malldsm#//@categories.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPUTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPUjMdEeqpHfa-wFJPiA" name="Local Food" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.0/@contains.0"/>
+        <semanticElements xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.0/@contains.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPUzMdEeqpHfa-wFJPiA" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPVDMdEeqpHfa-wFJPiA" name="Exotic Food" incomingEdges="_lHRPczMdEeqpHfa-wFJPiA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.0/@contains.1"/>
+        <semanticElements xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.0/@contains.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPVTMdEeqpHfa-wFJPiA" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPVjMdEeqpHfa-wFJPiA" name="Clothes">
+      <target xmi:type="Mall:Category" href="example2.malldsm#//@categories.1"/>
+      <semanticElements xmi:type="Mall:Category" href="example2.malldsm#//@categories.1"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPVzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPWDMdEeqpHfa-wFJPiA" name="Male" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.1/@contains.0"/>
+        <semanticElements xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.1/@contains.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPWTMdEeqpHfa-wFJPiA" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPWjMdEeqpHfa-wFJPiA" name="Female" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.1/@contains.1"/>
+        <semanticElements xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.1/@contains.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPWzMdEeqpHfa-wFJPiA" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPXDMdEeqpHfa-wFJPiA" name="Technology" incomingEdges="_lHRPbTMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:Category" href="example2.malldsm#//@categories.2"/>
+      <semanticElements xmi:type="Mall:Category" href="example2.malldsm#//@categories.2"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPXTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']"/>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPXjMdEeqpHfa-wFJPiA" name="Compilers" incomingEdges="_lHRPcDMdEeqpHfa-wFJPiA" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.2/@contains.0"/>
+        <semanticElements xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.2/@contains.0"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPXzMdEeqpHfa-wFJPiA" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPYDMdEeqpHfa-wFJPiA" name="Not Compilers" width="3" height="3" resizeKind="NSEW">
+        <target xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.2/@contains.1"/>
+        <semanticElements xmi:type="Mall:SubCategory" href="example2.malldsm#//@categories.2/@contains.1"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_lHRPYTMdEeqpHfa-wFJPiA" labelPosition="node" color="209,209,209">
+          <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPYjMdEeqpHfa-wFJPiA" name="Jinteki" incomingEdges="_lHRPajMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:Brand" href="example2.malldsm#//@availableBrands.0"/>
+      <semanticElements xmi:type="Mall:Brand" href="example2.malldsm#//@availableBrands.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPYzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" foregroundColor="214,197,66">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']"/>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPZDMdEeqpHfa-wFJPiA" name="Jinteki compiler collections" outgoingEdges="_lHRPcDMdEeqpHfa-wFJPiA">
+        <target xmi:type="Mall:Good" href="example2.malldsm#//@availableBrands.0/@producedGoods.0"/>
+        <semanticElements xmi:type="Mall:Good" href="example2.malldsm#//@availableBrands.0/@producedGoods.0"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPZTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" foregroundColor="154,103,23">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lHRPZjMdEeqpHfa-wFJPiA" name="Open Source 1" width="3" height="3" resizeKind="NSEW">
+          <target xmi:type="Mall:Feature" href="example2.malldsm#//@availableBrands.0/@producedGoods.0/@features.0"/>
+          <semanticElements xmi:type="Mall:Feature" href="example2.malldsm#//@availableBrands.0/@producedGoods.0/@features.0"/>
+          <ownedStyle xmi:type="diagram:Dot" xmi:id="_lHRPZzMdEeqpHfa-wFJPiA" labelPosition="node">
+            <description xmi:type="style:DotDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@subNodeMappings[name='Feature%20Node']/@style"/>
+          </ownedStyle>
+          <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@subNodeMappings[name='Feature%20Node']"/>
+        </ownedDiagramElements>
+      </ownedDiagramElements>
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPaDMdEeqpHfa-wFJPiA" name="MangoDB" outgoingEdges="_lHRPczMdEeqpHfa-wFJPiA">
+        <target xmi:type="Mall:Good" href="example2.malldsm#//@availableBrands.0/@producedGoods.1"/>
+        <semanticElements xmi:type="Mall:Good" href="example2.malldsm#//@availableBrands.0/@producedGoods.1"/>
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPaTMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" foregroundColor="154,103,23">
+          <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
+      </ownedDiagramElements>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lHRPajMdEeqpHfa-wFJPiA" sourceNode="_lHRPQDMdEeqpHfa-wFJPiA" targetNode="_lHRPYjMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:BrandShop" href="example2.malldsm#//@shops.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lHRPazMdEeqpHfa-wFJPiA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lHRPbDMdEeqpHfa-wFJPiA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lHRPbTMdEeqpHfa-wFJPiA" sourceNode="_lHRPJDMdEeqpHfa-wFJPiA" targetNode="_lHRPXDMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:SpecialisticShop" href="example2.malldsm#//@shops.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lHRPbjMdEeqpHfa-wFJPiA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SpecialisticCategoryEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lHRPbzMdEeqpHfa-wFJPiA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='SpecialisticCategoryEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lHRPcDMdEeqpHfa-wFJPiA" sourceNode="_lHRPZDMdEeqpHfa-wFJPiA" targetNode="_lHRPXjMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:Good" href="example2.malldsm#//@availableBrands.0/@producedGoods.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lHRPcTMdEeqpHfa-wFJPiA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='GoodSubCategory%20Edge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lHRPcjMdEeqpHfa-wFJPiA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='GoodSubCategory%20Edge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_lHRPczMdEeqpHfa-wFJPiA" sourceNode="_lHRPaDMdEeqpHfa-wFJPiA" targetNode="_lHRPVDMdEeqpHfa-wFJPiA">
+      <target xmi:type="Mall:Good" href="example2.malldsm#//@availableBrands.0/@producedGoods.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_lHRPdDMdEeqpHfa-wFJPiA" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='GoodSubCategory%20Edge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_lHRPdTMdEeqpHfa-wFJPiA"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='GoodSubCategory%20Edge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_lHRPdjMdEeqpHfa-wFJPiA"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer"/>
+    <target xmi:type="Mall:Mall" href="example2.malldsm#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>
