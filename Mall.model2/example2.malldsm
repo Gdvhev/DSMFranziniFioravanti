@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
-  <shops xsi:type="Mall:SpecialisticShop" name="new Shop1" address="No Address Present" speciality="//@categories.2">
+  <shops xsi:type="Mall:SpecialisticShop" name="TickTochTech" address="Mall Slot 5" speciality="//@categories.2">
     <has xsi:type="Mall:Refrigerator">
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
     </has>
-    <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="0">
+    <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="10">
       <sales percentage="0" timeStart="1900-01-01T00:00:00.000+0100" timeEnd="2100-01-01T00:00:00.000+0100"/>
     </soldGoods>
     <employees name="Von Neumann">
       <shiftSchedule>
         <shifts startHour="0" startDay="0" endDay="1" endHour="1"/>
-        <shifts startHour="1" startDay="1" endDay="2" endHour="2"/>
+        <shifts startHour="2" startDay="2" endDay="3" endHour="3"/>
       </shiftSchedule>
     </employees>
     <manager name="Ken Tompson">
@@ -19,17 +19,85 @@
       </shiftSchedule>
     </manager>
     <openSchedule>
-      <shifts startHour="0" startDay="0" endDay="5" endHour="100"/>
+      <shifts startHour="0" startDay="0" endDay="5" endHour="23"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:BrandShop" name="Jinteki Brand Shop" address="No Address Present" brand="//@availableBrands.0">
+  <shops xsi:type="Mall:BrandShop" name="Jinteki Brand Shop" address="Mall Slot 1" brand="//@availableBrands.0">
     <has xsi:type="Mall:Shelf" layers="1">
       <containedGood contains="//@availableBrands.0/@producedGoods.1" itemCount="1"/>
     </has>
     <soldGoods good="//@availableBrands.0/@producedGoods.1" defaultPrice="1"/>
     <manager name="Chairman Hiro">
       <shiftSchedule>
-        <shifts startHour="0" startDay="0" endDay="4" endHour="12"/>
+        <shifts startHour="1" startDay="1" endDay="2" endHour="2"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:SpecialisticShop" name="Bran Shop" address="Mall Slot 3" speciality="//@categories.1">
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.0/@producedGoods.2" itemCount="1"/>
+      <containedGood contains="//@availableBrands.1/@producedGoods.1" itemCount="1"/>
+      <containedGood contains="//@availableBrands.1/@producedGoods.1" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.0/@producedGoods.2" defaultPrice="1000"/>
+    <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="10"/>
+    <soldGoods good="//@availableBrands.1/@producedGoods.1" defaultPrice="10"/>
+    <employees name="Louis Vuitton">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="1" endHour="1"/>
+        <shifts startHour="2" startDay="2" endDay="3" endHour="3"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Bran Moolenar">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="1" endHour="1"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="5" endDay="5" endHour="12"/>
+      <shifts startHour="0" startDay="1" endDay="1" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:SpecialisticShop" name="TokTechTik" address="Mall Slot 2" speciality="//@categories.2">
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.1/@producedGoods.2" itemCount="1"/>
+      <containedGood contains="//@availableBrands.1/@producedGoods.2" itemCount="1"/>
+      <containedGood contains="//@availableBrands.1/@producedGoods.2" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.1/@producedGoods.2" defaultPrice="1"/>
+    <employees name="Riemann">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="1" endHour="1"/>
+        <shifts startHour="2" startDay="2" endDay="3" endHour="3"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Ken Tompson Clone">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="1" endHour="1"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="0" endDay="5" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:SpecialisticShop" name="Mafia Money Laundering Front " address="Basement" speciality="//@categories.0">
+    <employees name="Milite Ignoto">
+      <shiftSchedule>
+        <shifts startHour="8" startDay="2" endDay="2" endHour="16"/>
+      </shiftSchedule>
+    </employees>
+    <employees name="Mario Rossi">
+      <shiftSchedule>
+        <shifts startHour="5" startDay="5" endDay="5" endHour="19"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Jonh Doe">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="1" endHour="1"/>
+        <shifts startHour="8" startDay="3" endDay="3" endHour="18"/>
       </shiftSchedule>
     </manager>
     <openSchedule/>
@@ -39,6 +107,16 @@
       <features name="Open Source" value="1"/>
     </producedGoods>
     <producedGoods hasSubCategory="//@categories.0/@contains.1" modelNumber="MangoDB"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Jinteki Inferior T-Shirt"/>
+  </availableBrands>
+  <availableBrands name="Generic Brand">
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Vim T-shirt">
+      <features name="Font Size" value="20000"/>
+    </producedGoods>
+    <producedGoods hasSubCategory="//@categories.1/@contains.1" modelNumber="Vim Skirt">
+      <features name="Font Size" value="2000"/>
+    </producedGoods>
+    <producedGoods hasSubCategory="//@categories.2/@contains.1" modelNumber="S.OS."/>
   </availableBrands>
   <categories name="Food">
     <contains name="Local Food"/>
