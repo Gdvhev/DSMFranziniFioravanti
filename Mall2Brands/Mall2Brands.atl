@@ -15,7 +15,7 @@ rule Mall2BrandList {
 }
 
 helper context Mall!Brand def:
-	getShopOfBrand(): Sequence(Mall!BrandShop) =
+	getShopsOfBrand(): Sequence(Mall!BrandShop) =
 		self.refImmediateComposite().shops->select(s | s.oclIsKindOf(Mall!BrandShop))->select(s | s.brand = self);
 
 helper context Mall!Shop def:
@@ -24,7 +24,7 @@ helper context Mall!Shop def:
 	
 helper context Mall!Brand def:
 	getWorkers(): Sequence(Mall!Eployee) = 
-		self.getShopOfBrand()->collect(s | s.getEmployees()->collect(e | thisModule.Employee2Worker(e)));
+		self.getShopsOfBrand()->collect(s | s.getEmployees()->collect(e | thisModule.Employee2Worker(e)));
 
 lazy rule Brand2Brand
 {
@@ -51,7 +51,7 @@ lazy rule TimeSpan2TimeSpan
 			)
 }
 
-lazy rule WeeklySchedule2WeeklySchedyle
+lazy rule WeeklySchedule2WeeklySchedule
 {
 	from
 		s: Mall!WeeklySchedule
@@ -70,7 +70,7 @@ lazy rule Employee2Worker
 	to
 		t: Brands!Worker(
 			name <- s.name,
-			shiftSchedule <- thisModule.WeeklySchedule2WeeklySchedyle(s.shiftSchedule),
+			shiftSchedule <- thisModule.WeeklySchedule2WeeklySchedule(s.shiftSchedule),
 			isManager <- s.refImmediateComposite().manager = s
 		)
 }

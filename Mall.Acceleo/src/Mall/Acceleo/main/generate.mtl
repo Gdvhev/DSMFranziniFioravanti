@@ -7,51 +7,64 @@
 [file ('index.html', false, 'UTF-8')]
 	<html>
 	<head>
-	<title>Mall Info</title>
+		<title>Mall Info</title>
 	</head>
 
-	<body>
+	<body bgcolor=#F5FFFA>
 		<b>Mall Info</b>
 		<br/><br/>
 		<ul>
 		 [for (shop : Shop | aMall.shops)]
 			<li>
-			<p>[shop.name/]:</p>
+				<p><h3>[shop.name/]:</h3></p>
 				<ul>
 					<li>
-					Location: 
-					[if (shop.address = null)]
-						<b>MISSING, must be one of those shops that disapears</b>
-					[/if]
-					[shop.address/]
+						<i>Location:</i>
+						[if (shop.address = null)]
+							<b>MISSING, must be one of those shops that disappears when you need it</b>
+						[/if]
+						[shop.address/]
 					</li>
 
 					<li>
-						Manager:
-					[if (shop.manager = null)]
-						<b>MIA</b>
-					[/if]
-					[if (shop.manager <> null)]
-						[shop.manager.name/]
-					[/if]
+						<i>Manager:</i>
+						[if (shop.manager = null)]
+							<b>MIA</b>
+						[/if]
+						[if (shop.manager <> null)]
+							[shop.manager.name/]
+						[/if]
 					</li>
+
 					<li>
-					Brands:
-						[for (brand : Brand | aMall.availableBrands)]
-							[if (brand.producedGoods->intersection(shop.soldGoods->asBag().good)->size() <> 0)]
-								[brand.name.concat(' ')/]
-							[/if]
-						[/for]	
+						[if(shop.oclIsKindOf(BrandShop))]
+							This shop is branded : [shop.oclAsType(BrandShop).brand.name/]
+						[else]
+						Brands sold here:
+							[for (brand : Brand | aMall.availableBrands)]
+								[if (brand.producedGoods->intersection(shop.soldGoods->asBag().good)->size() <> 0)]
+									[brand.name.concat(' ')/]
+								[/if]
+							[/for]
+						[/if]
 					</li>
+					
+					[if(shop.oclIsKindOf(SpecialisticShop))]
+						<li>
+							This specialistic shop sells items in category : [shop.oclAsType(SpecialisticShop).speciality.name/]
+						</li>
+					[/if]
+
 					<li>
-					Opening Times:
+					<i>Opening Times:</i>
 						[if (shop.openSchedule = null or shop.openSchedule.shifts = null)]
 							<b>WE ARE OUT OF TIME</b>
-						[/if]
-						[if (not (shop.openSchedule = null or shop.openSchedule.shifts = null))]
+						[elseif(shop.openSchedule.shifts->size()=0)]
+							<i>There are no open hours defined for this shop</i>
+						[else]
 						[for (time : TimeSpan | shop.openSchedule.shifts->sortedBy(t : TimeSpan | t.startDay * 1000 + t.startHour))]
-							<p>from [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.startDay)/] [time.startHour/] 
-								to [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.endDay)/] [time.endHour/]<p>							
+							<p>from [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.startDay)/] [time.startHour+':00'/] 
+								to [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.endDay)/] [time.endHour+':59'/]<p>							
 						[/for]
 						[/if]
 					</li>

@@ -17,6 +17,7 @@
     <employees name="Emp1">
       <shiftSchedule>
         <shifts startHour="1" startDay="1" endDay="1" endHour="1"/>
+        <shifts startHour="5" startDay="2" endDay="2" endHour="6"/>
       </shiftSchedule>
     </employees>
     <employees name="Emp2">
@@ -39,10 +40,23 @@
       <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="5"/>
     </has>
     <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="2"/>
+    <soldGoods good="//@availableBrands.0/@producedGoods.2" defaultPrice="1"/>
     <employees name="Emp3">
       <shiftSchedule/>
     </employees>
     <manager name="Shop2 Manager">
+      <shiftSchedule/>
+    </manager>
+    <openSchedule/>
+  </shops>
+  <shops xsi:type="Mall:BrandShop" name="new Shop3" address="No Address Present" brand="//@availableBrands.0">
+    <manager name="Default Manager">
+      <shiftSchedule/>
+    </manager>
+    <openSchedule/>
+  </shops>
+  <shops xsi:type="Mall:BrandShop" name="new Shop4" address="No Address Present" brand="//@availableBrands.1">
+    <manager name="Default Manager">
       <shiftSchedule/>
     </manager>
     <openSchedule/>
@@ -52,6 +66,7 @@
       <features name="Size" value="100*100"/>
     </producedGoods>
     <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Good3"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Bananas"/>
   </availableBrands>
   <availableBrands name="Brand2">
     <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Good2">

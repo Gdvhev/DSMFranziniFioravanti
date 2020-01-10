@@ -330,49 +330,6 @@
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
-          <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Container" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']">
-            <variable name="container"/>
-            <viewVariable name="containerView"/>
-            <initialOperation>
-              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
-                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Container Dialog">
-                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
-                    <initialOperation/>
-                  </buttons>
-                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
-                    <initialOperation/>
-                  </buttons>
-                  <page name="Container Page" labelExpression="Container Creation" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.0/@ownedTools[name='New%20Container']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
-                  <groups name="Default Group" labelExpression="Please select the type of the new container. Press create to create one or more of the selected types. The New Containers will appear after the window has been closed" semanticCandidateExpression="var:self">
-                    <controls xsi:type="properties:ListDescription" name="ContainerList" labelExpression="Select Type" valueExpression="aql:Sequence{MallDsm::Shelf,MallDsm::Refrigerator,MallDsm::Table}" displayExpression="aql:value.name">
-                      <onClickOperation/>
-                      <actions labelExpression="Create">
-                        <initialOperation>
-                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
-                            <subModelOperations xsi:type="tool_1:Switch">
-                              <cases conditionExpression="aql:selection->first()=MallDsm::Shelf">
-                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Shelf" referenceName="has">
-                                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
-                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="layers" valueExpression="1"/>
-                                  </subModelOperations>
-                                </subModelOperations>
-                              </cases>
-                              <cases conditionExpression="aql:selection->first()=MallDsm::Refrigerator">
-                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Refrigerator" referenceName="has"/>
-                              </cases>
-                              <cases conditionExpression="aql:selection->first()=MallDsm::Table">
-                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Table" referenceName="has"/>
-                              </cases>
-                            </subModelOperations>
-                          </firstModelOperations>
-                        </initialOperation>
-                      </actions>
-                    </controls>
-                  </groups>
-                </subModelOperations>
-              </firstModelOperations>
-            </initialOperation>
-          </ownedTools>
           <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Employee" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']">
             <variable name="container"/>
             <viewVariable name="containerView"/>
@@ -648,6 +605,49 @@
                     <subModelOperations xsi:type="tool_1:RemoveElement"/>
                   </subModelOperations>
                 </default>
+              </firstModelOperations>
+            </initialOperation>
+          </ownedTools>
+          <ownedTools xsi:type="tool:ContainerCreationDescription" name="New Container" containerMappings="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']">
+            <variable name="container"/>
+            <viewVariable name="containerView"/>
+            <initialOperation>
+              <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:container">
+                <subModelOperations xsi:type="properties:DialogModelOperation" titleExpression="Container Dialog">
+                  <buttons labelExpression="Cancel" closeDialogOnClick="true" rollbackChangesOnClose="true">
+                    <initialOperation/>
+                  </buttons>
+                  <buttons labelExpression="OK" default="true" closeDialogOnClick="true">
+                    <initialOperation/>
+                  </buttons>
+                  <page name="Container Page" labelExpression="Container Creation" semanticCandidateExpression="var:self" groups="//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@toolSections.1/@ownedTools[name='New%20Container']/@initialOperation/@firstModelOperations/@subModelOperations.0/@groups.0"/>
+                  <groups name="Default Group" labelExpression="Please select the type of the new container. Press create to create one or more of the selected types. The New Containers will appear after the window has been closed" semanticCandidateExpression="var:self">
+                    <controls xsi:type="properties:ListDescription" name="ContainerList" labelExpression="Select Type" valueExpression="aql:Sequence{MallDsm::Shelf,MallDsm::Refrigerator,MallDsm::Table}" displayExpression="aql:value.name">
+                      <onClickOperation/>
+                      <actions labelExpression="Create">
+                        <initialOperation>
+                          <firstModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:self">
+                            <subModelOperations xsi:type="tool_1:Switch">
+                              <cases conditionExpression="aql:selection->first()=MallDsm::Shelf">
+                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Shelf" referenceName="has">
+                                  <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
+                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="layers" valueExpression="1"/>
+                                  </subModelOperations>
+                                </subModelOperations>
+                              </cases>
+                              <cases conditionExpression="aql:selection->first()=MallDsm::Refrigerator">
+                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Refrigerator" referenceName="has"/>
+                              </cases>
+                              <cases conditionExpression="aql:selection->first()=MallDsm::Table">
+                                <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Table" referenceName="has"/>
+                              </cases>
+                            </subModelOperations>
+                          </firstModelOperations>
+                        </initialOperation>
+                      </actions>
+                    </controls>
+                  </groups>
+                </subModelOperations>
               </firstModelOperations>
             </initialOperation>
           </ownedTools>
