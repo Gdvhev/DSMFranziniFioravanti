@@ -1187,7 +1187,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPQjMdEeqpHfa-wFJPiA" name="Shelf 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_lHRPQjMdEeqpHfa-wFJPiA" name="Shelf 2">
         <target xmi:type="Mall:Shelf" href="example2.malldsm#//@shops.1/@has.0"/>
         <semanticElements xmi:type="Mall:Shelf" href="example2.malldsm#//@shops.1/@has.0"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_lHRPQzMdEeqpHfa-wFJPiA" borderSize="1" borderSizeComputationExpression="1" foregroundColor="204,242,166">

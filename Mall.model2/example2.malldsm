@@ -23,7 +23,7 @@
     </openSchedule>
   </shops>
   <shops xsi:type="Mall:BrandShop" name="Jinteki Brand Shop" address="Mall Slot 1" brand="//@availableBrands.0">
-    <has xsi:type="Mall:Shelf" layers="1">
+    <has xsi:type="Mall:Shelf" layers="2">
       <containedGood contains="//@availableBrands.0/@producedGoods.1" itemCount="1"/>
     </has>
     <soldGoods good="//@availableBrands.0/@producedGoods.1" defaultPrice="1"/>
