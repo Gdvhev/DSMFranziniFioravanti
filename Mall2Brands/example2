@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Brands:BrandsList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Brands="http://brands.com">
+  <brands name="Jinteki">
+    <workers name="Chairman Hiro" isManager="true">
+      <shiftSchedule>
+        <Shift StartDay="1" StartHour="2" EndDay="2" EndHour="2"/>
+      </shiftSchedule>
+    </workers>
+  </brands>
+  <brands name="Generic Brand"/>
+</Brands:BrandsList>

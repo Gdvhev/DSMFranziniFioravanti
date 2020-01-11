@@ -63,8 +63,8 @@
 							<i>There are no open hours defined for this shop</i>
 						[else]
 						[for (time : TimeSpan | shop.openSchedule.shifts->sortedBy(t : TimeSpan | t.startDay * 1000 + t.startHour))]
-							<p>from [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.startDay)/] [time.startHour+':00'/] 
-								to [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.endDay)/] [time.endHour+':59'/]<p>							
+							<p>from [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.startDay+1)/] [time.startHour+':00'/] 
+								to [OrderedSet{'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'}->at(time.endDay+1)/] [time.endHour+':59'/]<p>							
 						[/for]
 						[/if]
 					</li>

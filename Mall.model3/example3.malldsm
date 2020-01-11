@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
+  <shops xsi:type="Mall:BrandShop" name="Gork 'nd Mork Shop" address="Oktarious Sector" brand="//@availableBrands.0">
+    <has xsi:type="Mall:Table">
+      <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="1"/>
+    <soldGoods good="//@availableBrands.0/@producedGoods.1" defaultPrice="4"/>
+    <employees name="Makari the grot">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Grazkull Thraka">
+      <shiftSchedule>
+        <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
+        <shifts startHour="8" startDay="1" endDay="1" endHour="16"/>
+        <shifts startHour="8" startDay="2" endDay="2" endHour="16"/>
+        <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
+        <shifts startHour="8" startDay="4" endDay="4" endHour="16"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="0" endDay="4" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:BrandShop" name="Painboy Shop" address="Oktarious Sector n2" brand="//@availableBrands.0">
+    <has xsi:type="Mall:Table">
+      <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
+      <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
+      <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
+    </has>
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.0/@producedGoods.1" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="1"/>
+    <soldGoods good="//@availableBrands.0/@producedGoods.1" defaultPrice="4"/>
+    <employees name="Random Grot">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Mad Dok Grotsnik">
+      <shiftSchedule>
+        <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
+        <shifts startHour="8" startDay="1" endDay="1" endHour="16"/>
+        <shifts startHour="8" startDay="2" endDay="2" endHour="16"/>
+        <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
+        <shifts startHour="8" startDay="4" endDay="4" endHour="16"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="0" endDay="4" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:BrandShop" name="BogrotBones" address="Oktarious Sector n3" brand="//@availableBrands.3">
+    <has xsi:type="Mall:Table">
+      <containedGood contains="//@availableBrands.3/@producedGoods.0" itemCount="1"/>
+    </has>
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.3/@producedGoods.0" itemCount="1"/>
+      <containedGood contains="//@availableBrands.3/@producedGoods.0" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.3/@producedGoods.0" defaultPrice="1"/>
+    <soldGoods good="//@availableBrands.3/@producedGoods.1" defaultPrice="4"/>
+    <employees name="Weirdboy">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Grukk Face-rippa">
+      <shiftSchedule>
+        <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
+        <shifts startHour="8" startDay="1" endDay="1" endHour="16"/>
+        <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
+        <shifts startHour="8" startDay="4" endDay="4" endHour="16"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="4" endDay="4" endHour="23"/>
+      <shifts startHour="0" startDay="5" endDay="5" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:BrandShop" name="SpeedKult" address="Oktarious Sector n4" brand="//@availableBrands.1">
+    <has xsi:type="Mall:Table">
+      <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="1"/>
+    </has>
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="1"/>
+      <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="1"/>
+    <employees name="Mekboy">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Wazdakka Gutsmek">
+      <shiftSchedule>
+        <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
+        <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
+        <shifts startHour="8" startDay="4" endDay="4" endHour="16"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="9" startDay="4" endDay="4" endHour="17"/>
+      <shifts startHour="10" startDay="6" endDay="6" endHour="18"/>
+    </openSchedule>
+  </shops>
+  <shops xsi:type="Mall:BrandShop" name="Flash Gitz" address="Oktarious Sector n5" brand="//@availableBrands.2">
+    <has xsi:type="Mall:Table">
+      <containedGood contains="//@availableBrands.2/@producedGoods.0" itemCount="1"/>
+      <containedGood contains="//@availableBrands.2/@producedGoods.0" itemCount="1"/>
+    </has>
+    <has xsi:type="Mall:Refrigerator">
+      <containedGood contains="//@availableBrands.2/@producedGoods.0" itemCount="1"/>
+      <containedGood contains="//@availableBrands.2/@producedGoods.1" itemCount="1"/>
+    </has>
+    <soldGoods good="//@availableBrands.2/@producedGoods.0" defaultPrice="1"/>
+    <soldGoods good="//@availableBrands.2/@producedGoods.1" defaultPrice="1"/>
+    <employees name="Freeboota">
+      <shiftSchedule>
+        <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
+      </shiftSchedule>
+    </employees>
+    <manager name="Kaptin Badrukk">
+      <shiftSchedule>
+        <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
+        <shifts startHour="8" startDay="4" endDay="4" endHour="16"/>
+      </shiftSchedule>
+    </manager>
+    <openSchedule>
+      <shifts startHour="0" startDay="0" endDay="4" endHour="23"/>
+      <shifts startHour="0" startDay="5" endDay="5" endHour="23"/>
+    </openSchedule>
+  </shops>
+  <availableBrands name="Goffs Brand">
+    <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Goff Beer">
+      <features name="Quantity" value="9999"/>
+    </producedGoods>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Goff Teeth"/>
+  </availableBrands>
+  <availableBrands name="Evil Sunz Band">
+    <producedGoods hasSubCategory="//@categories.2/@contains.0" modelNumber="Ork Tech"/>
+  </availableBrands>
+  <availableBrands name="Bad Moons Brand">
+    <producedGoods hasSubCategory="//@categories.2/@contains.1" modelNumber="Stolen Humie Tech"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Bad Moons Teeth"/>
+  </availableBrands>
+  <availableBrands name="Snakebites Brand">
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Snakebite Teeth"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.1" modelNumber="Stolen Hummie Theeth"/>
+  </availableBrands>
+  <categories name="Food">
+    <contains name="Fungus Beer"/>
+    <contains name="Hummie Food"/>
+  </categories>
+  <categories name="Teeth">
+    <contains name="Ork Teeth"/>
+    <contains name="Hummie Theeth"/>
+  </categories>
+  <categories name="Tech">
+    <contains name="Ork Tech"/>
+    <contains name="Hummie Tech"/>
+  </categories>
+</Mall:Mall>

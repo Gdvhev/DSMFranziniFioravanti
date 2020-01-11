@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Brands:BrandsList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Brands="http://brands.com">
+  <brands name="Goffs Brand">
+    <workers name="Makari the grot">
+      <shiftSchedule>
+        <Shift StartHour="23" EndDay="6" EndHour="23"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Grazkull Thraka" isManager="true">
+      <shiftSchedule>
+        <Shift StartHour="16" EndDay="0" EndHour="16"/>
+        <Shift StartDay="1" StartHour="16" EndDay="1" EndHour="16"/>
+        <Shift StartDay="2" StartHour="16" EndDay="2" EndHour="16"/>
+        <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
+        <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Random Grot">
+      <shiftSchedule>
+        <Shift StartHour="23" EndDay="6" EndHour="23"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Mad Dok Grotsnik" isManager="true">
+      <shiftSchedule>
+        <Shift StartHour="16" EndDay="0" EndHour="16"/>
+        <Shift StartDay="1" StartHour="16" EndDay="1" EndHour="16"/>
+        <Shift StartDay="2" StartHour="16" EndDay="2" EndHour="16"/>
+        <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
+        <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
+      </shiftSchedule>
+    </workers>
+  </brands>
+  <brands name="Evil Sunz Band">
+    <workers name="Mekboy">
+      <shiftSchedule>
+        <Shift StartHour="23" EndDay="6" EndHour="23"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Wazdakka Gutsmek" isManager="true">
+      <shiftSchedule>
+        <Shift StartHour="16" EndDay="0" EndHour="16"/>
+        <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
+        <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
+      </shiftSchedule>
+    </workers>
+  </brands>
+  <brands name="Bad Moons Brand">
+    <workers name="Freeboota">
+      <shiftSchedule>
+        <Shift StartHour="23" EndDay="6" EndHour="23"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Kaptin Badrukk" isManager="true">
+      <shiftSchedule>
+        <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
+        <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
+      </shiftSchedule>
+    </workers>
+  </brands>
+  <brands name="Snakebites Brand">
+    <workers name="Weirdboy">
+      <shiftSchedule>
+        <Shift StartHour="23" EndDay="6" EndHour="23"/>
+      </shiftSchedule>
+    </workers>
+    <workers name="Grukk Face-rippa" isManager="true">
+      <shiftSchedule>
+        <Shift StartHour="16" EndDay="0" EndHour="16"/>
+        <Shift StartDay="1" StartHour="16" EndDay="1" EndHour="16"/>
+        <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
+        <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
+      </shiftSchedule>
+    </workers>
+  </brands>
+</Brands:BrandsList>
