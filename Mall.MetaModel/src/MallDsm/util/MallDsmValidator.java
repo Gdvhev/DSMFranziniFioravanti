@@ -685,7 +685,7 @@ public class MallDsmValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static final String SHELF__POS_LAYERS__EEXPRESSION = "self.layers>0";
+	protected static final String SHELF__POS_LAYERS__EEXPRESSION = "self.layers>1";
 
 	/**
 	 * Validates the posLayers constraint of '<em>Shelf</em>'.

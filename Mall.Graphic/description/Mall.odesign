@@ -28,8 +28,8 @@
         <ownedRules xsi:type="validation:SemanticValidationRule" name="ValidPercentageDiscountRule" level="ERROR" message="Sale Percentage must be between 0 and 100" targetClass="MallDsm::Discount">
           <audits auditExpression="[self.percentage&lt;=100 and self.percentage>=0/]"/>
         </ownedRules>
-        <ownedRules xsi:type="validation:SemanticValidationRule" name="ShelfLayersRule" level="ERROR" message="A shelf must have at least a layer" targetClass="MallDsm::Shelf">
-          <audits auditExpression="[self.layers>0/]"/>
+        <ownedRules xsi:type="validation:SemanticValidationRule" name="ShelfLayersRule" level="ERROR" message="A shelf must have at least two layers" targetClass="MallDsm::Shelf">
+          <audits auditExpression="[self.layers>1/]"/>
         </ownedRules>
         <ownedRules xsi:type="validation:SemanticValidationRule" name="ValidInterval" level="ERROR" message="Shift can't start after ending" targetClass="MallDsm::TimeSpan">
           <audits auditExpression="aql:if(self.endDay=self.startDay) self.endHour>=self.startHour else true endif"/>
@@ -631,7 +631,7 @@
                               <cases conditionExpression="aql:selection->first()=MallDsm::Shelf">
                                 <subModelOperations xsi:type="tool_1:CreateInstance" typeName="MallDsm::Shelf" referenceName="has">
                                   <subModelOperations xsi:type="tool_1:ChangeContext" browseExpression="var:instance">
-                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="layers" valueExpression="1"/>
+                                    <subModelOperations xsi:type="tool_1:SetValue" featureName="layers" valueExpression="2"/>
                                   </subModelOperations>
                                 </subModelOperations>
                               </cases>

@@ -1172,7 +1172,7 @@ public class MallDsmPackageImpl extends EPackageImpl implements MallDsmPackage {
 		  (shelfEClass,
 		   source,
 		   new String[] {
-			   "posLayers", "self.layers>0"
+			   "posLayers", "self.layers>1"
 		   });
 		addAnnotation
 		  (mallEClass,

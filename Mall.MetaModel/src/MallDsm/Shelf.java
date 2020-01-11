@@ -17,7 +17,7 @@ package MallDsm;
  *
  * @see MallDsm.MallDsmPackage#getShelf()
  * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='posLayers'"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot posLayers='self.layers&gt;0'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot posLayers='self.layers&gt;1'"
  * @generated
  */
 public interface Shelf extends Container {
