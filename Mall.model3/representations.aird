@@ -741,7 +741,7 @@
                         <layoutConstraint xmi:type="notation:Bounds" xmi:id="__zC5SjRREeqG1bgZGjFhvQ"/>
                       </children>
                       <styles xmi:type="notation:ShapeStyle" xmi:id="__zBrLTRREeqG1bgZGjFhvQ" fontName="Noto Sans" fontHeight="8"/>
-                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__zBrLjRREeqG1bgZGjFhvQ" x="92" y="30" width="30" height="30"/>
+                      <layoutConstraint xmi:type="notation:Bounds" xmi:id="__zBrLjRREeqG1bgZGjFhvQ" x="123" y="30" width="85" height="30"/>
                     </children>
                     <children xmi:type="notation:Node" xmi:id="__zCSNzRREeqG1bgZGjFhvQ" type="3007" element="__yjxEDRREeqG1bgZGjFhvQ">
                       <children xmi:type="notation:Node" xmi:id="__zCSOjRREeqG1bgZGjFhvQ" type="5003">
@@ -1385,7 +1385,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dBFLoDRQEeqG1bgZGjFhvQ" name="Quantity 9999" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dBFLoDRQEeqG1bgZGjFhvQ" name="Feature1 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:Feature" href="example3.malldsm#//@availableBrands.0/@producedGoods.0/@features.0"/>
           <semanticElements xmi:type="Mall:Feature" href="example3.malldsm#//@availableBrands.0/@producedGoods.0/@features.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2173,6 +2173,9 @@
           <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="__yii8DRREeqG1bgZGjFhvQ" name="From 1d -  8h to 1d - 16h" width="3" height="3" resizeKind="NSEW">
             <target xmi:type="Mall:TimeSpan" href="example3.malldsm#//@shops.2/@manager/@shiftSchedule/@shifts.1"/>
             <semanticElements xmi:type="Mall:TimeSpan" href="example3.malldsm#//@shops.2/@manager/@shiftSchedule/@shifts.1"/>
+            <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+            <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+            <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
             <ownedStyle xmi:type="diagram:Square" xmi:id="__yii8TRREeqG1bgZGjFhvQ" labelPosition="node">
               <description xmi:type="style:SquareDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Employee%20Node']/@subContainerMappings[name='Employee%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']/@style"/>
             </ownedStyle>

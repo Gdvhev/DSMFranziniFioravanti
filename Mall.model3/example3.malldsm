@@ -136,7 +136,7 @@
   </shops>
   <availableBrands name="Goffs Brand">
     <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Goff Beer">
-      <features name="Quantity" value="9999"/>
+      <features name="Feature1" value="1"/>
     </producedGoods>
     <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Goff Teeth"/>
   </availableBrands>

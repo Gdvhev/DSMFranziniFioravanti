@@ -11,6 +11,7 @@
 \usepackage{color}
 \usepackage{longtable}
 \usepackage{subcaption}
+\usepackage{todonotes}
 \hypersetup{
 	colorlinks=false,
 	pdfborder={0 0 0},
@@ -29,7 +30,7 @@
 	\vspace{0.3cm}
 	{\large \textbf{Documentation} \par}
 	\vspace{1.5cm}
-	{\Large{Domain Specific Modeling} \par}
+	{\Large{Domain Specific Modeling Project} \par}
 	\vspace{1.5cm}
 	{\Large\itshape Massimo Fioravanti, matr.921149 \\
 				    Francesco Franzini, matr.912857 \\ }
@@ -45,19 +46,53 @@
 \clearpage
 
 \section{Dependencies}
+The project uses OCLInEcore to add Ocl constraints to the Ecore model, so installing \textit{OCL Examples and Editors Feature SDK} is required.
+The graphical editor is made using Sirius, Acceleo is used for M2T, ATL for M2M, so those dependencies must be installed too.
+
 \section{Assumptions}
+While developing the project we have made the following assumptions:
+\begin{enumerate}
+	\item There are no general shops(neither specialistic or brand) as instructed during the project briefing
+	\item Special offers are shop dependent, so each shop can have its own discounted items at any time instant
+	\item Shop maps and photos are inserted as paths to the location of the file in the filesystem
+	\item Features must be very flexible as new types of feature might be introduced for a particular item
+	\item Shifts can be of any length and can be in any hour of the week (it will be the manager's responsibility to not get sued by an union)
+	\item Shifts can be outside the shop's opening hours (due to making inventory, organizing, accounting, cleaning,...)
+	
+\end{enumerate}
+
 \section{Design}
+We have made the following design choices
+\begin{itemize}
+	\item Information about a particular item is stored in a dictionary-like structure
+\end{itemize}
+
 \section{Usage}
+\subsection{Sirius Graphical Editor}
+The viewpoint specification of the Sirius editor can be found in \textit{Mall.Graphic/description}. When opened on a model, three types top nodes will appear: Category, Brand and Shop (either specialistic or branded). Every other item will be a sub-node of one of these. Under the \textit{Brand} node the user can find the \textit{Good}s produced by said brand together with their respective specified features. Inside the \textit{Category} node, the \textit{Subcategory} nodes can be found, each having a name and being pointed by an arrow from each of the goods pertaining to that subcategory. 
+Inside each shop the user will find:
+\begin{itemize}
+	\item a \textit{Schedule} node representing the open hours
+	\item the \textit{Manager} node denoted by an orange background
+	\item the \textit{Employee} nodes (if any)
+	\item the \textit{ListedGood} nodes, each describing that a particular good is sold in that shop by giving price and info on eventual discounts
+	\item the \textit{Container} nodes represent shelves/refrigerators/tables on which the items will be put
+\end{itemize}
+Each employee and manager will then have a schedule of their own. Inside each schedule the user can put any number of shifts, as long as they are not overlapping (the validation will trigger an Ocl error if this is not the case)
+
 \subsection{Examples}
-There are 3 privovided examples, in the folder \textit{Mall.model}, \textit{Mall.model2} and \textit{Mall.model3}.
+There are 3 provided examples, in the folder \textit{Mall.model}, \textit{Mall.model2} and \textit{Mall.model3}.
+The first model illustrates is aimed at showing what the graphical editor can do. It has every element that can be instantiated and edited.
+The second model instead focuses on showing how a busier model with more realistic instances remains quite well organized and partitioned in the GUI.
+The last one is a \todo{Riempi descrizione terzo esempio}
 
 \subsection{Model To Model}
-The brand metamodel is located in the \textit{Brands.metamodel} folder.
-The model to model transformation from the mall metamodel to the brand metamodel can be found in the folder \textit{Mall2Brands}.  The transformed version of each example is in the folder as well. 
-The transformation can be run as normal atl transformation and there are no different requirements. 
+The brand metamodel is located in the \textit{Brands.MetaModel} folder.
+The model to model transformation from the mall metamodel to the brand metamodel can be found in the folder \textit{Mall2Brands}.  The transformed version of each example is in this folder as well. 
+The transformation can be run as a normal ATL transformation and there are no special requirements. 
 
 \subsection{Model To Text}
-The accelleo transfomation from the brand metamodel to the html files is located in the \textit{Mall.Acceleo} folder. That folder contains the folders \textit{html}, \textit{html2},\textit{html3}. Each of them contains the output of the transformation applied to the relative example.
-The transformation can be run as a normal acceleo transformation and there are no different requirements.
+The Acceleo transformation from the brand metamodel to html is located in the \textit{Mall.Acceleo} folder. In there you can find the folders \textit{html}, \textit{html2} and \textit{html3}, each of them containing the output of the transformation applied to the relative example.
+The transformation can be run as a normal Acceleo transformation and there are no special requirements.
 	
 \end{document}

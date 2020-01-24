@@ -83,8 +83,8 @@
       <shifts startHour="0" startDay="0" endDay="5" endHour="23"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:SpecialisticShop" name="Mafia Money Laundering Front " address="Basement" speciality="//@categories.0">
-    <employees name="Milite Ignoto">
+  <shops xsi:type="Mall:SpecialisticShop" name="Money Laundering Front " address="Basement" speciality="//@categories.0">
+    <employees name="Jane Doe">
       <shiftSchedule>
         <shifts startHour="8" startDay="2" endDay="2" endHour="16"/>
       </shiftSchedule>
@@ -104,7 +104,7 @@
   </shops>
   <availableBrands name="Jinteki">
     <producedGoods hasSubCategory="//@categories.2/@contains.0" modelNumber="Jinteki compiler collections">
-      <features name="Open Source" value="1"/>
+      <features name="Open Source" value="true"/>
     </producedGoods>
     <producedGoods hasSubCategory="//@categories.0/@contains.1" modelNumber="MangoDB"/>
     <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Jinteki Inferior T-Shirt"/>
