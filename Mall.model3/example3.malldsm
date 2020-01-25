@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Mall:Mall xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Mall="http://mall.com">
-  <shops xsi:type="Mall:BrandShop" name="Gork 'nd Mork Shop" address="Oktarious Sector" brand="//@availableBrands.0">
+  <shops xsi:type="Mall:BrandShop" name="An Unsound Advice" address="Slot 1" brand="//@availableBrands.0">
     <has xsi:type="Mall:Table">
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
     </has>
     <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="1"/>
     <soldGoods good="//@availableBrands.0/@producedGoods.1" defaultPrice="4"/>
-    <employees name="Makari the grot">
+    <employees name="Theo Moses">
       <shiftSchedule>
         <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
       </shiftSchedule>
     </employees>
-    <manager name="Grazkull Thraka">
+    <manager name="Andrei Glenn">
       <shiftSchedule>
         <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
         <shifts startHour="8" startDay="1" endDay="1" endHour="16"/>
@@ -24,7 +24,7 @@
       <shifts startHour="0" startDay="0" endDay="4" endHour="23"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:BrandShop" name="Painboy Shop" address="Oktarious Sector n2" brand="//@availableBrands.0">
+  <shops xsi:type="Mall:BrandShop" name="An Unsound Place" address="Slot 2" brand="//@availableBrands.0">
     <has xsi:type="Mall:Table">
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
       <containedGood contains="//@availableBrands.0/@producedGoods.0" itemCount="1"/>
@@ -35,12 +35,12 @@
     </has>
     <soldGoods good="//@availableBrands.0/@producedGoods.0" defaultPrice="1"/>
     <soldGoods good="//@availableBrands.0/@producedGoods.1" defaultPrice="4"/>
-    <employees name="Random Grot">
+    <employees name="Hareem Graham">
       <shiftSchedule>
         <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
       </shiftSchedule>
     </employees>
-    <manager name="Mad Dok Grotsnik">
+    <manager name="Farrell Cannon">
       <shiftSchedule>
         <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
         <shifts startHour="8" startDay="1" endDay="1" endHour="16"/>
@@ -53,7 +53,7 @@
       <shifts startHour="0" startDay="0" endDay="4" endHour="23"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:BrandShop" name="BogrotBones" address="Oktarious Sector n3" brand="//@availableBrands.3">
+  <shops xsi:type="Mall:BrandShop" name="High Frequency Shop" address=" Slot 3" brand="//@availableBrands.3">
     <has xsi:type="Mall:Table">
       <containedGood contains="//@availableBrands.3/@producedGoods.0" itemCount="1"/>
     </has>
@@ -63,12 +63,12 @@
     </has>
     <soldGoods good="//@availableBrands.3/@producedGoods.0" defaultPrice="1"/>
     <soldGoods good="//@availableBrands.3/@producedGoods.1" defaultPrice="4"/>
-    <employees name="Weirdboy">
+    <employees name="Jameel Mcloughlin">
       <shiftSchedule>
         <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
       </shiftSchedule>
     </employees>
-    <manager name="Grukk Face-rippa">
+    <manager name="Bobbi Galindo">
       <shiftSchedule>
         <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
         <shifts startHour="8" startDay="1" endDay="1" endHour="16"/>
@@ -81,7 +81,7 @@
       <shifts startHour="0" startDay="5" endDay="5" endHour="23"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:BrandShop" name="SpeedKult" address="Oktarious Sector n4" brand="//@availableBrands.1">
+  <shops xsi:type="Mall:BrandShop" name="Silent Place" address="Slot 4" brand="//@availableBrands.1">
     <has xsi:type="Mall:Table">
       <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="1"/>
     </has>
@@ -90,12 +90,12 @@
       <containedGood contains="//@availableBrands.1/@producedGoods.0" itemCount="1"/>
     </has>
     <soldGoods good="//@availableBrands.1/@producedGoods.0" defaultPrice="1"/>
-    <employees name="Mekboy">
+    <employees name="Jayson Morrison">
       <shiftSchedule>
         <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
       </shiftSchedule>
     </employees>
-    <manager name="Wazdakka Gutsmek">
+    <manager name="Yasemin Barlow">
       <shiftSchedule>
         <shifts startHour="8" startDay="0" endDay="0" endHour="16"/>
         <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
@@ -107,7 +107,7 @@
       <shifts startHour="10" startDay="6" endDay="6" endHour="18"/>
     </openSchedule>
   </shops>
-  <shops xsi:type="Mall:BrandShop" name="Flash Gitz" address="Oktarious Sector n5" brand="//@availableBrands.2">
+  <shops xsi:type="Mall:BrandShop" name="The Second Sound" address="Slot 5" brand="//@availableBrands.2">
     <has xsi:type="Mall:Table">
       <containedGood contains="//@availableBrands.2/@producedGoods.0" itemCount="1"/>
       <containedGood contains="//@availableBrands.2/@producedGoods.0" itemCount="1"/>
@@ -118,12 +118,12 @@
     </has>
     <soldGoods good="//@availableBrands.2/@producedGoods.0" defaultPrice="1"/>
     <soldGoods good="//@availableBrands.2/@producedGoods.1" defaultPrice="1"/>
-    <employees name="Freeboota">
+    <employees name="Clementine Baird">
       <shiftSchedule>
         <shifts startHour="0" startDay="0" endDay="6" endHour="23"/>
       </shiftSchedule>
     </employees>
-    <manager name="Kaptin Badrukk">
+    <manager name="Theo Holcomb">
       <shiftSchedule>
         <shifts startHour="8" startDay="3" endDay="3" endHour="16"/>
         <shifts startHour="8" startDay="4" endDay="4" endHour="16"/>
@@ -134,33 +134,33 @@
       <shifts startHour="0" startDay="5" endDay="5" endHour="23"/>
     </openSchedule>
   </shops>
-  <availableBrands name="Goffs Brand">
-    <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Goff Beer">
-      <features name="Feature1" value="1"/>
+  <availableBrands name="Unsound Brand">
+    <producedGoods hasSubCategory="//@categories.0/@contains.0" modelNumber="Vivaldi CD">
+      <features name="Length" value="400"/>
     </producedGoods>
-    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Goff Teeth"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Debussy CD"/>
   </availableBrands>
-  <availableBrands name="Evil Sunz Band">
-    <producedGoods hasSubCategory="//@categories.2/@contains.0" modelNumber="Ork Tech"/>
+  <availableBrands name="Soundless Brand">
+    <producedGoods hasSubCategory="//@categories.2/@contains.0" modelNumber="CPE Bach CD"/>
   </availableBrands>
-  <availableBrands name="Bad Moons Brand">
-    <producedGoods hasSubCategory="//@categories.2/@contains.1" modelNumber="Stolen Humie Tech"/>
-    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Bad Moons Teeth"/>
+  <availableBrands name="Resound Brand">
+    <producedGoods hasSubCategory="//@categories.2/@contains.1" modelNumber="Hydin CD"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber=" Paul Dukas CD"/>
   </availableBrands>
-  <availableBrands name="Snakebites Brand">
-    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Snakebite Teeth"/>
-    <producedGoods hasSubCategory="//@categories.1/@contains.1" modelNumber="Stolen Hummie Theeth"/>
+  <availableBrands name="Ultrasound Brand">
+    <producedGoods hasSubCategory="//@categories.1/@contains.0" modelNumber="Debussy part 2, electric boogaloo"/>
+    <producedGoods hasSubCategory="//@categories.1/@contains.1" modelNumber="Ernest Fanelli CD"/>
   </availableBrands>
-  <categories name="Food">
-    <contains name="Fungus Beer"/>
-    <contains name="Hummie Food"/>
+  <categories name="Baroque">
+    <contains name="Early Classical Music"/>
+    <contains name="Late Classical Music"/>
   </categories>
-  <categories name="Teeth">
-    <contains name="Ork Teeth"/>
-    <contains name="Hummie Theeth"/>
+  <categories name="Impressionist">
+    <contains name="Early Impressionist"/>
+    <contains name="Late Impressionist"/>
   </categories>
-  <categories name="Tech">
-    <contains name="Ork Tech"/>
-    <contains name="Hummie Tech"/>
+  <categories name="Galant Music">
+    <contains name="Early Galant"/>
+    <contains name="Late Galant"/>
   </categories>
 </Mall:Mall>

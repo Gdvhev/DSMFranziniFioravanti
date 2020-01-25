@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <Brands:BrandsList xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:Brands="http://brands.com">
-  <brands name="Goffs Brand">
-    <workers name="Makari the grot">
+  <brands name="Unsound Brand">
+    <workers name="Theo Moses">
       <shiftSchedule>
         <Shift StartHour="23" EndDay="6" EndHour="23"/>
       </shiftSchedule>
     </workers>
-    <workers name="Grazkull Thraka" isManager="true">
+    <workers name="Andrei Glenn" isManager="true">
       <shiftSchedule>
         <Shift StartHour="16" EndDay="0" EndHour="16"/>
         <Shift StartDay="1" StartHour="16" EndDay="1" EndHour="16"/>
@@ -15,12 +15,12 @@
         <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
       </shiftSchedule>
     </workers>
-    <workers name="Random Grot">
+    <workers name="Hareem Graham">
       <shiftSchedule>
         <Shift StartHour="23" EndDay="6" EndHour="23"/>
       </shiftSchedule>
     </workers>
-    <workers name="Mad Dok Grotsnik" isManager="true">
+    <workers name="Farrell Cannon" isManager="true">
       <shiftSchedule>
         <Shift StartHour="16" EndDay="0" EndHour="16"/>
         <Shift StartDay="1" StartHour="16" EndDay="1" EndHour="16"/>
@@ -30,13 +30,13 @@
       </shiftSchedule>
     </workers>
   </brands>
-  <brands name="Evil Sunz Band">
-    <workers name="Mekboy">
+  <brands name="Soundless Brand">
+    <workers name="Jayson Morrison">
       <shiftSchedule>
         <Shift StartHour="23" EndDay="6" EndHour="23"/>
       </shiftSchedule>
     </workers>
-    <workers name="Wazdakka Gutsmek" isManager="true">
+    <workers name="Yasemin Barlow" isManager="true">
       <shiftSchedule>
         <Shift StartHour="16" EndDay="0" EndHour="16"/>
         <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
@@ -44,26 +44,26 @@
       </shiftSchedule>
     </workers>
   </brands>
-  <brands name="Bad Moons Brand">
-    <workers name="Freeboota">
+  <brands name="Resound Brand">
+    <workers name="Clementine Baird">
       <shiftSchedule>
         <Shift StartHour="23" EndDay="6" EndHour="23"/>
       </shiftSchedule>
     </workers>
-    <workers name="Kaptin Badrukk" isManager="true">
+    <workers name="Theo Holcomb" isManager="true">
       <shiftSchedule>
         <Shift StartDay="3" StartHour="16" EndDay="3" EndHour="16"/>
         <Shift StartDay="4" StartHour="16" EndDay="4" EndHour="16"/>
       </shiftSchedule>
     </workers>
   </brands>
-  <brands name="Snakebites Brand">
-    <workers name="Weirdboy">
+  <brands name="Ultrasound Brand">
+    <workers name="Jameel Mcloughlin">
       <shiftSchedule>
         <Shift StartHour="23" EndDay="6" EndHour="23"/>
       </shiftSchedule>
     </workers>
-    <workers name="Grukk Face-rippa" isManager="true">
+    <workers name="Bobbi Galindo" isManager="true">
       <shiftSchedule>
         <Shift StartHour="16" EndDay="0" EndHour="16"/>
         <Shift StartDay="1" StartHour="16" EndDay="1" EndHour="16"/>

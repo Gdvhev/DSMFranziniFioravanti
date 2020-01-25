@@ -140,7 +140,7 @@
                 <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HrBJ0jRMEeqG1bgZGjFhvQ"/>
               </children>
               <styles xmi:type="notation:ShapeStyle" xmi:id="_HrAiwTRMEeqG1bgZGjFhvQ" fontName="Noto Sans" fontHeight="8"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HrAiwjRMEeqG1bgZGjFhvQ" x="7" y="30" width="109" height="30"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HrAiwjRMEeqG1bgZGjFhvQ" x="7" y="30" width="145" height="30"/>
             </children>
             <children xmi:type="notation:Node" xmi:id="_WoBUoDRMEeqG1bgZGjFhvQ" type="3007" element="_Wn1ucDRMEeqG1bgZGjFhvQ">
               <children xmi:type="notation:Node" xmi:id="_WoBUozRMEeqG1bgZGjFhvQ" type="5003">
@@ -1185,7 +1185,7 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_F6J-QjROEeqG1bgZGjFhvQ" fontName="Noto Sans" fontHeight="8"/>
           <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_F6J-QzROEeqG1bgZGjFhvQ" points="[0, 0, 0, -76]$[0, 76, 0, 0]"/>
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F6MagjROEeqG1bgZGjFhvQ" id="(0.32432432432432434,1.0)"/>
-          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F6NBkDROEeqG1bgZGjFhvQ" id="(0.44036697247706424,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_F6NBkDROEeqG1bgZGjFhvQ" id="(0.3310344827586207,0.0)"/>
         </edges>
         <edges xmi:type="notation:Edge" xmi:id="_r3cN0DROEeqG1bgZGjFhvQ" type="4001" element="_r3XVUDROEeqG1bgZGjFhvQ" source="_r3ZKgDROEeqG1bgZGjFhvQ" target="_akVZMDRMEeqG1bgZGjFhvQ">
           <children xmi:type="notation:Node" xmi:id="_r3c04DROEeqG1bgZGjFhvQ" type="6001">
@@ -1365,7 +1365,7 @@
         </edges>
       </data>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_fpTkYDRLEeqG1bgZGjFhvQ" name="Goffs Brand" incomingEdges="_cjZmkDRPEeqG1bgZGjFhvQ _bCXmwDRREeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_fpTkYDRLEeqG1bgZGjFhvQ" name="Unsound Brand" incomingEdges="_cjZmkDRPEeqG1bgZGjFhvQ _bCXmwDRREeqG1bgZGjFhvQ">
       <target xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.0"/>
       <semanticElements xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1375,7 +1375,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_MbvRYDRNEeqG1bgZGjFhvQ" name="Goff Beer" outgoingEdges="_F6GT4DROEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_MbvRYDRNEeqG1bgZGjFhvQ" name="Vivaldi CD" outgoingEdges="_F6GT4DROEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.0/@producedGoods.0"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.0/@producedGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1385,7 +1385,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dBFLoDRQEeqG1bgZGjFhvQ" name="Feature1 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dBFLoDRQEeqG1bgZGjFhvQ" name="Length 400" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:Feature" href="example3.malldsm#//@availableBrands.0/@producedGoods.0/@features.0"/>
           <semanticElements xmi:type="Mall:Feature" href="example3.malldsm#//@availableBrands.0/@producedGoods.0/@features.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1397,7 +1397,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']/@subNodeMappings[name='Feature%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_r3FogDROEeqG1bgZGjFhvQ" name="Goff Teeth" outgoingEdges="_r3XVUDROEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_r3FogDROEeqG1bgZGjFhvQ" name="Debussy CD" outgoingEdges="_r3XVUDROEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.0/@producedGoods.1"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.0/@producedGoods.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1409,7 +1409,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_nLotYDRLEeqG1bgZGjFhvQ" name="Evil Sunz Band" incomingEdges="_nyGzUDRSEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_nLotYDRLEeqG1bgZGjFhvQ" name="Soundless Brand" incomingEdges="_nyGzUDRSEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.1"/>
       <semanticElements xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1419,7 +1419,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-BAbQDROEeqG1bgZGjFhvQ" name="Ork Tech" outgoingEdges="_-BNPkDROEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_-BAbQDROEeqG1bgZGjFhvQ" name="CPE Bach CD" outgoingEdges="_-BNPkDROEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.1/@producedGoods.0"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.1/@producedGoods.0"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_-BAbQTROEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="154,103,23">
@@ -1428,7 +1428,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_rgfNwDRLEeqG1bgZGjFhvQ" name="Bad Moons Brand" incomingEdges="_KRNEwDRTEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_rgfNwDRLEeqG1bgZGjFhvQ" name="Resound Brand" incomingEdges="_KRNEwDRTEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.2"/>
       <semanticElements xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1438,7 +1438,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_IWH08DRPEeqG1bgZGjFhvQ" name="Stolen Humie Tech" outgoingEdges="_IWS0EDRPEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_IWH08DRPEeqG1bgZGjFhvQ" name="Hydin CD" outgoingEdges="_IWS0EDRPEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.2/@producedGoods.0"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.2/@producedGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1449,7 +1449,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_PX4AcDRPEeqG1bgZGjFhvQ" name="Bad Moons Teeth" outgoingEdges="_PYDmoDRPEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_PX4AcDRPEeqG1bgZGjFhvQ" name=" Paul Dukas CD" outgoingEdges="_PYDmoDRPEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.2/@producedGoods.1"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.2/@producedGoods.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1461,7 +1461,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_v4XM8DRLEeqG1bgZGjFhvQ" name="Snakebites Brand" incomingEdges="_FjMS8DRSEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_v4XM8DRLEeqG1bgZGjFhvQ" name="Ultrasound Brand" incomingEdges="_FjMS8DRSEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.3"/>
       <semanticElements xmi:type="Mall:Brand" href="example3.malldsm#//@availableBrands.3"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1471,7 +1471,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_zdTL8DROEeqG1bgZGjFhvQ" name="Snakebite Teeth" outgoingEdges="_zdgAQDROEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_zdTL8DROEeqG1bgZGjFhvQ" name="Debussy part 2, electric boogaloo" outgoingEdges="_zdgAQDROEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.3/@producedGoods.0"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.3/@producedGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1482,7 +1482,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_4Fs6cDROEeqG1bgZGjFhvQ" name="Stolen Hummie Theeth" outgoingEdges="_4F5HsDROEeqG1bgZGjFhvQ">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_4Fs6cDROEeqG1bgZGjFhvQ" name="Ernest Fanelli CD" outgoingEdges="_4F5HsDROEeqG1bgZGjFhvQ">
         <target xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.3/@producedGoods.1"/>
         <semanticElements xmi:type="Mall:Good" href="example3.malldsm#//@availableBrands.3/@producedGoods.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1494,7 +1494,7 @@
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Brand%20Node']/@subContainerMappings[name='Good%20Node']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_GOdFMDRMEeqG1bgZGjFhvQ" name="Food">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_GOdFMDRMEeqG1bgZGjFhvQ" name="Baroque">
       <target xmi:type="Mall:Category" href="example3.malldsm#//@categories.0"/>
       <semanticElements xmi:type="Mall:Category" href="example3.malldsm#//@categories.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1504,7 +1504,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Hqj20DRMEeqG1bgZGjFhvQ" name="Fungus Beer" incomingEdges="_F6GT4DROEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Hqj20DRMEeqG1bgZGjFhvQ" name="Early Classical Music" incomingEdges="_F6GT4DROEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.0/@contains.0"/>
         <semanticElements xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.0/@contains.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1515,7 +1515,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Wn1ucDRMEeqG1bgZGjFhvQ" name="Hummie Food" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_Wn1ucDRMEeqG1bgZGjFhvQ" name="Late Classical Music" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.0/@contains.1"/>
         <semanticElements xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.0/@contains.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1527,7 +1527,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_akPSkDRMEeqG1bgZGjFhvQ" name="Teeth">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_akPSkDRMEeqG1bgZGjFhvQ" name="Impressionist">
       <target xmi:type="Mall:Category" href="example3.malldsm#//@categories.1"/>
       <semanticElements xmi:type="Mall:Category" href="example3.malldsm#//@categories.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1537,7 +1537,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_akP5oDRMEeqG1bgZGjFhvQ" name="Ork Teeth" incomingEdges="_r3XVUDROEeqG1bgZGjFhvQ _zdgAQDROEeqG1bgZGjFhvQ _PYDmoDRPEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_akP5oDRMEeqG1bgZGjFhvQ" name="Early Impressionist" incomingEdges="_r3XVUDROEeqG1bgZGjFhvQ _zdgAQDROEeqG1bgZGjFhvQ _PYDmoDRPEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.1/@contains.0"/>
         <semanticElements xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.1/@contains.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1548,7 +1548,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_akQgsDRMEeqG1bgZGjFhvQ" name="Hummie Theeth" incomingEdges="_4F5HsDROEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_akQgsDRMEeqG1bgZGjFhvQ" name="Late Impressionist" incomingEdges="_4F5HsDROEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.1/@contains.1"/>
         <semanticElements xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.1/@contains.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1560,7 +1560,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_6qEmkDRMEeqG1bgZGjFhvQ" name="Tech">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_6qEmkDRMEeqG1bgZGjFhvQ" name="Galant Music">
       <target xmi:type="Mall:Category" href="example3.malldsm#//@categories.2"/>
       <semanticElements xmi:type="Mall:Category" href="example3.malldsm#//@categories.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1570,7 +1570,7 @@
         <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@style"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']"/>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6qIQ8DRMEeqG1bgZGjFhvQ" name="Ork Tech" incomingEdges="_-BNPkDROEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6qIQ8DRMEeqG1bgZGjFhvQ" name="Early Galant" incomingEdges="_-BNPkDROEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.2/@contains.0"/>
         <semanticElements xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.2/@contains.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1581,7 +1581,7 @@
         </ownedStyle>
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Category%20Node']/@subNodeMappings[name='SubCategory%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6qJfEDRMEeqG1bgZGjFhvQ" name="Hummie Tech" incomingEdges="_IWS0EDRPEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
+      <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_6qJfEDRMEeqG1bgZGjFhvQ" name="Late Galant" incomingEdges="_IWS0EDRPEeqG1bgZGjFhvQ" width="3" height="3" resizeKind="NSEW">
         <target xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.2/@contains.1"/>
         <semanticElements xmi:type="Mall:SubCategory" href="example3.malldsm#//@categories.2/@contains.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1649,7 +1649,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='GoodSubCategory%20Edge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_cjOAYDRPEeqG1bgZGjFhvQ" name="Brand Shop Gork 'nd Mork Shop" outgoingEdges="_cjZmkDRPEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_cjOAYDRPEeqG1bgZGjFhvQ" name="Brand Shop An Unsound Advice" outgoingEdges="_cjZmkDRPEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.0"/>
       <semanticElements xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.0"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1678,7 +1678,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_cjWjQDRPEeqG1bgZGjFhvQ" name="Manager Grazkull Thraka">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_cjWjQDRPEeqG1bgZGjFhvQ" name="Manager Andrei Glenn">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.0/@manager"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.0/@manager"/>
         <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_cjWjQTRPEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" backgroundColor="253,206,137" foregroundColor="224,133,3">
@@ -1756,7 +1756,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_YzmekDRQEeqG1bgZGjFhvQ" name="Goff Beer 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_YzmekDRQEeqG1bgZGjFhvQ" name="Vivaldi CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.0/@has.0/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.0/@has.0/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_Yzw2oDRQEeqG1bgZGjFhvQ" labelPosition="node">
@@ -1765,26 +1765,26 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WrI9QDRQEeqG1bgZGjFhvQ" name="Goff Beer sold at 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WrI9QDRQEeqG1bgZGjFhvQ" name="Vivaldi CD sold at 1">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.0/@soldGoods.0"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.0/@soldGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WrW_sDRQEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WrW_sDRQEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_awheQDRQEeqG1bgZGjFhvQ" name="Goff Teeth sold at 4">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_awheQDRQEeqG1bgZGjFhvQ" name="Debussy CD sold at 4">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.0/@soldGoods.1"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.0/@soldGoods.1"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_awiFUDRQEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_awiFUDRQEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_8oh6gDRQEeqG1bgZGjFhvQ" name="Makari the grot">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_8oh6gDRQEeqG1bgZGjFhvQ" name="Theo Moses">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.0/@employees.0"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.0/@employees.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1823,7 +1823,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bBh5QDRREeqG1bgZGjFhvQ" name="Brand Shop Painboy Shop" outgoingEdges="_bCXmwDRREeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bBh5QDRREeqG1bgZGjFhvQ" name="Brand Shop An Unsound Place" outgoingEdges="_bCXmwDRREeqG1bgZGjFhvQ">
       <target xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.1"/>
       <semanticElements xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.1"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1843,7 +1843,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bBjHYDRREeqG1bgZGjFhvQ" name="Goff Beer 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bBjHYDRREeqG1bgZGjFhvQ" name="Vivaldi CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.0/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.0/@containedGood.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1854,7 +1854,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lsLeEDRREeqG1bgZGjFhvQ" name="Goff Beer 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_lsLeEDRREeqG1bgZGjFhvQ" name="Vivaldi CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.0/@containedGood.1"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.0/@containedGood.1"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1865,7 +1865,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mJlLwDRREeqG1bgZGjFhvQ" name="Goff Beer 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_mJlLwDRREeqG1bgZGjFhvQ" name="Vivaldi CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.0/@containedGood.2"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.0/@containedGood.2"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1877,24 +1877,24 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bBrqQDRREeqG1bgZGjFhvQ" name="Goff Beer sold at 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bBrqQDRREeqG1bgZGjFhvQ" name="Vivaldi CD sold at 1">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.1/@soldGoods.0"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.1/@soldGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_bB0NIDRREeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_bB0NIDRREeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bB00MDRREeqG1bgZGjFhvQ" name="Goff Teeth sold at 4">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bB00MDRREeqG1bgZGjFhvQ" name="Debussy CD sold at 4">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.1/@soldGoods.1"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.1/@soldGoods.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_bB00MTRREeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_bB00MTRREeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
@@ -1918,7 +1918,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bCAaYDRREeqG1bgZGjFhvQ" name="Random Grot">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bCAaYDRREeqG1bgZGjFhvQ" name="Hareem Graham">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.1/@employees.0"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.1/@employees.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -1945,7 +1945,7 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bCAaYjRREeqG1bgZGjFhvQ" name="Manager Mad Dok Grotsnik">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_bCAaYjRREeqG1bgZGjFhvQ" name="Manager Farrell Cannon">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.1/@manager"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.1/@manager"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2014,7 +2014,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_8YznADRREeqG1bgZGjFhvQ" name="Goff Teeth 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_8YznADRREeqG1bgZGjFhvQ" name="Debussy CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.1/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.1/@has.1/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_8Y67wDRREeqG1bgZGjFhvQ" labelPosition="node">
@@ -2032,7 +2032,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__yVHkDRREeqG1bgZGjFhvQ" name="Brand Shop BogrotBones" outgoingEdges="_FjMS8DRSEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__yVHkDRREeqG1bgZGjFhvQ" name="Brand Shop High Frequency Shop" outgoingEdges="_FjMS8DRSEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.2"/>
       <semanticElements xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.2"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2052,7 +2052,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dKU8UDRSEeqG1bgZGjFhvQ" name="Snakebite Teeth 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_dKU8UDRSEeqG1bgZGjFhvQ" name="Debussy part 2, electric boogaloo 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.2/@has.0/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.2/@has.0/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_dKWKcDRSEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2071,7 +2071,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_duk44DRSEeqG1bgZGjFhvQ" name="Snakebite Teeth 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_duk44DRSEeqG1bgZGjFhvQ" name="Debussy part 2, electric boogaloo 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.2/@has.1/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.2/@has.1/@containedGood.0"/>
           <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2082,7 +2082,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_eF8QADRSEeqG1bgZGjFhvQ" name="Snakebite Teeth 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_eF8QADRSEeqG1bgZGjFhvQ" name="Debussy part 2, electric boogaloo 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.2/@has.1/@containedGood.1"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.2/@has.1/@containedGood.1"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_eF9eIDRSEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2118,7 +2118,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__ydqcDRREeqG1bgZGjFhvQ" name="Weirdboy">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__ydqcDRREeqG1bgZGjFhvQ" name="Jameel Mcloughlin">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.2/@employees.0"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.2/@employees.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2145,7 +2145,7 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__ydqcjRREeqG1bgZGjFhvQ" name="Manager Grukk Face-rippa">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="__ydqcjRREeqG1bgZGjFhvQ" name="Manager Bobbi Galindo">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.2/@manager"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.2/@manager"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2199,24 +2199,24 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WWhtQDRSEeqG1bgZGjFhvQ" name="Snakebite Teeth sold at 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_WWhtQDRSEeqG1bgZGjFhvQ" name="Debussy part 2, electric boogaloo sold at 1">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.2/@soldGoods.0"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.2/@soldGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WWiUUDRSEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_WWiUUDRSEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ZqQH0DRSEeqG1bgZGjFhvQ" name="Stolen Hummie Theeth sold at 4">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ZqQH0DRSEeqG1bgZGjFhvQ" name="Ernest Fanelli CD sold at 4">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.2/@soldGoods.1"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.2/@soldGoods.1"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ZqQu4DRSEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ZqQu4DRSEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
@@ -2230,7 +2230,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mHQbEDRSEeqG1bgZGjFhvQ" name="Brand Shop SpeedKult" outgoingEdges="_nyGzUDRSEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mHQbEDRSEeqG1bgZGjFhvQ" name="Brand Shop Silent Place" outgoingEdges="_nyGzUDRSEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.3"/>
       <semanticElements xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.3"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2247,7 +2247,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3ooAEDRSEeqG1bgZGjFhvQ" name="Ork Tech 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3ooAEDRSEeqG1bgZGjFhvQ" name="CPE Bach CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.3/@has.0/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.3/@has.0/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_3oonIDRSEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2266,7 +2266,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_24SIQDRSEeqG1bgZGjFhvQ" name="Ork Tech 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_24SIQDRSEeqG1bgZGjFhvQ" name="CPE Bach CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.3/@has.1/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.3/@has.1/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_24SvUDRSEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2274,7 +2274,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3NnfEDRSEeqG1bgZGjFhvQ" name="Ork Tech 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_3NnfEDRSEeqG1bgZGjFhvQ" name="CPE Bach CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.3/@has.1/@containedGood.1"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.3/@has.1/@containedGood.1"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_3NoGIDRSEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2310,7 +2310,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mHcoUDRSEeqG1bgZGjFhvQ" name="Mekboy">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mHcoUDRSEeqG1bgZGjFhvQ" name="Jayson Morrison">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.3/@employees.0"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.3/@employees.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2337,7 +2337,7 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mHdPYDRSEeqG1bgZGjFhvQ" name="Manager Wazdakka Gutsmek">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_mHdPYDRSEeqG1bgZGjFhvQ" name="Manager Yasemin Barlow">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.3/@manager"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.3/@manager"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2380,13 +2380,13 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xtgFcDRSEeqG1bgZGjFhvQ" name="Ork Tech sold at 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_xtgFcDRSEeqG1bgZGjFhvQ" name="CPE Bach CD sold at 1">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.3/@soldGoods.0"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.3/@soldGoods.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
         <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
         <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xtgsgDRSEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_xtgsgDRSEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
@@ -2400,7 +2400,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@edgeMappings[name='ShopBrandEdge']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HZpo0DRTEeqG1bgZGjFhvQ" name="Brand Shop Flash Gitz" outgoingEdges="_KRNEwDRTEeqG1bgZGjFhvQ">
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HZpo0DRTEeqG1bgZGjFhvQ" name="Brand Shop The Second Sound" outgoingEdges="_KRNEwDRTEeqG1bgZGjFhvQ">
       <target xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.4"/>
       <semanticElements xmi:type="Mall:BrandShop" href="example3.malldsm#//@shops.4"/>
       <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_HZqP4DRTEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
@@ -2417,7 +2417,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_aSTw4DRTEeqG1bgZGjFhvQ" name="Stolen Humie Tech 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_aSTw4DRTEeqG1bgZGjFhvQ" name="Hydin CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.0/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.0/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_aSUX8DRTEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2425,7 +2425,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bydVADRTEeqG1bgZGjFhvQ" name="Stolen Humie Tech 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bydVADRTEeqG1bgZGjFhvQ" name="Hydin CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.0/@containedGood.1"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.0/@containedGood.1"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_byd8EDRTEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2444,7 +2444,7 @@
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']"/>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_axwtADRTEeqG1bgZGjFhvQ" name="Stolen Humie Tech 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_axwtADRTEeqG1bgZGjFhvQ" name="Hydin CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.1/@containedGood.0"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.1/@containedGood.0"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_axxUEDRTEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2452,7 +2452,7 @@
           </ownedStyle>
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Container%20Node']/@subNodeMappings[name='ItemInStock%20Node']"/>
         </ownedDiagramElements>
-        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bVRCsDRTEeqG1bgZGjFhvQ" name="Bad Moons Teeth 1" width="3" height="3" resizeKind="NSEW">
+        <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_bVRCsDRTEeqG1bgZGjFhvQ" name=" Paul Dukas CD 1" width="3" height="3" resizeKind="NSEW">
           <target xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.1/@containedGood.1"/>
           <semanticElements xmi:type="Mall:ItemInStock" href="example3.malldsm#//@shops.4/@has.1/@containedGood.1"/>
           <ownedStyle xmi:type="diagram:Ellipse" xmi:id="_bVRCsTRTEeqG1bgZGjFhvQ" labelPosition="node">
@@ -2488,7 +2488,7 @@
           <actualMapping xmi:type="description_1:NodeMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='Shop%20Schedule%20Node']/@subNodeMappings[name='TimeSpan%20Node']"/>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HZtTMjRTEeqG1bgZGjFhvQ" name="Freeboota">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HZtTMjRTEeqG1bgZGjFhvQ" name="Clementine Baird">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.4/@employees.0"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.4/@employees.0"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2515,7 +2515,7 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HZt6QTRTEeqG1bgZGjFhvQ" name="Manager Kaptin Badrukk">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_HZt6QTRTEeqG1bgZGjFhvQ" name="Manager Theo Holcomb">
         <target xmi:type="Mall:Employee" href="example3.malldsm#//@shops.4/@manager"/>
         <semanticElements xmi:type="Mall:Employee" href="example3.malldsm#//@shops.4/@manager"/>
         <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -2550,18 +2550,18 @@
           </ownedDiagramElements>
         </ownedDiagramElements>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YdinoDRTEeqG1bgZGjFhvQ" name="Stolen Humie Tech sold at 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_YdinoDRTEeqG1bgZGjFhvQ" name="Hydin CD sold at 1">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.4/@soldGoods.0"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.4/@soldGoods.0"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YdjOsDRTEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_YdjOsDRTEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>
       </ownedDiagramElements>
-      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ZHb5MDRTEeqG1bgZGjFhvQ" name="Bad Moons Teeth sold at 1">
+      <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_ZHb5MDRTEeqG1bgZGjFhvQ" name=" Paul Dukas CD sold at 1">
         <target xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.4/@soldGoods.1"/>
         <semanticElements xmi:type="Mall:ListedGood" href="example3.malldsm#//@shops.4/@soldGoods.1"/>
-        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ZHdHUDRTEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1">
+        <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_ZHdHUDRTEeqG1bgZGjFhvQ" borderSize="1" borderSizeComputationExpression="1" foregroundColor="194,239,255">
           <description xmi:type="style:FlatContainerStyleDescription" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']/@style"/>
         </ownedStyle>
         <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/resource/Mall.Graphic/description/Mall.odesign#//@ownedViewpoints[name='Mall%20Viewpoint']/@ownedRepresentations[name='Mall%20Diagram']/@defaultLayer/@containerMappings[name='Shop%20Node']/@subContainerMappings[name='ListedGood%20Node']"/>

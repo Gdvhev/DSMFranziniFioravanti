@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project default="generate" name="Mall.Acceleo">
-    <property name="ECLIPSE_HOME" value="../../.."/>
+    <property name="ECLIPSE_HOME" value="../../../../../../Downloads/eclipse"/>
     <property name="ECLIPSE_WORKSPACE" value="../.."/>
 
     <!-- The classpath with only the dependencies used by the project -->
@@ -29,7 +29,7 @@
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.acceleo.engine_3.7.3.201802240723.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen.ecore_2.14.0.v20180418-0836.jar"/>
         <pathelement location="${ECLIPSE_HOME}/plugins/org.eclipse.emf.codegen_2.13.0.v20180319-0813.jar"/>
-        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_27.1.0.v20190517-1946.jar"/>
+        <pathelement location="${ECLIPSE_HOME}/plugins/com.google.guava_21.0.0.v20170206-1425.jar"/>
     </path>
 
     <path id="Mall.Acceleo.classpath">
