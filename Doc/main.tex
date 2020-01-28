@@ -45,6 +45,9 @@
 \tableofcontents
 \clearpage
 
+\section{Introduction}
+The goal of this project was to model a Mall and its shops in order to allow to build models that describe each shop together with its items in stock and employees. In addition, two transformations have been developed, one that prints out the employee information as a nice html page and one that produces another model (conforming to a different metamodel) that shifts the focus on brands, branded shops and their employees. The creation of models will be assisted by using a Sirius based graphical editor.
+
 \section{Dependencies}
 The project uses OCLInEcore to add Ocl constraints to the Ecore model, so installing \textit{OCL Examples and Editors Feature SDK} is required.
 The graphical editor is made using Sirius, Acceleo is used for M2T, ATL for M2M, so those dependencies must be installed too.
@@ -58,25 +61,30 @@ While developing the project we have made the following assumptions:
 	\item Features must be very flexible as new types of feature might be introduced for a particular item
 	\item Shifts can be of any length and can be in any hour of the week (it will be the manager's responsibility to not get sued by an union)
 	\item Shifts can be outside the shop's opening hours (due to making inventory, organizing, accounting, cleaning,...)
-	\item Every good must have a brand, a generic brand can be intrudoced to simulate those items that lack a known brand.
+	\item Every good must have a brand, a "generic" brand can be introduced to aggregate those items that lack a known brand.
 	
 \end{enumerate}
 
 \section{Design}
-We have made the following design choices
-\begin{itemize}
-	\item Information about a particular item is stored in a dictionary-like structure
-\end{itemize}
+When developing the metamodel we have kept in mind an user that wants to manage the whole mall, so namely the general manager of said mall.
+We have separated the concept of a \textit{Good} intended as a produced item (so the description, name, model number, ..) and the concept of an \textit{Item in stock}, so an "instance" of a particular good that is in stock. So each shop will have a listing for each Good, detailing price and possible discounts, and will have \textit{Container}s that in turn will have \textit{ItemInStock} that detail which good it is and how many items of said good are present in that container. Both employees and shops have schedules, these have been represented as a set of shifts (guaranteed non overlapping by Ocl) that are in turn defined by a start day+hour and an end day+hour. Days are from 0 to 6, so we are describing schedules that we assume repeat each week, as it is common practice with business hours.
+Figure \ref{fig:mallDiag} shows the Ecore metamodel.
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{pictures/MallDsmclassdiagram.jpg}
+	\caption{The Ecore Diagram.}
+	\label{fig:mallDiag}
+\end{figure}
 
 \section{Usage}
 \subsection{Sirius Graphical Editor}
-The viewpoint specification of the Sirius editor can be found in \textit{Mall.Graphic/description}. When opened on a model, three types top nodes will appear: Category, Brand and Shop (either specialistic or branded). Every other item will be a sub-node of one of these. Under the \textit{Brand} node the user can find the \textit{Good}s produced by said brand together with their respective specified features. Inside the \textit{Category} node, the \textit{Subcategory} nodes can be found, each having a name and being pointed by an arrow from each of the goods pertaining to that subcategory. 
+The viewpoint specification of the Sirius-based editor can be found in \textit{Mall.Graphic/description}. When a model is opened, three types of top nodes will appear: Category, Brand and Shop (either specialistic or branded). Every other item will be a sub-node of one of these. Under the \textit{Brand} node the user can find the \textit{Good}s produced by said brand together with their respective specified features. Inside the \textit{Category} node the \textit{Subcategory} nodes can be found, each having a name and being pointed by an arrow from each of the goods pertaining to that subcategory. 
 Inside each shop the user will find:
 \begin{itemize}
 	\item a \textit{Schedule} node representing the open hours
 	\item the \textit{Manager} node denoted by an orange background
 	\item the \textit{Employee} nodes (if any)
-	\item the \textit{ListedGood} nodes, each describing that a particular good is sold in that shop by giving price and info on eventual discounts
+	\item the \textit{ListedGood} nodes, each describing that a particular good is sold in that shop by giving price and info on possible discounts
 	\item the \textit{Container} nodes represent shelves/refrigerators/tables on which the items will be put
 \end{itemize}
 Each employee and manager will then have a schedule of their own. Inside each schedule the user can put any number of shifts, as long as they are not overlapping (the validation will trigger an Ocl error if this is not the case)
@@ -96,4 +104,6 @@ The transformation can be run as a normal ATL transformation and there are no sp
 The Acceleo transformation from the brand metamodel to html is located in the \textit{Mall.Acceleo} folder. In there you can find the folders \textit{html}, \textit{html2} and \textit{html3}, each of them containing the output of the transformation applied to the relative example.
 The transformation can be run as a normal Acceleo transformation and there are no special requirements.
 	
+\section{Conclusion}
+In conclusion, this framework of metamodel, transformations and editor allows a user (for example the person in charge of the whole mall) to easily keep track of each shop together with its stock of items, pricing and discount policies and employees. The high level of compartmentalization in Shop/Brand/Categories "top entities" means that the metamodel is easy to extend if need be in the future because most likely just one of the main parts will need to be changed.
 \end{document}
